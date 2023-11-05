@@ -1,0 +1,297 @@
+---
+title: "Diversity calculations"
+author: "Samuel Chan"
+date: 29/10/2023
+date-format: "DD/MM/YYYY"
+format: html
+editor: visual
+---
+
+# Load libraries
+```{r}
+library(tidyverse)
+library(vegan)
+library(picante)
+library(FD)
+library(apTreeshape)
+library(geiger)
+```
+
+# Calculate diversity metrics
+## TD
+
+### Calculate abundance, richness
+```{r}
+transect.spp.td <- transect.spp %>% 
+  rowwise() %>%
+  mutate(total = sum(c_across(Acanthastrea_echinata:Turbinaria_stellulata)), 
+         nbsp = sum((c_across(Acanthastrea_echinata:Turbinaria_stellulata)>0)))
+transect.pastgen.td <- transect.pastgen %>% 
+  rowwise() %>%
+  mutate(total = sum(c_across(Acanthastrea:Turbinaria)), 
+         nbsp = sum((c_across(Acanthastrea:Turbinaria)>0)))
+
+results.sp.TR <- transect.spp.td %>% select(., Code, total, nbsp) %>% 
+  mutate(total = total/2000) %>%
+  column_to_rownames(., var="Code")
+
+results.ge.TR <- transect.pastgen.td %>% select(., Code, total, nbsp) %>% 
+  mutate(total = total/2000) %>%
+  column_to_rownames(., var="Code")
+```
+### Calculate diversity
+```{r}
+transect.spp.td.rm <- transect.spp.td %>% 
+  select(., -nbsp, -total) %>%
+  column_to_rownames(., var="Code")
+
+results.sp.TD <- diversity(transect.spp.td.rm, index="simpson")
+results.sp.TD <- as.matrix(results.sp.TD)
+
+transect.pastgen.td.rm <- transect.pastgen.td %>% 
+  select(., -nbsp, -total) %>%
+  column_to_rownames(., var="Code")
+
+results.ge.TD <- diversity(transect.pastgen.td.rm, index="simpson")
+results.ge.TD <- as.matrix(results.ge.TD)
+```
+
+### Combine values
+```{r}
+results.sp.TDiv<-cbind(results.sp.TR, results.sp.TD)
+colnames(results.sp.TDiv)<-c("Abun", "TRic", "TDiv")
+
+results.ge.TDiv<-cbind(results.ge.TR, results.ge.TD)
+colnames(results.ge.TDiv)<-c("Abun", "TRic", "TDiv")
+
+rm(transect.spp.td.rm);rm(transect.pastgen.td.rm)
+rm(results.sp.TR);rm(results.sp.TD)
+rm(results.ge.TR);rm(results.ge.TD)
+
+#write.csv(results.sp.TDiv, file="output/results.sp.TDiv.csv")
+#write.csv(results.ge.TDiv, file="output/results.ge.TDiv.csv")
+```
+
+## FD
+### Prepare data and checks
+```{r}
+spp.traits.fd <- spp.trait.table %>% select(., spp, 4:17)  %>%
+  mutate(., spp =  str_replace(spp, " ", "_"))
+gen.traits.fd <- pastgen.trait.table %>% select(., pastgen, 2:15) 
+
+transect.spp.fd <- transect.spp.td %>% 
+  filter(., nbsp > 0) %>% 
+  select(., -total, -nbsp) %>%
+  column_to_rownames(., var="Code")
+transect.pastgen.fd <- transect.pastgen.td %>%
+  filter(., nbsp > 0) %>%
+  select(., -total, -nbsp) %>%
+  column_to_rownames(., var="Code")
+
+names.abundance <- rownames(t(transect.spp.fd))
+names.abundance2 <- rownames(t(transect.pastgen.fd))
+
+spp.traits.fd.rm <- spp.traits.fd %>% 
+  subset(., spp %in% names.abundance)
+spp.traits.fd.rm <- spp.traits.fd.rm %>% 
+  remove_rownames() %>%
+  column_to_rownames("spp")
+names.traits <- rownames(spp.traits.fd.rm)
+identical(names.traits,names.abundance)
+names.traits[!(names.traits %in% names.abundance)]
+names.abundance[!(names.abundance %in% names.traits)]
+
+gen.traits.fd.rm <- gen.traits.fd %>% 
+  subset(., pastgen %in% names.abundance2)
+gen.traits.fd.rm <- gen.traits.fd.rm %>% 
+  remove_rownames() %>%
+  column_to_rownames("pastgen")
+names.traits2 <- rownames(gen.traits.fd.rm)
+identical(names.traits2,names.abundance2)
+names.traits2[!(names.traits2 %in% names.abundance2)]
+names.abundance2[!(names.abundance2 %in% names.traits2)]
+
+rm(species);rm(genera)
+rm(transect.spp);rm(transect.pastgen)
+rm(spp.traits);rm(spp.traits.fd);rm(pastgen.traits);rm(gen.traits.fd)
+rm(names.abundance);rm(names.abundance2);rm(names.traits);rm(names.traits2)
+
+spp.traits.fd.rm <- spp.traits.fd.rm %>%
+  select(., -calc)
+gen.traits.fd.rm <- gen.traits.fd.rm %>%
+  select(., -calc)
+```
+
+### Calculate diversity
+```{r}
+wt.fd <- c(rep(1,8), rep(0.2,5))
+
+results.sp.FDiv <- dbFD(spp.traits.fd.rm, 
+                        transect.spp.fd, 
+                        wt.fd, 
+                        w.abun=T, 
+                        m="max", 
+                        corr=c("cailliez"), 
+                        clust.type="ward", 
+                        calc.FDiv=T, 
+                        calc.CWM=T)
+results.sp.FDiv <- as.data.frame(results.sp.FDiv)
+
+results.ge.FDiv <- dbFD(gen.traits.fd.rm, 
+                        transect.pastgen.fd, 
+                        wt.fd, 
+                        w.abun=T, 
+                        m="max", 
+                        corr=c("cailliez"), 
+                        clust.type="ward", 
+                        calc.FDiv=T, 
+                        calc.CWM=T)
+results.ge.FDiv <- as.data.frame(results.ge.FDiv)
+
+
+rm(spp.traits.fd.rm);rm(gen.traits.fd.rm)
+rm(wt.fd)
+
+#write.csv(results.sp.FDiv, file="output/results.sp.FDiv.csv")
+#write.csv(results.ge.FDiv, file="output/results.ge.FDiv.csv")
+```
+
+## PD
+### Prepare data and checks
+```{r}
+spp.tree <- read.nexus(file="data/database traits/RSTBtree.tre")
+gen.tree <- read.nexus(file="data/database traits/Genus.tre")
+
+transect.spp.pd <- transect.spp.td %>% 
+  filter(., nbsp > 0) %>% 
+  select(., -total, -nbsp) %>%
+  column_to_rownames(., var="Code") %>%
+  rename(., Montastraea_annuligera = Astrea_annuligera,
+         Montastraea_curta = Astrea_curta,
+         Coelastrea_aspera = Coelastrea_incrustans,
+         Psammocora_explanulata = Cycloseris_explanulata,
+         Favia_laxa = Dipsastraea_laxa,
+         Favia_rotumana = Dipsastraea_rotumana,
+         Favia_veroni = Dipsastraea_veroni,
+         Turbinaria_peltata = Duncanopsammia_peltata,
+         Oxypora_glabra = Echinophyllia_glabra,
+         Echinopora_pacificus = Echinopora_pacifica,
+         Montastraea_magnistellata = Favites_magnistellata,
+         Favia_rotundata = Favites_rotundata,
+         Euphyllia_ancora = Fimbriaphyllia_ancora,
+         Euphyllia_divisa = Fimbriaphyllia_divisa,
+         Euphyllia_paradivisa = Fimbriaphyllia_paradivisa,
+         Favia_stelligera = Goniastrea_stelligera,
+         Goniopora_minor = Goniopora_pedunculata,
+         Acanthastrea_bowerbanki = Homophyllia_bowerbanki,
+         Echinophyllia_echinata = Oxypora_echinata,
+         Favites_russelli = Paragoniastrea_russelli
+         ) %>% mutate (
+           Dipsastraea_mirabilis = Dipsastraea_mirabilis + Dipsastraea_amicorum
+         ) %>% select(., - Dipsastraea_amicorum)
+transect.pastgen.pd <- transect.pastgen.td %>%
+  filter(., nbsp > 0) %>%
+  select(., -total, -nbsp) %>%
+  column_to_rownames(., var="Code")
+
+transect.spp.pd.t <- as.data.frame(t(transect.spp.pd))
+transect.pastgen.pd.t <- as.data.frame(t(transect.pastgen.pd))
+
+names.abundance <- rownames(transect.spp.pd)
+names.abundance2 <- rownames(transect.pastgen.pd)
+
+overlap1<-name.check(spp.tree[[1]],transect.spp.pd.t)
+phylotree1<-rtreeshape(n=length(spp.tree),tip.number=2,model="yule")
+for (i in 1:1000){
+  phylotree1[[i]]<-drop.tip(spp.tree[[i]],overlap1$tree_not_data)
+}
+name.check(phylotree1[[1]],transect.spp.pd.t)
+
+overlap2<-name.check(gen.tree[[1]],transect.pastgen.pd.t)
+phylotree2<-rtreeshape(n=length(gen.tree),tip.number=2,model="yule")
+for (i in 1:1000){
+  phylotree2[[i]]<-drop.tip(gen.tree[[i]],overlap2$tree_not_data)
+}
+name.check(phylotree2[[1]],transect.pastgen.pd.t)
+```
+
+### Calculate diversity
+```{r}
+esults.sp.PR <- array(NA,dim=c(length(phylotree1),length(transect.spp.pd.t[1,])))
+colnames(results.sp.PR)<-colnames(transect.spp.pd.t)
+for (i in 1:length(phylotree1)){
+  cat("Tree",i,"\n")
+  results.sp.PR[i,]<-pd(t(transect.spp.pd.t),phylotree1[[i]])[,1]
+}
+results.sp.PD<-array(NA, dim=c(length(phylotree1), length(transect.spp.pd.t[1,])))
+colnames(results.sp.PD)<-colnames(transect.spp.pd.t)
+for (i in 1:length(phylotree1)){
+  cat("Tree",i,"\n")
+  results.sp.PD[i,]<-raoD(t(transect.spp.pd.t),phy=phylotree1[[i]])$Dkk
+}
+
+results.sp.PR.t <-apply(results.sp.PR, 2, mean)
+results.sp.PR.t<-as.data.frame(results.sp.PR.t)
+results.sp.PD.t<-apply(results.sp.PD, 2, mean)
+results.sp.PD.t<-as.data.frame(results.sp.PD.t)
+results.sp.PDiv <-cbind(results.sp.PR.t, results.sp.PD.t)
+colnames(results.sp.PDiv)<- c("PRic", "PDiv")
+
+rm(overlap1);rm(phylotree1)
+rm(results.sp.PR.t);rm(results.sp.PD.t)
+
+results.ge.PR <- array(NA,dim=c(length(phylotree2),length(transect.pastgen.pd.t[1,])))
+colnames(results.ge.PR)<-colnames(transect.pastgen.pd.t)
+for (i in 1:length(phylotree2)){
+  cat("Tree",i,"\n")
+  results.ge.PR[i,]<-pd(t(transect.pastgen.pd.t),phylotree2[[i]])[,1]
+}
+results.ge.PD<-array(NA, dim=c(length(phylotree2), length(transect.pastgen.pd.t[1,])))
+colnames(results.ge.PD)<-colnames(transect.pastgen.pd.t)
+for (i in 1:length(phylotree2)){
+  cat("Tree",i,"\n")
+  results.ge.PD[i,]<-raoD(t(transect.pastgen.pd.t),phy=phylotree2[[i]])$Dkk
+}
+
+results.ge.PR.t <-apply(results.ge.PR, 2, mean)
+results.ge.PR.t<-as.data.frame(results.ge.PR.t)
+results.ge.PD.t<-apply(results.ge.PD, 2, mean)
+results.ge.PD.t<-as.data.frame(results.ge.PD.t)
+results.ge.PDiv <-cbind(results.ge.PR.t, results.ge.PD.t)
+colnames(results.ge.PDiv)<- c("PRic", "PDiv")
+
+rm(overlap2);rm(phylotree2)
+rm(results.ge.PR.t);rm(results.ge.PD.t)
+
+#write.csv(results.sp.PDiv, file="output/results.sp.PDiv.csv")
+#write.csv(results.ge.PDiv, file="output/results.ge.PDiv.csv")
+```
+
+## Combine TD, FD, PD
+```{r}
+results.sp.TDiv <- results.sp.TDiv %>% 
+  rownames_to_column(., var = "Code")
+results.sp.PDiv <- results.sp.PDiv %>% 
+  rownames_to_column(., var = "Code")
+results.sp.FDiv <- results.sp.FDiv %>% 
+  rownames_to_column(., var = "Code")
+
+results.ge.TDiv <- results.ge.TDiv %>% 
+  rownames_to_column(., var = "Code")
+results.ge.PDiv <- results.ge.PDiv %>% 
+  rownames_to_column(., var = "Code")
+results.ge.FDiv <- results.ge.FDiv %>% 
+  rownames_to_column(., var = "Code")
+
+results.sp.Div <- left_join(transect.spp.meta, results.sp.TDiv) %>%
+  left_join(results.sp.PDiv) %>%
+  left_join(results.sp.FDiv)
+
+results.ge.Div <- left_join(transect.pastgen.meta, results.ge.TDiv) %>%
+  left_join(results.ge.PDiv) %>%
+  left_join(results.ge.FDiv)
+
+#write.csv(results.sp.Div, file="output/results.sp.Div.csv")
+#write.csv(results.ge.Div, file="output/results.ge.Div.csv")
+```
+

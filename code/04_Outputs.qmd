@@ -1,0 +1,475 @@
+---
+title: "Outputs"
+author: "Samuel Chan"
+date: 29/10/2023
+date-format: "DD/MM/YYYY"
+format: html
+editor: visual
+---
+
+# Load libraries
+```{r}
+library(tidyverse)
+library(rstan)
+library(brms)
+library(performance)
+library(DHARMa)
+library(HDInterval)
+library(emmeans)
+library(tidybayes)
+library(patchwork)
+library(ggpubr)
+library(visibly)
+set.seed(13)
+```
+
+# Posterior predictions
+## Create dataset for predictions
+```{r}
+yeardata <- seq(1986, 2020, 1) %>%
+  as.tibble() %>%
+  rename(Year = value)
+```
+
+## Abundance
+```{r}
+pred.ep.abun <- posterior_epred(model.ge.abun.re.sc, newdata = yeardata, re_formula = NA) %>%
+  as.tibble() %>%
+  summarise_all(.funs = list(mean = mean, sd = sd)) %>%
+  t() %>%
+  cbind(yeardata) %>%
+  mutate(Values = . * 0.1766204 + 0.2677669) %>%
+  cbind(rep(c("Mean", "SD"), each = 35)) %>%
+  select(., 2:4) %>%
+  rename("Stat" = 3) %>%
+  pivot_wider(names_from = Stat, names_prefix = c("Abun_"), values_from = Values)
+```
+
+## Taxonomic
+```{r}
+pred.ep.tric <- posterior_epred(model.ge.tric.re.sc, newdata = yeardata, re_formula = NA) %>%
+  as.tibble() %>%
+  summarise_all(.funs = list(mean = mean, sd = sd)) %>%
+  t() %>%
+  cbind(yeardata) %>%
+  mutate(Values = . * 4.610299 + 11.0093) %>%
+  cbind(rep(c("Mean", "SD"), each = 35)) %>%
+  select(., 2:4) %>%
+  rename("Stat" = 3) %>%
+  pivot_wider(names_from = Stat, names_prefix = c("TRic_"), values_from = Values)
+pred.ep.tdiv <- posterior_epred(model.ge.tdiv.re.sc, newdata = yeardata, re_formula = NA) %>%
+  as.tibble() %>%
+  summarise_all(.funs = list(mean = mean, sd = sd)) %>%
+  t() %>%
+  cbind(yeardata) %>%
+  mutate(Values = . * 0.1820617 + 0.7707524) %>%
+  cbind(rep(c("Mean", "SD"), each = 35)) %>%
+  select(., 2:4) %>%
+  rename("Stat" = 3) %>%
+  pivot_wider(names_from = Stat, names_prefix = c("TDiv_"), values_from = Values)
+```
+
+## Phylogenetic
+```{r}
+pred.ep.pric <- posterior_epred(model.ge.pric.re.sc, newdata = yeardata, re_formula = NA) %>%
+  as.tibble() %>%
+  summarise_all(.funs = list(mean = mean, sd = sd)) %>%
+  t() %>%
+  cbind(yeardata) %>%
+  mutate(Values = . * 245.0934 + 1226.477) %>%
+  cbind(rep(c("Mean", "SD"), each = 35)) %>%
+  select(., 2:4) %>%
+  rename("Stat" = 3) %>%
+  pivot_wider(names_from = Stat, names_prefix = c("PRic_"), values_from = Values)
+pred.ep.pdiv <- posterior_epred(model.ge.pdiv.re.sc, newdata = yeardata, re_formula = NA) %>%
+  as.tibble() %>%
+  summarise_all(.funs = list(mean = mean, sd = sd)) %>%
+  t() %>%
+  cbind(yeardata) %>%
+  mutate(Values = . * 56.61612 + 150.2985) %>%
+  cbind(rep(c("Mean", "SD"), each = 35)) %>%
+  select(., 2:4) %>%
+  rename("Stat" = 3) %>%
+  pivot_wider(names_from = Stat, names_prefix = c("PDiv_"), values_from = Values)
+```
+
+## Functional
+```{r}
+pred.ep.fric <- posterior_epred(model.ge.fric.re.sc, newdata = yeardata, re_formula = NA) %>%
+  as.tibble() %>%
+  summarise_all(.funs = list(mean = mean, sd = sd)) %>%
+  t() %>%
+  cbind(yeardata) %>%
+  mutate(Values = . * 0.1391478 + 0.2692114) %>%
+  cbind(rep(c("Mean", "SD"), each = 35)) %>%
+  select(., 2:4) %>%
+  rename("Stat" = 3) %>%
+  pivot_wider(names_from = Stat, names_prefix = c("FRic_"), values_from = Values)
+pred.ep.fdiv <- posterior_epred(model.ge.fdiv.re.sc, newdata = yeardata, re_formula = NA) %>%
+  as.tibble() %>%
+  summarise_all(.funs = list(mean = mean, sd = sd)) %>%
+  t() %>%
+  cbind(yeardata) %>%
+  mutate(Values = . * 0.009244943 + 0.02164159) %>%
+  cbind(rep(c("Mean", "SD"), each = 35)) %>%
+  select(., 2:4) %>%
+  rename("Stat" = 3) %>%
+  pivot_wider(names_from = Stat, names_prefix = c("FDiv_"), values_from = Values)
+```
+
+## Write results
+```{r}
+epred.ge <- cbind(pred.ep.abun, pred.ep.tric[,c(2:3)], pred.ep.tdiv[,c(2:3)], 
+                  pred.ep.pric[,c(2:3)], pred.ep.pdiv[,c(2:3)], pred.ep.fric[,c(2:3)], pred.ep.fdiv[,c(2:3)])
+
+
+#write.csv(epred.ge, file = "output/epreds.csv")
+```
+
+# Set theme
+```{r}
+theme_base <- theme_set(theme_bw(base_size = 10) + theme(legend.position="bottom")) #create theme
+```
+
+# Model plots
+## Fig 1
+### Legend
+```{r}
+legend.data <- cbind(c("Coral Cover", "Non-abundance-weighted Richness", "Abundance-weighted Diversity"), seq(1,3,1)) %>%
+  as_tibble() %>%
+  rename(Metrics = V1, Values = V2)
+legend.data$Metrics <- factor(legend.data$Metrics, levels = c("Coral Cover", "Non-abundance-weighted Richness", "Abundance-weighted Diversity"))
+plot.legendgraph <- ggplot(data = legend.data) + 
+  geom_bar(aes(x = Values, fill = Metrics)) + 
+  scale_fill_manual(values = c("Coral Cover" =  "#e31a1c", 
+                                 "Non-abundance-weighted Richness" = "#33a02c", 
+                                 "Abundance-weighted Diversity" = "#1f78b4"))
+plot.legend <- get_legend(plot.legendgraph, position = "left") 
+plot.legend <- as_ggplot(plot.legend)
+```
+
+### Abundance
+```{r}
+plot.ge.abun <- plot(conditional_effects(model.ge.abun.re.sc, ask = F), point_args = c(alpha = 0.5, size = 1.5), 
+                     points = T, ask=F, line_args = list(colour="#e31a1c", fill="#e31a1c", alpha=0.3))
+plot.ge.abun <- plot.ge.abun$Year + labs(x = NULL, y = "Coral Cover")
+```
+
+### TRic
+```{r}
+plot.ge.tric <- plot(conditional_effects(model.ge.tric.re.sc), 
+                     point_args = c(alpha = 0.5, size = 1.5), 
+                     points = T, ask=F, line_args = list(colour="#33a02c", fill="#33a02c", alpha=0.3))
+plot.ge.tric <- plot.ge.tric$Year + labs(x = NULL, y = "Taxonomic Richness")
+```
+
+### TDiv
+```{r}
+plot.ge.tdiv <- plot(conditional_effects(model.ge.tdiv.re.sc), 
+                     point_args = c(alpha = 0.5, size = 1.5), 
+                     points = T, ask=F, line_args = list(colour="#1f78b4", fill="#1f78b4", alpha=0.3))
+plot.ge.tdiv <- plot.ge.tdiv$Year + labs(x = NULL, y = "Taxonomic Diversity")
+```
+
+### PRic
+```{r}
+plot.ge.pric <- plot(conditional_effects(model.ge.pric.re.sc), 
+                     point_args = c(alpha = 0.5, size = 1.5), 
+                     points = T, ask=F, line_args = list(colour="#33a02c", fill="#33a02c", alpha=0.3))
+plot.ge.pric <- plot.ge.pric$Year + labs(x = NULL, y ="Phylogenetic Richness")
+```
+
+### PDiv
+```{r}
+plot.ge.pdiv <- plot(conditional_effects(model.ge.pdiv.re.sc), 
+                     point_args = c(alpha = 0.5, size = 1.5), 
+                     points = T, ask=F, line_args = list(colour="#1f78b4", fill="#1f78b4", alpha=0.3))
+plot.ge.pdiv <- plot.ge.pdiv$Year + labs(x = NULL, y ="Phylogenetic Diversity")
+```
+
+### FRic
+```{r}
+plot.ge.fric <- plot(conditional_effects(model.ge.fric.re.sc), 
+                     point_args = c(alpha = 0.5, size = 1.5), 
+                     points = T, ask=F, line_args = list(colour="#33a02c", fill="#33a02c", alpha=0.3))
+plot.ge.fric <- plot.ge.fric$Year + labs(x = NULL, y ="Functional Richness")
+```
+
+### FDiv
+```{r}
+plot.ge.fdiv <- plot(conditional_effects(model.ge.fdiv.re.sc), 
+                     point_args = c(alpha = 0.5, size = 1.5), 
+                     points = T, ask=F, line_args = list(colour="#1f78b4", fill="#1f78b4", alpha=0.3))
+plot.ge.fdiv <- plot.ge.fdiv$Year + labs(x = NULL, y ="Functional Diversity")
+```
+
+### Combined Plot
+```{r}
+layout.model <- "
+#A
+BC
+DE
+FG"
+
+plot.gescmodel <- plot.legend + plot.ge.abun + plot.ge.tric + plot.ge.tdiv +  
+  plot.ge.pric +  plot.ge.pdiv + plot.ge.fric + plot.ge.fdiv + 
+  plot_layout(ncol = 2) + plot_annotation(tag_levels = list(c("", "a", "b", "c", "d", "e", "f", "g")))
+
+#ggsave(plot.gescmodel, file = "output/figs/modeleffects.ge.sc.tiff", dpi=300, width=10, height=10)
+#ggsave(plot.gescmodel, file = "output/figs/modeleffects.ge.sc.pdf", width=10, height=10)
+```
+## Fig 2
+### Genus richness correlations
+```{r}
+plot.cor.prs <- plot(conditional_effects(cor.pric.sc2), point_args = c(alpha = 0.5, size = 1.5), 
+                     points = T, ask=F, line_args = list(colour="#33a02c", fill="#33a02c", alpha=0.3))
+plot.cor.prs <- plot.cor.prs$TRic + labs(x = "Taxonomic Richness", y ="Phylogenetic Richness")
+plot.cor.frs <- plot(conditional_effects(cor.fric.sc2), point_args = c(alpha = 0.5, size = 1.5), 
+                     points = T, ask=F, line_args = list(colour="#33a02c", fill="#33a02c", alpha=0.3))
+plot.cor.frs <- plot.cor.frs$TRic + labs(x = "Taxonomic Richness", y ="Functional Richness")
+plot.cor.pfrs <- plot(conditional_effects(cor.pfric.sc2), point_args = c(alpha = 0.5, size = 1.5), 
+                     points = T, ask=F, line_args = list(colour="#33a02c", fill="#33a02c", alpha=0.3))
+plot.cor.pfrs <- plot.cor.pfrs$PRic + labs(x = "Phylogenetic Richness", y ="Functional Richness")
+```
+
+### Genus diversity correlations
+```{r}
+plot.cor.pds <- plot(conditional_effects(cor.pdiv.sc2), point_args = c(alpha = 0.5, size = 1.5), 
+                     points = T, ask=F, line_args = list(colour="#1f78b4", fill="#1f78b4", alpha=0.3))
+plot.cor.pds <- plot.cor.pds$TDiv + labs(x = "Taxonomic Diversity", y ="Phylogenetic Diversity")
+plot.cor.fds <- plot(conditional_effects(cor.fdiv.sc2), point_args = c(alpha = 0.5, size = 1.5), 
+                     points = T, ask=F, line_args = list(colour="#1f78b4", fill="#1f78b4", alpha=0.3))
+plot.cor.fds <- plot.cor.fds$TDiv + labs(x = "Taxonomic Diversity", y ="Functional Diversity")
+plot.cor.pfds <- plot(conditional_effects(cor.pfdiv.sc2), point_args = c(alpha = 0.5, size = 1.5), 
+                      points = T, ask=F, line_args = list(colour="#1f78b4", fill="#1f78b4", alpha=0.3))
+plot.cor.pfds <- plot.cor.pfds$PDiv + labs(x = "Phylogenetic Diversity", y ="Functional Diversity")
+```
+
+### Species richness correlations
+```{r}
+plot.scor.prs <- plot(conditional_effects(scor.pric.sc2), point_args = c(alpha = 0.5, size = 1.5), 
+                     points = T, ask=F, line_args = list(colour="#33a02c", fill="#33a02c", alpha=0.3))
+plot.scor.prs <- plot.scor.prs$TRic + labs(x = "Taxonomic Richness", y ="Phylogenetic Richness")
+plot.scor.frs <- plot(conditional_effects(scor.fric.sc2), point_args = c(alpha = 0.5, size = 1.5), 
+                     points = T, ask=F, line_args = list(colour="#33a02c", fill="#33a02c", alpha=0.3))
+plot.scor.frs <- plot.scor.frs$TRic + labs(x = "Taxonomic Richness", y ="Functional Richness")
+plot.scor.pfrs <- plot(conditional_effects(scor.pfric.sc2), point_args = c(alpha = 0.5, size = 1.5), 
+                      points = T, ask=F, line_args = list(colour="#33a02c", fill="#33a02c", alpha=0.3))
+plot.scor.pfrs <- plot.scor.pfrs$PRic + labs(x = "Phylogenetic Richness", y ="Functional Richness")
+```
+
+### Species diversity correlations
+```{r}
+plot.scor.pds <- plot(conditional_effects(scor.pdiv.sc2), point_args = c(alpha = 0.5, size = 1.5), 
+                     points = T, ask=F, line_args = list(colour="#1f78b4", fill="#1f78b4", alpha=0.3))
+plot.scor.pds <- plot.scor.pds$TDiv + labs(x = "Taxonomic Diversity", y ="Phylogenetic Diversity")
+plot.scor.fds <- plot(conditional_effects(scor.fdiv.sc2), point_args = c(alpha = 0.5, size = 1.5), 
+                     points = T, ask=F, line_args = list(colour="#1f78b4", fill="#1f78b4", alpha=0.3))
+plot.scor.fds <- plot.scor.fds$TDiv + labs(x = "Taxonomic Diversity", y ="Functional Diversity")
+plot.scor.pfds <- plot(conditional_effects(scor.pfdiv.sc2), point_args = c(alpha = 0.5, size = 1.5), 
+                      points = T, ask=F, line_args = list(colour="#1f78b4", fill="#1f78b4", alpha=0.3))
+plot.scor.pfds <- plot.scor.pfds$PDiv + labs(x = "Phylogenetic Diversity", y ="Functional Diversity")
+```
+
+### Combined plot
+```{r}
+layout.cor <- "
+ABC
+DEF
+GHI
+JKL"
+
+plot.cor <- plot.cor.prs + plot.cor.frs + plot.cor.pfrs +  
+  plot.cor.pds +  plot.cor.fds + plot.cor.pfds + 
+  plot.scor.prs + plot.scor.frs + plot.scor.pfrs +
+  plot.scor.pds + plot.scor.fds + plot.scor.pfds + 
+  plot_layout(design = layout.cor) + plot_annotation(tag_levels = 'a')
+
+#ggsave(plot.cor, file = "output/figs/model.cor.tiff", dpi=300, width=10, height=12)
+#ggsave(plot.cor, file = "output/figs/model.cor.pdf", width=10, height=12)
+```
+
+## Fig 3
+### Abundance
+```{r}
+plot.sp.abun <- plot(conditional_effects(model.sp.abun.re.sc, ask = F), point_args = c(alpha = 0.5, size = 1.5), 
+                     points = T, ask=F, cat_args = list(colour="#e31a1c", alpha=0.7), 
+                     errorbar_args = list(colour="#e31a1c", size=1.25, alpha = 0.7))
+plot.sp.abun <- plot.sp.abun$Period + labs(x = NULL, y = "Coral Cover")
+```
+
+### TRic
+```{r}
+plot.sp.tric <- plot(conditional_effects(model.sp.tric.re.sc, ask = F), 
+                     point_args = c(alpha = 0.5, size = 1.5), 
+                     points = T, ask=F, cat_args = list(colour="#33a02c", alpha=0.7), 
+                     errorbar_args = list(colour="#33a02c", size=1.25, alpha = 0.7))
+plot.sp.tric <- plot.sp.tric$Period + labs(x = NULL, y = "Taxonomic Richness")
+```
+
+### TDiv
+```{r}
+plot.sp.tdiv <- plot(conditional_effects(model.sp.tdiv.re.sc), 
+                     point_args = c(alpha = 0.5, size = 1.5), 
+                     points = T, ask=F, cat_args = list(colour="#1f78b4", alpha=0.7), 
+                     errorbar_args = list(colour="#1f78b4", size=1.25, alpha = 0.7))
+plot.sp.tdiv <- plot.sp.tdiv$Period + labs(x = NULL, y = "Taxonomic Diversity")
+```
+
+### PRic
+```{r}
+plot.sp.pric <- plot(conditional_effects(model.sp.pric.re.sc), 
+                     point_args = c(alpha = 0.5, size = 1.5), 
+                     points = T, ask=F, cat_args = list(colour="#33a02c", alpha=0.7), 
+                     errorbar_args = list(colour="#33a02c", size=1.25, alpha = 0.7))
+plot.sp.pric <- plot.sp.pric$Period + labs(x = NULL, y ="Phylogenetic Richness")
+```
+
+### PDiv
+```{r}
+plot.sp.pdiv <- plot(conditional_effects(model.sp.pdiv.re.sc), 
+                     point_args = c(alpha = 0.5, size = 1.5), 
+                     points = T, ask=F, cat_args = list(colour="#1f78b4", alpha=0.7), 
+                     errorbar_args = list(colour="#1f78b4", size=1.25, alpha = 0.7))
+plot.sp.pdiv <- plot.sp.pdiv$Period + labs(x = NULL, y ="Phylogenetic Diversity")
+```
+
+### FRic
+```{r}
+lot.sp.fric <- plot(conditional_effects(model.sp.fric.re.sc), 
+                     point_args = c(alpha = 0.5, size = 1.5), 
+                     points = T, ask=F, cat_args = list(colour="#33a02c", alpha=0.7), 
+                     errorbar_args = list(colour="#33a02c", size=1.25, alpha = 0.7))
+plot.sp.fric <- plot.sp.fric$Period + labs(x = NULL, y ="Functional Richness")
+```
+
+### FDiv
+```{r}
+plot.sp.fdiv <- plot(conditional_effects(model.sp.fdiv.re.sc), 
+                     point_args = c(alpha = 0.5, size = 1.5), 
+                     points = T, ask=F, cat_args = list(colour="#1f78b4", alpha=0.7), 
+                     errorbar_args = list(colour="#1f78b4", size=1.25, alpha = 0.7))
+plot.sp.fdiv <- plot.sp.fdiv$Period + labs(x = NULL, y ="Functional Diversity")
+```
+
+### Combined plot
+```{r}
+#plot.spscmodel <- plot.sp.abun + plot.sp.tric + plot.sp.tdiv +  
+#  plot.sp.pric +  plot.sp.pdiv + plot.sp.fric + plot.sp.fdiv + 
+#  plot_layout(design = layout.model) + plot_annotation(tag_levels = 'a')
+
+#ggsave(plot.spscmodel, file = "output/figs/modeleffects.sp.sc.tiff", dpi=300, width=10, height=10)
+#ggsave(plot.spscmodel, file = "output/figs/modeleffects.sp.sc.pdf", width=10, height=10)
+
+plot.spscmodel2 <- plot.sp.tric + plot.sp.tdiv +  
+  plot.sp.pric +  plot.sp.pdiv + plot.sp.fric + plot.sp.fdiv + 
+  plot_layout(ncol = 2) + plot_annotation(tag_levels = 'a')
+
+#ggsave(plot.spscmodel2, file = "output/figs/modeleffects.sp.sc2.tiff", dpi=300, width=10, height=10)
+#ggsave(plot.spscmodel2, file = "output/figs/modeleffects.sp.sc2.pdf", width=10, height=10)
+```
+
+## Fig 4
+### Continuous traits
+```{r}
+plot.ge.grow <- plot(conditional_effects(model.ge.grow.re.sc), 
+                     point_args = c(alpha = 0.5, size = 1.5), 
+                     points = T, ask=F, line_args = list(colour="#1f78b4", fill="#1f78b4", alpha=0.3))
+plot.ge.grow <- plot.ge.grow$Year + labs(x = NULL, y = "Growth Rate*")
+plot.ge.grow <- plot.ge.grow + ylim(-2.5,4) 
+plot.ge.skel <- plot(conditional_effects(model.ge.skel.re.sc), 
+                     point_args = c(alpha = 0.5, size = 1.5), 
+                     points = T, ask=F, line_args = list(colour="#1f78b4", fill="#1f78b4", alpha=0.3))
+plot.ge.skel <- plot.ge.skel$Year + labs(x = NULL, y = "Skeletal Density*")
+plot.ge.skel <- plot.ge.skel + ylim(-3,4) 
+plot.ge.cwid <- plot(conditional_effects(model.ge.cwid.re.sc), 
+                     point_args = c(alpha = 0.5, size = 1.5), 
+                     points = T, ask=F, line_args = list(colour="#1f78b4", fill="#1f78b4", alpha=0.3))
+plot.ge.cwid <- plot.ge.cwid$Year + labs(x = NULL, y ="Corallite Width*")
+plot.ge.cwid <- plot.ge.cwid + ylim(-1,4) 
+plot.ge.cmd <- plot(conditional_effects(model.ge.cmd.re.sc), 
+                     point_args = c(alpha = 0.5, size = 1.5), 
+                     points = T, ask=F, line_args = list(colour="#1f78b4", fill="#1f78b4", alpha=0.3))
+plot.ge.cmd <- plot.ge.cmd$Year + labs(x = NULL, y ="Colony Max Diameter*")
+plot.ge.cmd <- plot.ge.cmd + ylim(-2.5,4) 
+```
+
+### Growth forms
+```{r}
+plot.ge.gfbr <- plot(conditional_effects(model.ge.gfbr.re.sc), 
+                     point_args = c(alpha = 0.5, size = 1.5), 
+                     points = T, ask=F, line_args = list(colour="#1f78b4", fill="#1f78b4", alpha=0.3))
+plot.ge.gfbr <- plot.ge.gfbr$Year + labs(x = NULL, y = "Branching Morphology*")
+plot.ge.gfbr <- plot.ge.gfbr + ylim(-1, 4)
+plot.ge.gfen <- plot(conditional_effects(model.ge.gfen.re.sc), 
+                     point_args = c(alpha = 0.5, size = 1.5), 
+                     points = T, ask=F, line_args = list(colour="#1f78b4", fill="#1f78b4", alpha=0.3))
+plot.ge.gfen <- plot.ge.gfen$Year + labs(x = NULL, y = "Encrusting Morphology")
+plot.ge.gfla <- plot(conditional_effects(model.ge.gfla.re.sc), 
+                     point_args = c(alpha = 0.5, size = 1.5), 
+                     points = T, ask=F, line_args = list(colour="#1f78b4", fill="#1f78b4", alpha=0.3))
+plot.ge.gfla <- plot.ge.gfla$Year + labs(x = NULL, y = "Laminar Morphology")
+plot.ge.gfma <- plot(conditional_effects(model.ge.gfma.re.sc), 
+                     point_args = c(alpha = 0.5, size = 1.5), 
+                     points = T, ask=F, line_args = list(colour="#1f78b4", fill="#1f78b4", alpha=0.3))
+plot.ge.gfma <- plot.ge.gfma$Year + labs(x = NULL, y = "Massive Morphology")
+plot.ge.gfsu <- plot(conditional_effects(model.ge.gfsu.re.sc), 
+                     point_args = c(alpha = 0.5, size = 1.5), 
+                     points = T, ask=F, line_args = list(colour="#1f78b4", fill="#1f78b4", alpha=0.3))
+plot.ge.gfsu <- plot.ge.gfsu$Year + labs(x = NULL, y = "Submassive Morphology")
+```
+
+### Combined plot
+```{r}
+plot.ge.cwm <- plot.ge.grow + plot.ge.skel + plot.ge.cwid + plot.ge.cmd +
+  plot_layout(ncol = 1) + plot_annotation(tag_levels = 'a')
+
+plot.ge.gf <- plot.ge.gfbr + plot.ge.gfen + plot.ge.gfla + plot.ge.gfsu + plot.ge.gfma +
+  plot_layout(ncol = 1) + plot_annotation(tag_levels = list(c("e", "f", "g", "h", "i")))
+
+plot.ge.cwmgf <- (plot.ge.cwm | plot.ge.gf)  + plot_annotation(tag_levels = 'a')
+
+#ggsave(plot.ge.cwmgf, file = "output/figs/modeleffects.ge.cwmgf.tiff", dpi=300, width=10, height=12)
+#ggsave(plot.ge.cwmgf, file = "output/figs/modeleffects.ge.cwmgf.pdf", width=10, height=12)
+```
+
+## Supplementary pltos
+### Genus ranef
+```{r}
+abun.ranef <- plot_coefficients(model.ge.abun.re.sc, ranef = TRUE, which_ranef = 'Site') + coord_flip()
+tric.ranef <- plot_coefficients(model.ge.tric.re.sc, ranef = TRUE, which_ranef = 'Site') + coord_flip()
+tdiv.ranef <- plot_coefficients(model.ge.tdiv.re.sc, ranef = TRUE, which_ranef = 'Site') + coord_flip()
+pric.ranef <- plot_coefficients(model.ge.pric.re.sc, ranef = TRUE, which_ranef = 'Site') + coord_flip()
+pdiv.ranef <- plot_coefficients(model.ge.pdiv.re.sc, ranef = TRUE, which_ranef = 'Site') + coord_flip()
+fric.ranef <- plot_coefficients(model.ge.fric.re.sc, ranef = TRUE, which_ranef = 'Site') + coord_flip()
+fdiv.ranef <- plot_coefficients(model.ge.fdiv.re.sc, ranef = TRUE, which_ranef = 'Site') + coord_flip()
+
+plot.ge.ranef <- abun.ranef + tric.ranef + tdiv.ranef + 
+  pric.ranef + pdiv.ranef + fric.ranef + fdiv.ranef + 
+  plot_layout(design = layout.model) + 
+  plot_annotation(tag_levels = list(c("a) Cover", "b) TRic", "c) TDiv", "d) PRic", "e) PDiv", "f) FRic", "f) FDiv")))
+
+#gsave(plot.ge.ranef, file = "output/figs/modelraneffects.ge.tiff", dpi=300, width=10, height=15)
+#ggsave(plot.ge.ranef, file = "output/figs/modelraneffects.ge.pdf", width=10, height=15)
+```
+
+### Species ranef
+```{r}
+abuns.ranef <- plot_coefficients(model.sp.abun.re.sc, ranef = TRUE, which_ranef = 'Site') + coord_flip()
+trics.ranef <- plot_coefficients(model.sp.tric.re.sc, ranef = TRUE, which_ranef = 'Site') + coord_flip()
+tdivs.ranef <- plot_coefficients(model.sp.tdiv.re.sc, ranef = TRUE, which_ranef = 'Site') + coord_flip()
+prics.ranef <- plot_coefficients(model.sp.pric.re.sc, ranef = TRUE, which_ranef = 'Site') + coord_flip()
+pdivs.ranef <- plot_coefficients(model.sp.pdiv.re.sc, ranef = TRUE, which_ranef = 'Site') + coord_flip()
+frics.ranef <- plot_coefficients(model.sp.fric.re.sc, ranef = TRUE, which_ranef = 'Site') + coord_flip()
+fdivs.ranef <- plot_coefficients(model.sp.fdiv.re.sc, ranef = TRUE, which_ranef = 'Site') + coord_flip()
+
+plot.sp.ranef <- abuns.ranef + trics.ranef + tdivs.ranef + 
+  prics.ranef + pdivs.ranef + frics.ranef + fdivs.ranef + 
+  plot_layout(design = layout.model) + 
+  plot_annotation(tag_levels = list(c("a) Cover", "b) TRic", "c) TDiv", "d) PRic", "e) PDiv", "f) FRic", "f) FDiv")))
+
+ggsave(plot.sp.ranef, file = "output/figs/modelraneffects.sp.tiff", dpi=300, width=10, height=12)
+ggsave(plot.sp.ranef, file = "output/figs/modelraneffects.sp.pdf", width=10, height=12)
+```
+
+

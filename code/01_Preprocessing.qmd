@@ -1,0 +1,299 @@
+---
+title: "Data processing"
+author: "Samuel Chan"
+date: 29/10/2023
+date-format: "DD/MM/YYYY"
+format: html
+editor: visual
+---
+
+# Load libraries
+```{r}
+library(tidyverse)
+library(vegan)
+library(picante)
+library(FD)
+library(apTreeshape)
+library(geiger)
+```
+
+# Calculate trait values
+## Read trait data
+```{r}
+traits <- read.csv("data/database/fulltraits.csv", header=T) #CoralTraits
+
+unique(traits$trait_name)
+```
+
+### Growth rate
+```{r}
+gr <- traits %>%
+  filter(., trait_name == "Growth rate") %>%
+  select("specie_name", "measurement_id", "value", "standard_unit")
+unique(gr$standard_unit)
+gr1 <- gr %>%
+  filter(., standard_unit == "mm yr^-1") %>%
+  mutate(stanvalue = as.numeric(as.character(value))) 
+gr2 <- gr %>%
+  filter(., standard_unit == "mm month^-1") %>%
+  mutate(stanvalue = as.numeric(as.character(value))*12) 
+gr3 <- gr %>%
+  filter(., standard_unit == "mm per 6 months^-1") %>%
+  mutate(stanvalue = as.numeric(as.character(value))*2) 
+gr4 <- gr %>%
+  filter(., standard_unit == "mm per 7 months^-1") %>%
+  mutate(stanvalue = as.numeric(as.character(value))/7*12) 
+gr5 <- gr %>%
+  filter(., standard_unit == "mm per 8 months^-1") %>%
+  mutate(stanvalue = as.numeric(as.character(value))/8*12) 
+gr6 <- gr %>%
+  filter(., standard_unit == "mm per 3 months^-1") %>%
+  mutate(stanvalue = as.numeric(as.character(value))*4) 
+gr7 <- gr %>%
+  filter(., standard_unit == "mm per 4 months^-1") %>%
+  mutate(stanvalue = as.numeric(as.character(value))*3) 
+gr8 <- gr %>%
+  filter(., standard_unit == "mm d^-1") %>%
+  mutate(stanvalue = as.numeric(as.character(value))*365) 
+growthrate <- rbind(gr1,gr2,gr3,gr4,gr5,gr6,gr7,gr8) %>%
+  arrange(specie_name) %>%
+  group_by(specie_name) %>%
+  summarise(grow = mean(stanvalue), n.grow = n(), sd.grow = sd(stanvalue))
+
+rm(gr1);rm(gr2);rm(gr3);rm(gr4);rm(gr5);rm(gr6);rm(gr7);rm(gr8)
+rm(gr)
+```
+
+### Skeletal density
+```{r}
+sd <- traits %>%
+  filter(., trait_name == "Skeletal density") %>%
+  select("specie_name", "measurement_id", "value", "standard_unit")
+unique(sd$standard_unit)
+
+skeletaldensity <- traits %>%
+  filter(., trait_name == "Skeletal density") %>%
+  select("specie_name", "measurement_id", "value", "standard_unit") %>%
+  mutate(stanvalue = as.numeric(as.character(value))) %>%
+  arrange(specie_name) %>%
+  group_by(specie_name) %>%
+  summarise(skel = mean(stanvalue), n.skel = n(), sd.skel = sd(stanvalue))
+
+rm(sd)
+```
+### Corallite width
+```{r}
+cw <- traits %>%
+  filter(., trait_name == "Corallite width") %>%
+  select("specie_name", "measurement_id", "value", "standard_unit") %>%
+  mutate(stanvalue = as.numeric(as.character(value))*10)
+cwmax <- traits %>%
+  filter(., trait_name == "Corallite width maximum") %>%
+  select("specie_name", "measurement_id", "value", "standard_unit") %>%
+  mutate(stanvalue = as.numeric(as.character(value)))
+cwmin <- traits %>%
+  filter(., trait_name == "Corallite width minimum") %>%
+  select("specie_name", "measurement_id", "value", "standard_unit") %>%
+  mutate(stanvalue = as.numeric(as.character(value)))
+unique(cwmax$standard_unit)
+unique(cwmin$standard_unit)
+corallitewidth <- rbind(cwmax, cwmin, cw) %>%
+  arrange(specie_name) %>%
+  group_by(specie_name) %>%
+  summarise(corwidth = mean(stanvalue), n.corwidth = n())
+
+rm(cwmax);rm(cwmin)
+rm(cw)
+```
+
+### Colony max diameter
+```{r}
+cm <- traits %>%
+  filter(., trait_name == "Colony maximum diameter") %>%
+  select("specie_name", "measurement_id", "value", "standard_unit") 
+unique(cm$standard_unit)
+cm1 <- cm %>%
+  filter(., standard_unit == "cm") %>%
+  mutate(stanvalue = as.numeric(as.character(value))) 
+cm2 <- cm %>%
+  filter(., standard_unit == "m") %>%
+  mutate(stanvalue = as.numeric(as.character(value))*100) 
+cm3 <- cm %>%
+  filter(., standard_unit == "mm") %>%
+  mutate(stanvalue = as.numeric(as.character(value))*0.1) 
+colonymaxdiameter <- rbind(cm1,cm2,cm3) %>%
+  arrange(specie_name) %>%
+  group_by(specie_name) %>%
+  summarise(cmd = max(stanvalue), n.cmd = n())
+colonymaxdiameter.mean <- rbind(cm1,cm2,cm3) %>%
+  arrange(specie_name) %>%
+  group_by(specie_name) %>%
+  summarise(cmd = mean(stanvalue), n.cmd = n(), sd.cmd = sd(stanvalue))
+
+rm(cm1);rm(cm2);rm(cm3)
+rm(cm)
+```
+
+### Calcification rate
+```{r}
+cr <- traits %>%
+  filter(., trait_name == "Calcification rate") %>%
+  select("specie_name", "measurement_id", "value", "standard_unit")
+unique(cr$standard_unit)
+calcificationrate <- traits %>%
+  filter(., trait_name == "Calcification rate") %>%
+  select("specie_name", "measurement_id", "value", "standard_unit") %>%
+  filter(., standard_unit == "g cm ^-2 yr^-1") %>%
+  mutate(stanvalue = as.numeric(as.character(value))) %>%
+  arrange(specie_name) %>%
+  group_by(specie_name) %>%
+  summarise(calc = mean(stanvalue), n.calc = n(), sd.calc = sd(stanvalue))
+
+rm(cr)
+```
+
+### Morphology
+```{r}
+mo <- traits %>% 
+  filter(., trait_name == "Growth form Veron") %>%
+  select("specie_name", "measurement_id", "value") %>%
+  distinct(specie_name, value) %>%
+  rename(., morph = value) %>%
+  mutate(.,
+         morph = case_match(
+           morph,
+           c("branching_open", "corymbose", "branching_closed", "hispidose") ~ "branching",
+           c("tables_or_plates") ~ "laminar",
+           c("digitate", "columnar") ~ "submassive",
+           c("encrusting_long_uprights") ~ "encrusting",
+           .default = morph
+         ),
+         .keep = "all")
+morphology <- dcast(mo, specie_name ~ morph, length)
+summary(morphology)
+
+rm(mo)
+```
+
+### Coloniality
+```{r}
+coloniality <- traits %>% 
+  filter(., trait_name == "Coloniality") %>%
+  select("specie_name", "measurement_id", "value") %>%
+  distinct(specie_name, value) %>%
+  rename(., col = value)
+```
+
+### Reproductive mode
+```{r}
+reproductivemode <- traits %>% 
+  filter(., trait_name == "Mode of larval development") %>%
+  select("specie_name", "measurement_id", "value") %>%
+  distinct(specie_name, value) %>%
+  rename(., repmode = value)
+```
+
+### Sexual system
+```{r}
+sexualsystem <- traits %>% 
+  filter(., trait_name == "Sexual system") %>%
+  select("specie_name", "measurement_id", "value") %>%
+  distinct(specie_name, value) %>%
+  rename(., sex = value)
+```
+
+### Symbiodinium in propagules
+```{r}
+symbiodiumpropagules <- traits %>% 
+  filter(., trait_name == "Symbiodinium sp. in propagules") %>%
+  select("specie_name", "measurement_id", "value") %>%
+  distinct(specie_name, value) %>%
+  rename(., symb = value)
+```
+
+### Life history
+```{r}
+lifehistory <-  traits %>% 
+  filter(., trait_name == "Life history strategy") %>%
+  select("specie_name", "measurement_id", "value") %>%
+  distinct(specie_name, value) %>%
+  rename(., lifehist = value)
+```
+
+### IUCN Red list
+```{r}
+iucnredlist <-  traits %>% 
+  filter(., trait_name == "IUCN Red List category") %>%
+  select("specie_name", "measurement_id", "value") %>%
+  distinct(specie_name, value) %>%
+  rename(., iucn = value)
+
+```
+
+### Concatenate all traits
+```{r}
+fulltraits <- growthrate %>%
+  full_join(skeletaldensity, by = "specie_name") %>%
+  full_join(calcificationrate, by = "specie_name") %>%
+  full_join(corallitewidth, by = "specie_name") %>%
+  full_join(colonymaxdiameter, by = "specie_name") %>%
+  full_join(coloniality, by = "specie_name") %>%
+  full_join(reproductivemode, by = "specie_name") %>%
+  full_join(sexualsystem, by = "specie_name") %>%
+  full_join(symbiodiumpropagules, by = "specie_name") %>%
+  full_join(morphology, by = "specie_name") %>%
+  full_join(lifehistory, by = "specie_name") %>%
+  full_join(iucnredlist, by = "specie_name") %>%
+  rename(spp = specie_name)
+
+rm(traits);rm(calcificationrate);rm(coloniality);rm(colonymaxdiameter);rm(colonymaxdiameter.mean);
+rm(corallitewidth);rm(growthrate);rm(iucnredlist);rm(lifehistory);rm(morphology);rm(reproductivemode);
+rm(sexualsystem);rm(skeletaldensity);rm(symbiodiumpropagules);
+
+#write.csv(fulltraits, file = "data/database processed/traits.csv")
+```
+
+## Find SG species traits
+```{r}
+sgspecies <- read.csv("data/database/rdbspecieslist.csv", header=T) %>% 
+  select(., 1,6,8,17,18,19)
+
+sgspptraits <- left_join(sgspecies, fulltraits, by="spp") %>% 
+  rename(modgen = Genus, pastgen = Past.Gen)
+
+#write.csv(sgspptraits, file="data/database processed/sgspptraits.csv")
+rm(fulltraits);rm(sgspecies)
+```
+
+## Calculate SG genera traits
+Infill traits based on other available data
+```{r}
+spp.trait.table <- read.csv("data/database processed/sgspptraits_edit.csv", header=T) %>%
+  select(., -starts_with("n.")) %>%
+  select(., -starts_with("sd.")) %>%
+  select(., spp:datadeficient)
+
+pastgen.trait.table <- spp.trait.table %>%
+  group_by(pastgen) %>%
+  summarise_at(vars(grow:datadeficient), mean, na.rm=T)
+#write.csv(pastgen.traits, file="data/database processed/pastgentraits.csv")
+```
+
+# Calculate phylogenetic distance
+## Read trees and species list
+```{r}
+gen.tree<-read.nexus(file="data/database/Genus.tre")
+spp.tree<-read.nexus(file="data/database/RSTBtree.tre")
+
+spp <- read.csv("data/database processed/species.t.csv", header=T)
+pastgen <- read.csv("data/database processed/genera.t.csv", header=T)
+
+transect.spp.meta <- spp[,1:15]
+transect.pastgen.meta <- pastgen[,1:15]
+
+transect.spp <- spp[,c(1,16:242)] %>% 
+  select(., -Cladopsammia_gracilis, -Tubastraea_diaphana, -Tubastraea_micranthus, -Heliopora_coerulea, -Millepora_exaesa, -Unknown)
+transect.pastgen <- pastgen[,c(1,16:72)] %>% 
+  select(., -Dendrophyllia, -Millepora, -Heliopora, -Tubastraea, -Unknown)
+```
+

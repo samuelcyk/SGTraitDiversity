@@ -1,0 +1,844 @@
+---
+title: "Modelling"
+author: "Samuel Chan"
+date: 29/10/2023
+date-format: "DD/MM/YYYY"
+format: html
+editor: visual
+---
+
+# Load libraries
+```{r}
+library(tidyverse)
+library(rstan)
+library(brms)
+library(performance)
+library(DHARMa)
+library(HDInterval)
+library(emmeans)
+library(tidybayes)
+library(patchwork)
+library(ggpubr)
+library(visibly)
+set.seed(13)
+```
+
+## Read data and preparation
+Data have been edited to include 0s which were not allowed for TD/PD/FD calculations
+```{r}
+results.sp.Div <- read.csv("output/results.sp.Div2_edit.csv", header = T)
+
+results.ge.Div <- read.csv("output/results.ge.Div2_edit.csv", header = T)
+
+meta.sp  <- results.sp.Div %>%
+  select(., Site, Location, Year:Replicate)
+
+meta.ge <- results.ge.Div %>%
+  select(., Site, Location, Year:Depth, Replicate)
+
+res.sp <- results.sp.Div %>%
+  ungroup() %>%
+  select(., Abun:RaoQ) %>%
+  select(., -nbsp, -sing.sp, -qual.FRic, - FEve, -FDiv, -FDis) %>%
+  dplyr::rename(., FDiv = RaoQ) 
+
+res.sp.scaled <- scale(res.sp, scale = T, center = T)
+
+res.sp.cwm <- results.sp.Div %>% 
+  select(., starts_with("CWM")) %>%
+  select(., CWM.grow:CWM.cmd, CWM.branching:CWM.submassive)
+
+res.sp.cwm.modes <-results.sp.Div %>%
+  select(., CWM.col:CWM.symb)
+
+res.sp.cwm.scaled <- scale(res.sp.cwm, scale = T, center = T)
+
+res.ge <- results.ge.Div %>%
+  ungroup() %>%
+  select(., Abun:RaoQ) %>%
+  select(., -nbsp, -sing.sp, -qual.FRic, - FEve, -FDiv, -FDis) %>%
+  dplyr::rename(., FDiv = RaoQ) 
+
+res.ge.scaled <- scale(res.ge, scale = T, center = T)
+
+res.ge.cwm <- results.ge.Div %>%
+  select(., starts_with("CWM")) %>%
+  select(., CWM.grow:CWM.cmd, CWM.branching:CWM.submassive)
+
+res.ge.cwm.modes <-results.ge.Div %>%
+  select(., CWM.col:CWM.symb)
+
+res.ge.cwm.scaled <- scale(res.ge.cwm, scale = T, center = T)
+```
+
+## Modelling datasets
+```{r}
+res.sp.div.sc <- cbind(meta.sp, res.sp.scaled)
+res.ge.div.sc <- cbind(meta.ge, res.ge.scaled)
+
+res.sp.div <- cbind(meta.sp, res.sp)
+res.ge.div <- cbind(meta.ge, res.ge)
+
+res.sp.cwm.sc <- cbind(meta.sp, res.sp.cwm.scaled)
+res.ge.cwm.sc <- cbind(meta.ge, res.ge.cwm.scaled)
+
+res.sp.cwm.us <- cbind(meta.sp, res.sp.cwm)
+res.ge.cwm.us <- cbind(meta.ge, res.ge.cwm)
+
+res.sp.cwm.mo <- cbind(meta.sp, res.sp.cwm.modes)
+res.ge.cwm.mo <- cbind(meta.ge, res.ge.cwm.modes)
+
+rm(meta.sp);rm(meta.ge)
+#rm(res.sp.scaled);rm(res.ge.scaled)
+rm(res.sp);rm(res.ge)
+rm(results.sp.Div);rm(results.ge.Div)
+
+rm(res.sp.cwm.modes);rm(res.ge.cwm.modes)
+rm(res.sp.cwm.scaled);rm(res.ge.cwm.scaled)
+rm(res.sp.cwm);rm(res.ge.cwm)
+```
+# Assess model fits for random effect structures
+```{r}
+model.sp.abun <- brm(Abun ~ s(Year) + Site, data=res.sp.div, cores = 2)
+model.sp.tric <- brm(TRic ~ s(Year) + Site, data=res.sp.div, cores = 2)
+model.sp.tdiv <- brm(TDiv ~ s(Year) + Site, data=res.sp.div, cores = 2)
+model.sp.pric <- brm(PRic ~ s(Year) + Site, data=res.sp.div, cores = 2)
+model.sp.pdiv <- brm(PDiv ~ s(Year) + Site, data=res.sp.div, cores = 2)
+model.sp.fric <- brm(FRic ~ s(Year) + Site, data=res.sp.div, cores = 2)
+model.sp.fdiv <- brm(FDiv ~ s(Year) + Site, data=res.sp.div, cores = 2)
+
+model.sp.abun.re <- brm(Abun ~ s(Year) + (1|Site), data=res.sp.div, cores = 2)
+model.sp.tric.re <- brm(TRic ~ s(Year) + (1|Site), data=res.sp.div, cores = 2)
+model.sp.tdiv.re <- brm(TDiv ~ s(Year) + (1|Site), data=res.sp.div, cores = 2)
+model.sp.pric.re <- brm(PRic ~ s(Year) + (1|Site), data=res.sp.div, cores = 2)
+model.sp.pdiv.re <- brm(PDiv ~ s(Year) + (1|Site), data=res.sp.div, cores = 2)
+model.sp.fric.re <- brm(FRic ~ s(Year) + (1|Site), data=res.sp.div, cores = 2)
+model.sp.fdiv.re <- brm(FDiv ~ s(Year) + (1|Site), data=res.sp.div, cores = 2)
+
+model.sp.abun.re2 <- brm(Abun ~ s(Year) + (1|Location), data=res.sp.div, cores = 2)
+model.sp.tric.re2 <- brm(TRic ~ s(Year) + (1|Location), data=res.sp.div, cores = 2)
+model.sp.tdiv.re2 <- brm(TDiv ~ s(Year) + (1|Location), data=res.sp.div, cores = 2)
+model.sp.pric.re2 <- brm(PRic ~ s(Year) + (1|Location), data=res.sp.div, cores = 2)
+model.sp.pdiv.re2 <- brm(PDiv ~ s(Year) + (1|Location), data=res.sp.div, cores = 2)
+model.sp.fric.re2 <- brm(FRic ~ s(Year) + (1|Location), data=res.sp.div, cores = 2)
+model.sp.fdiv.re2 <- brm(FDiv ~ s(Year) + (1|Location), data=res.sp.div, cores = 2)
+
+model.sp.abun.ren <- brm(Abun ~ s(Year) + (1|Location/Site), data=res.sp.div, cores = 2)
+model.sp.tric.ren <- brm(TRic ~ s(Year) + (1|Location/Site), data=res.sp.div, cores = 2)
+model.sp.tdiv.ren <- brm(TDiv ~ s(Year) + (1|Location/Site), data=res.sp.div, cores = 2)
+model.sp.pric.ren <- brm(PRic ~ s(Year) + (1|Location/Site), data=res.sp.div, cores = 2)
+model.sp.pdiv.ren <- brm(PDiv ~ s(Year) + (1|Location/Site), data=res.sp.div, cores = 2)
+model.sp.fric.ren <- brm(FRic ~ s(Year) + (1|Location/Site), data=res.sp.div, cores = 2)
+model.sp.fdiv.ren <- brm(FDiv ~ s(Year) + (1|Location/Site), data=res.sp.div, cores = 2)
+```
+
+## LOO comparisons
+```{r}
+loo(model.sp.abun, model.sp.abun.re, model.sp.abun.re2, model.sp.abun.ren)
+loo(model.sp.tric, model.sp.tric.re, model.sp.tric.re2, model.sp.tric.ren)
+loo(model.sp.tdiv, model.sp.tdiv.re, model.sp.tdiv.re2, model.sp.tdiv.ren)
+loo(model.sp.pric, model.sp.pric.re, model.sp.pric.re2, model.sp.pric.ren)
+loo(model.sp.pdiv, model.sp.pdiv.re, model.sp.pdiv.re2, model.sp.pdiv.ren)
+loo(model.sp.fric, model.sp.fric.re, model.sp.fric.re2, model.sp.fric.ren)
+loo(model.sp.fdiv, model.sp.fdiv.re, model.sp.fdiv.re2, model.sp.fdiv.ren)
+
+rm(model.sp.abun);rm(model.sp.abun.re);rm(model.sp.abun.re2);rm(model.sp.abun.ren)
+rm(model.sp.tric);rm(model.sp.tric.re);rm(model.sp.tric.re2);rm(model.sp.tric.ren)
+rm(model.sp.tdiv);rm(model.sp.tdiv.re);rm(model.sp.tdiv.re2);rm(model.sp.tdiv.ren)
+rm(model.sp.pric);rm(model.sp.pric.re);rm(model.sp.pric.re2);rm(model.sp.pric.ren)
+rm(model.sp.abun);rm(model.sp.abun.re);rm(model.sp.abun.re2);rm(model.sp.abun.ren)
+rm(model.sp.abun);rm(model.sp.abun.re);rm(model.sp.abun.re2);rm(model.sp.abun.ren)
+rm(model.sp.abun);rm(model.sp.abun.re);rm(model.sp.abun.re2);rm(model.sp.abun.ren)
+```
+
+LOO indicates little difference between Site as random effect vs nested Location/Site so we default to the simpler model
+
+# Setting priors
+```{r}
+get_prior(Abun ~ s(Year) + (1|Site), data = res.sp.div)
+
+scaled.priors <- prior(normal(0, 1), class = "Intercept") + 
+  prior(normal(0, 2), class = "b") +
+  prior(student_t(3, 0, 2), class = "sd") +
+  prior(normal(0, 2), class = "sds")
+
+scaled.priors.cor <- prior(normal(0, 1), class = "Intercept") + 
+  prior(normal(0, 2), class = "b") +
+  prior(normal(0, 2), class = "sds")
+```
+
+# Diversity models
+## Species diversity models
+### Abundance
+```{r}
+model.sp.abun.re.sc <- brm(Abun ~ s(Year) + (1|Site), 
+                           data=res.sp.div.sc, 
+                           prior = scaled.priors,
+                           cores = 4, 
+                           iter = 5000,
+                           warmup = 1000,
+                           thin = 5)
+```
+
+### Taxonomic richness and diversity
+```{r}
+model.sp.tric.re.sc <- brm(TRic ~ s(Year) + (1|Site), 
+                           data=res.sp.div.sc, 
+                           prior = scaled.priors,
+                           cores = 4, 
+                           iter = 5000,
+                           warmup = 1000,
+                           thin = 5)
+model.sp.tdiv.re.sc <- brm(TDiv ~ s(Year) + (1|Site), data=res.sp.div.sc, 
+                           prior = scaled.priors,
+                           cores = 4, 
+                           iter = 5000,
+                           warmup = 1000,
+                           thin = 5)
+```
+
+### Phylogenetic richness and diversity
+```{r}
+model.sp.pric.re.sc <- brm(PRic ~ s(Year) + (1|Site), data=res.sp.div.sc, 
+                           prior = scaled.priors,
+                           cores = 4, 
+                           iter = 5000,
+                           warmup = 1000,
+                           thin = 5)
+model.sp.pdiv.re.sc <- brm(PDiv ~ s(Year) + (1|Site), data=res.sp.div.sc, 
+                           prior = scaled.priors,
+                           cores = 4, 
+                           iter = 5000,
+                           warmup = 1000,
+                           thin = 5)
+```
+
+### Functional richness and diversity
+```{r}
+model.sp.fric.re.sc <- brm(FRic ~ s(Year) + (1|Site), data=res.sp.div.sc, 
+                           prior = scaled.priors,
+                           cores = 4, 
+                           iter = 5000,
+                           warmup = 1000,
+                           thin = 5)
+model.sp.fdiv.re.sc <- brm(FDiv ~ s(Year) + (1|Site), data=res.sp.div.sc, 
+                           prior = scaled.priors,
+                           cores = 4, 
+                           iter = 5000,
+                           warmup = 1000,
+                           thin = 5)
+```
+
+## Genus diversity models
+### Abundance
+```{r}
+model.ge.abun.re.sc <- brm(Abun ~ s(Year) + (1|Site), data=res.ge.div.sc, 
+                           prior = scaled.priors,
+                           cores = 4, 
+                           iter = 5000,
+                           warmup = 1000,
+                           thin = 5)
+```
+
+### Taxonomic richness and diversity
+```{r}
+model.ge.tric.re.sc <- brm(TRic ~ s(Year) + (1|Site), data=res.ge.div.sc, 
+                           prior = scaled.priors,
+                           cores = 4, 
+                           iter = 5000,
+                           warmup = 1000,
+                           thin = 5)
+model.ge.tdiv.re.sc <- brm(TDiv ~ s(Year) + (1|Site), data=res.ge.div.sc, 
+                           prior = scaled.priors,
+                           cores = 4, 
+                           iter = 5000,
+                           warmup = 1000,
+                           thin = 5)
+```
+
+### Phylogenetic richness and diversity
+```{r}
+model.ge.pric.re.sc <- brm(PRic ~ s(Year) + (1|Site), data=res.ge.div.sc, 
+                           prior = scaled.priors,
+                           cores = 4, 
+                           iter = 5000,
+                           warmup = 1000,
+                           thin = 5)
+model.ge.pdiv.re.sc <- brm(PDiv ~ s(Year) + (1|Site), data=res.ge.div.sc, 
+                           prior = scaled.priors,
+                           cores = 4, 
+                           iter = 5000,
+                           warmup = 1000,
+                           thin = 5)
+```
+
+### Functional richness and diversity
+```{r}
+model.ge.fric.re.sc <- brm(FRic ~ s(Year) + (1|Site), data=res.ge.div.sc, 
+                           prior = scaled.priors,
+                           cores = 4, 
+                           iter = 5000,
+                           warmup = 1000,
+                           thin = 5)
+model.ge.fdiv.re.sc <- brm(FDiv ~ s(Year) + (1|Site), data=res.ge.div.sc, 
+                           prior = scaled.priors,
+                           cores = 4, 
+                           iter = 5000,
+                           warmup = 1000,
+                           thin = 5)
+```
+
+# CWM models
+## Species CWM models
+### Continuous traits
+```{r}
+model.sp.grow.re.sc <- brm(CWM.grow ~ s(Year) + (1|Site), 
+                           data=res.sp.cwm.sc, 
+                           prior = scaled.priors,
+                           cores = 4,
+                           iter = 5000,
+                           warmup = 1000,
+                           thin = 5)
+model.sp.skel.re.sc <- brm(CWM.skel ~ s(Year) + (1|Site), 
+                           data=res.sp.cwm.sc, 
+                           prior = scaled.priors,
+                           cores = 4,
+                           iter = 5000,
+                           warmup = 1000,
+                           thin = 5)
+model.sp.cwid.re.sc <- brm(CWM.corwidth ~ s(Year) + (1|Site), 
+                           data=res.sp.cwm.sc, 
+                           prior = scaled.priors,
+                           cores = 4,
+                           iter = 5000,
+                           warmup = 1000,
+                           thin = 5)
+model.sp.cmd.re.sc <- brm(CWM.cmd ~ s(Year) + (1|Site), 
+                           data=res.sp.cwm.sc, 
+                           prior = scaled.priors,
+                           cores = 4,
+                           iter = 5000,
+                           warmup = 1000,
+                           thin = 5)
+```
+
+### Growth forms
+```{r}
+model.sp.gfbr.re.sc <- brm(CWM.branching ~ s(Year) + (1|Site), 
+                           data=res.sp.cwm.sc, 
+                           prior = scaled.priors,
+                           cores = 4,
+                           iter = 5000,
+                           warmup = 1000,
+                           thin = 5)
+model.sp.gfen.re.sc <- brm(CWM.encrusting ~ s(Year) + (1|Site), 
+                           data=res.sp.cwm.sc, 
+                           prior = scaled.priors,
+                           cores = 4,
+                           iter = 5000,
+                           warmup = 1000,
+                           thin = 5)
+model.sp.gfla.re.sc <- brm(CWM.laminar ~ s(Year) + (1|Site), 
+                           data=res.sp.cwm.sc, 
+                           prior = scaled.priors,
+                           cores = 4,
+                           iter = 5000,
+                           warmup = 1000,
+                           thin = 5)
+model.sp.gfma.re.sc <- brm(CWM.massive ~ s(Year) + (1|Site), 
+                          data=res.sp.cwm.sc, 
+                          prior = scaled.priors,
+                          cores = 4,
+                          iter = 5000,
+                          warmup = 1000,
+                          thin = 5)
+model.sp.gfsu.re.sc <- brm(CWM.submassive ~ s(Year) + (1|Site), 
+                           data=res.sp.cwm.sc, 
+                           prior = scaled.priors,
+                           cores = 4,
+                           iter = 5000,
+                           warmup = 1000,
+                           thin = 5)
+```
+
+## Genus CWM models
+### Continuous traits
+```{r}
+model.ge.grow.re.sc <- brm(CWM.grow ~ s(Year) + (1|Site), 
+                           data=res.ge.cwm.sc, 
+                           prior = scaled.priors,
+                           cores = 4,
+                           iter = 5000,
+                           warmup = 1000,
+                           thin = 5)
+model.ge.skel.re.sc <- brm(CWM.skel ~ s(Year) + (1|Site), 
+                           data=res.ge.cwm.sc, 
+                           prior = scaled.priors,
+                           cores = 4,
+                           iter = 5000,
+                           warmup = 1000,
+                           thin = 5)
+model.ge.cwid.re.sc <- brm(CWM.corwidth ~ s(Year) + (1|Site), 
+                           data=res.ge.cwm.sc, 
+                           prior = scaled.priors,
+                           cores = 4,
+                           iter = 5000,
+                           warmup = 1000,
+                           thin = 5)
+model.ge.cmd.re.sc <- brm(CWM.cmd ~ s(Year) + (1|Site), 
+                          data=res.ge.cwm.sc, 
+                          prior = scaled.priors,
+                          cores = 4,
+                          iter = 5000,
+                          warmup = 1000,
+                          thin = 5)
+```
+
+### Growth forms
+```{r}
+model.ge.gfbr.re.sc <- brm(CWM.branching ~ s(Year) + (1|Site), 
+                           data=res.ge.cwm.sc, 
+                           prior = scaled.priors,
+                           cores = 4,
+                           iter = 5000,
+                           warmup = 1000,
+                           thin = 5)
+model.ge.gfen.re.sc <- brm(CWM.encrusting ~ s(Year) + (1|Site), 
+                           data=res.ge.cwm.sc, 
+                           prior = scaled.priors,
+                           cores = 4,
+                           iter = 5000,
+                           warmup = 1000,
+                           thin = 5)
+model.ge.gfla.re.sc <- brm(CWM.laminar ~ s(Year) + (1|Site), 
+                           data=res.ge.cwm.sc, 
+                           prior = scaled.priors,
+                           cores = 4,
+                           iter = 5000,
+                           warmup = 1000,
+                           thin = 5)
+model.ge.gfma.re.sc <- brm(CWM.massive ~ s(Year) + (1|Site), 
+                           data=res.ge.cwm.sc, 
+                           prior = scaled.priors,
+                           cores = 4,
+                           iter = 5000,
+                           warmup = 1000,
+                           thin = 5)
+model.ge.gfsu.re.sc <- brm(CWM.submassive ~ s(Year) + (1|Site), 
+                           data=res.ge.cwm.sc, 
+                           prior = scaled.priors,
+                           cores = 4,
+                           iter = 5000,
+                           warmup = 1000,
+                           thin = 5)
+```
+
+# Assessing model fits for correlation models
+## Species richness correlations
+```{r}
+scor.pric.sc <- brm(PRic ~ s(TRic), data=res.sp.div.sc,
+                    prior = scaled.priors.cor,
+                    cores = 4,
+                    iter = 5000,
+                    warmup = 1000,
+                    thin = 5)
+scor.fric.sc <- brm(FRic ~ s(TRic), data=res.sp.div.sc,
+                    prior = scaled.priors.cor,
+                    cores = 4,
+                    iter = 5000,
+                    warmup = 1000,
+                    thin = 5)
+scor.pfric.sc <- brm(FRic ~ s(PRic), data=res.sp.div.sc,
+                     prior = scaled.priors.cor,
+                     cores = 4,
+                     iter = 5000,
+                     warmup = 1000,
+                     thin = 5)
+
+scor.pric.sc2 <- brm(PRic ~ s(TRic) + (1|Site), data=res.sp.div.sc,
+                    prior = scaled.priors,
+                    cores = 4,
+                    iter = 5000,
+                    warmup = 1000,
+                    thin = 5)
+scor.fric.sc2 <- brm(FRic ~ s(TRic) + (1|Site), data=res.sp.div.sc,
+                    prior = scaled.priors,
+                    cores = 4,
+                    iter = 5000,
+                    warmup = 1000,
+                    thin = 5)
+scor.pfric.sc2 <- brm(FRic ~ s(PRic) + (1|Site), data=res.sp.div.sc,
+                     prior = scaled.priors,
+                     cores = 4,
+                     iter = 5000,
+                     warmup = 1000,
+                     thin = 5)
+```
+
+## Species diversity correlations
+```{r}
+scor.pdiv.sc <- brm(PDiv ~ s(TDiv), data=res.sp.div.sc,
+                 prior = scaled.priors.cor,
+                 cores = 4,
+                 iter = 5000,
+                 warmup = 1000,
+                 thin = 5)
+scor.fdiv.sc <- brm(FDiv ~ s(TDiv), data=res.sp.div.sc,
+                 prior = scaled.priors.cor,
+                 cores = 4,
+                 iter = 5000,
+                 warmup = 1000,
+                 thin = 5)
+scor.pfdiv.sc <- brm(FDiv ~ s(PDiv), data=res.sp.div.sc,
+                  prior = scaled.priors.cor,
+                  cores = 4,
+                  iter = 5000,
+                  warmup = 1000,
+                  thin = 5)
+
+scor.pdiv.sc2 <- brm(PDiv ~ s(TDiv) + (1|Site), data=res.sp.div.sc,
+                    prior = scaled.priors,
+                    cores = 4,
+                    iter = 5000,
+                    warmup = 1000,
+                    thin = 5)
+scor.fdiv.sc2 <- brm(FDiv ~ s(TDiv) + (1|Site), data=res.sp.div.sc,
+                    prior = scaled.priors,
+                    cores = 4,
+                    iter = 5000,
+                    warmup = 1000,
+                    thin = 5)
+scor.pfdiv.sc2 <- brm(FDiv ~ s(PDiv) + (1|Site), data=res.sp.div.sc,
+                    prior = scaled.priors.cor,
+                    cores = 4,
+                    iter = 5000,
+                    warmup = 1000,
+                    thin = 5)
+```
+## Genus richness correlations
+```{r}
+cor.pric.sc <- brm(PRic ~ s(TRic), data=res.ge.div.sc,
+                   prior = scaled.priors.cor,
+                   cores = 4,
+                   iter = 5000,
+                   warmup = 1000,
+                   thin = 5)
+cor.fric.sc <- brm(FRic ~ s(TRic), data=res.ge.div.sc,
+                   prior = scaled.priors.cor,
+                   cores = 4,
+                   iter = 5000,
+                   warmup = 1000,
+                   thin = 5)
+cor.pfric.sc <- brm(FRic ~ s(PRic), data=res.ge.div.sc,
+                    prior = scaled.priors.cor,
+                    cores = 4,
+                    iter = 5000,
+                    warmup = 1000,
+                    thin = 5)
+
+cor.pric.sc2 <- brm(PRic ~ s(TRic) + (1|Site), data=res.ge.div.sc,
+                   prior = scaled.priors,
+                   cores = 4,
+                   iter = 5000,
+                   warmup = 1000,
+                   thin = 5)
+cor.fric.sc2 <- brm(FRic ~ s(TRic) + (1|Site), data=res.ge.div.sc,
+                   prior = scaled.priors,
+                   cores = 4,
+                   iter = 5000,
+                   warmup = 1000,
+                   thin = 5)
+cor.pfric.sc2 <- brm(FRic ~ s(PRic) + (1|Site), data=res.ge.div.sc,
+                    prior = scaled.priors,
+                    cores = 4,
+                    iter = 5000,
+                    warmup = 1000,
+                    thin = 5)
+
+cor.pdiv.sc2 <- brm(PDiv ~ s(TDiv) + (1|Site), data=res.ge.div.sc,
+                   prior = scaled.priors,
+                   cores = 4,
+                   iter = 5000,
+                   warmup = 1000,
+                   thin = 5)
+cor.fdiv.sc2 <- brm(FDiv ~ s(TDiv) + (1|Site), data=res.ge.div.sc,
+                   prior = scaled.priors,
+                   cores = 4,
+                   iter = 5000,
+                   warmup = 1000,
+                   thin = 5)
+cor.pfdiv.sc2 <- brm(FDiv ~ s(PDiv) + (1|Site), data=res.ge.div.sc,
+                    prior = scaled.priors,
+                    cores = 4,
+                    iter = 5000,
+                    warmup = 1000,
+                    thin = 5)
+```
+
+## Genus diversity correlations
+```{r}
+cor.pdiv.sc <- brm(PDiv ~ s(TDiv), data=res.ge.div.sc,
+                prior = scaled.priors.cor,
+                cores = 4,
+                iter = 5000,
+                warmup = 1000,
+                thin = 5)
+cor.fdiv.sc <- brm(FDiv ~ s(TDiv), data=res.ge.div.sc,
+                prior = scaled.priors.cor,
+                cores = 4,
+                iter = 5000,
+                warmup = 1000,
+                thin = 5)
+cor.pfdiv.sc <- brm(FDiv ~ s(PDiv), data=res.ge.div.sc,
+                 prior = scaled.priors.cor,
+                 cores = 4,
+                 iter = 5000,
+                 warmup = 1000,
+                 thin = 5)
+```
+
+## LOO comparisons
+```{r}
+loo(cor.fdiv.sc,cor.fdiv.sc2)
+loo(cor.pdiv.sc,cor.pdiv.sc2)
+loo(cor.pfdiv.sc,cor.pfdiv.sc2)
+loo(cor.fric.sc,cor.fric.sc2)
+loo(cor.pric.sc,cor.pric.sc2)
+loo(cor.pfric.sc,cor.pfric.sc2)
+
+loo(scor.fdiv.sc,scor.fdiv.sc2)
+loo(scor.pdiv.sc,scor.pdiv.sc2)
+loo(scor.pfdiv.sc,scor.pfdiv.sc2)
+loo(scor.fric.sc,scor.fric.sc2)
+loo(scor.pric.sc,scor.pric.sc2)
+loo(scor.pfric.sc,scor.pfric.sc2)
+```
+
+## Bayes R2 calculations
+```{r}
+bayes_R2(cor.pric.sc2)
+bayes_R2(cor.fric.sc2)
+bayes_R2(cor.pfric.sc2)
+bayes_R2(cor.pdiv.sc2)
+bayes_R2(cor.fdiv.sc2)
+bayes_R2(cor.pfdiv.sc2)
+bayes_R2(scor.pric.sc2)
+bayes_R2(scor.fric.sc2)
+bayes_R2(scor.pfric.sc2)
+bayes_R2(scor.pdiv.sc2)
+bayes_R2(scor.fdiv.sc2)
+bayes_R2(scor.pfdiv.sc2)
+```
+
+# Diversity models for modern comparisons
+## Create data
+```{r}
+res.sp.div.sc <- res.sp.div.sc %>%
+  dplyr::filter(., Site == "CY-N" | Site == "CY-S" | Site == "HA-NE" | Site == "HA-W" | 
+                  Site == "HP-W" | Site == "LZ-E" | Site == "RL-W" | Site == "SE-SW") %>%
+  mutate(., Period = case_when(Year < 2000 ~ "Historical",
+                               Year >= 2000 ~ "Modern"))
+res.sp.cwm.sc <- res.sp.cwm.sc %>%
+  dplyr::filter(., Site == "CY-N" | Site == "CY-S" | Site == "HA-NE" | Site == "HA-W" | 
+                  Site == "HP-W" | Site == "LZ-E" | Site == "RL-W" | Site == "SE-SW") %>%
+  mutate(., Period = case_when(Year < 2000 ~ "Historical",
+                               Year >= 2000 ~ "Modern"))
+
+scaled.priors.mod <- prior(normal(0, 1), class = "Intercept") + 
+  prior(normal(0, 2), class = "b") +
+  prior(student_t(3, 0, 2), class = "sd")
+```
+
+## Models
+### Abundance
+```{r}
+model.sp.abun.re.sc <- brm(Abun ~ Period + (1|Site), 
+                           data=res.sp.div.sc, 
+                           prior = scaled.priors.mod,
+                           cores = 4, 
+                           iter = 5000,
+                           warmup = 1000,
+                           thin = 5)
+```
+
+### Taxonomic richness and diversity
+```{r}
+model.sp.tric.re.sc <- brm(TRic ~ Period + (1|Site), 
+                           data=res.sp.div.sc, 
+                           prior = scaled.priors.mod,
+                           cores = 4, 
+                           iter = 5000,
+                           warmup = 1000,
+                           thin = 5)
+model.sp.tdiv.re.sc <- brm(TDiv ~ Period + (1|Site), data=res.sp.div.sc, 
+                           prior = scaled.priors.mod,
+                           cores = 4, 
+                           iter = 5000,
+                           warmup = 1000,
+                           thin = 5)
+```
+
+### Phylogenetic richness and diversity
+```{r}
+model.sp.pric.re.sc <- brm(PRic ~ Period + (1|Site), 
+                           data=res.sp.div.sc, 
+                           prior = scaled.priors.mod,
+                           cores = 4, 
+                           iter = 5000,
+                           warmup = 1000,
+                           thin = 5)
+model.sp.pdiv.re.sc <- brm(PDiv ~ Period + (1|Site), 
+                           data=res.sp.div.sc, 
+                           prior = scaled.priors.mod,
+                           cores = 4, 
+                           iter = 5000,
+                           warmup = 1000,
+                           thin = 5)
+```
+
+### Functional richness and diversity
+```{r}
+model.sp.fric.re.sc <- brm(FRic ~ Period + (1|Site), 
+                           data=res.sp.div.sc, 
+                           prior = scaled.priors.mod,
+                           cores = 4, 
+                           iter = 5000,
+                           warmup = 1000,
+                           thin = 5)
+model.sp.fdiv.re.sc <- brm(FDiv ~ Period + (1|Site), data=res.sp.div.sc, 
+                           prior = scaled.priors.mod,
+                           cores = 4, 
+                           iter = 5000,
+                           warmup = 1000,
+                           thin = 5)
+```
+
+### CWMs continuous traits
+```{r}
+model.sp.grow.re.sc <- brm(CWM.grow ~ Period + (1|Site), 
+                           data=res.sp.cwm.sc, 
+                           prior = scaled.priors.mod,
+                           cores = 4,
+                           iter = 5000,
+                           warmup = 1000,
+                           thin = 5)
+model.sp.skel.re.sc <- brm(CWM.skel ~ Period + (1|Site), 
+                           data=res.sp.cwm.sc, 
+                           prior = scaled.priors.mod,
+                           cores = 4,
+                           iter = 5000,
+                           warmup = 1000,
+                           thin = 5)
+model.sp.cwid.re.sc <- brm(CWM.corwidth ~ Period + (1|Site), 
+                           data=res.sp.cwm.sc, 
+                           prior = scaled.priors.mod,
+                           cores = 4,
+                           iter = 5000,
+                           warmup = 1000,
+                           thin = 5)
+model.sp.cmd.re.sc <- brm(CWM.cmd ~ Period + (1|Site), 
+                          data=res.sp.cwm.sc, 
+                          prior = scaled.priors.mod,
+                          cores = 4,
+                          iter = 5000,
+                          warmup = 1000,
+                          thin = 5)
+```
+
+### CWMs growth forms
+```{r}
+model.sp.gfbr.re.sc <- brm(CWM.branching ~ Period + (1|Site), 
+                           data=res.sp.cwm.sc, 
+                           prior = scaled.priors.mod,
+                           cores = 4,
+                           iter = 5000,
+                           warmup = 1000,
+                           thin = 5)
+model.sp.gfen.re.sc <- brm(CWM.encrusting ~ Period + (1|Site), 
+                           data=res.sp.cwm.sc, 
+                           prior = scaled.priors.mod,
+                           cores = 4,
+                           iter = 5000,
+                           warmup = 1000,
+                           thin = 5)
+model.sp.gfla.re.sc <- brm(CWM.laminar ~ Period + (1|Site), 
+                           data=res.sp.cwm.sc, 
+                           prior = scaled.priors.mod,
+                           cores = 4,
+                           iter = 5000,
+                           warmup = 1000,
+                           thin = 5)
+model.sp.gfma.re.sc <- brm(CWM.massive ~ Period + (1|Site), 
+                           data=res.sp.cwm.sc, 
+                           prior = scaled.priors.mod,
+                           cores = 4,
+                           iter = 5000,
+                           warmup = 1000,
+                           thin = 5)
+model.sp.gfsu.re.sc <- brm(CWM.submassive ~ Period + (1|Site), 
+                           data=res.sp.cwm.sc, 
+                           prior = scaled.priors.mod,
+                           cores = 4,
+                           iter = 5000,
+                           warmup = 1000,
+                           thin = 5)
+```
+
+# Model validations
+```{r}
+model.ge.abun.re.sc$fit |> stan_trace()
+model.ge.abun.re.sc$fit |> stan_ac()
+model.ge.abun.re.sc$fit |> stan_rhat()
+model.ge.abun.re.sc$fit |> stan_ess()
+model.ge.abun.re.sc |>  pp_check(type = "dens_overlay", ndraws = 200)
+resids <- model.ge.abun.re.sc |> make_brms_dharma_res(integerResponse = F)
+testUniformity(resids)
+testDispersion(resids)
+plotResiduals(resids)
+plotResiduals(resids, form = factor(rep(1, nrow(model.ge.abun.re.sc))))
+```
+
+# Functions from Murray Logan
+```{r}
+#### functions ####
+make_brms_dharma_res <- function(brms_model, seed = 10, ...) {
+# equivalent to `simulateResiduals(lme4_model, use.u = FALSE)`
+# cores are set to 1 just to ensure reproducibility
+options(mc.cores = 1)
+on.exit(options(mc.cores = parallel::detectCores()))
+response <- brms::standata(brms_model)$Y
+ndraws <- nrow(as_draws_df(brms_model))
+manual_preds_brms <- matrix(0, ndraws, nrow(brms_model$data))
+random_terms <- insight::find_random(
+  brms_model, split_nested = TRUE, flatten = TRUE
+)
+# for this to have a similar output to `glmmTMB`'s default, we need to
+#   create new levels in the hierarchical variables, so then we can
+#   use `allow_new_levels = TRUE` and `sample_new_levels = "gaussian"` in
+#   `brms::posterior_epred`. This is equivalent to
+#   `simulateResiduals(lme4_model, use.u = FALSE)`. See details in
+#   `lme4:::simulate.merMod` and `glmmTMB:::simulate.glmmTMB`
+new_data <- brms_model$data |>
+  dplyr::mutate(across(
+    all_of(random_terms), \(x)paste0("NEW_", x) |> as.factor()
+  ))
+set.seed(seed)
+brms_sims <- brms::posterior_predict(
+  brms_model, re_formula = NULL, newdata = new_data,
+  allow_new_levels = TRUE, sample_new_levels = "gaussian"
+) |>
+  t()
+fitted_median_brms <- apply(brms_sims, 1, median)
+## fitted_median_brms <- apply(
+##     t(brms::posterior_epred(brms_model, ndraws = ndraws, re.form = NA)),
+##     1,
+##     mean)
+DHARMa::createDHARMa(
+  simulatedResponse = brms_sims,
+  observedResponse = response,
+  fittedPredictedResponse = fitted_median_brms,
+  ...
+)
+}
+```
+
