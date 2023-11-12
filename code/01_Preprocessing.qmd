@@ -20,7 +20,7 @@ library(geiger)
 # Calculate trait values
 ## Read trait data
 ```{r}
-traits <- read.csv("data/database/fulltraits.csv", header=T) #CoralTraits
+traits <- read.csv("../data/database/fulltraits.csv", header=T) #CoralTraits
 
 unique(traits$trait_name)
 ```
@@ -250,25 +250,25 @@ rm(traits);rm(calcificationrate);rm(coloniality);rm(colonymaxdiameter);rm(colony
 rm(corallitewidth);rm(growthrate);rm(iucnredlist);rm(lifehistory);rm(morphology);rm(reproductivemode);
 rm(sexualsystem);rm(skeletaldensity);rm(symbiodiumpropagules);
 
-#write.csv(fulltraits, file = "data/database processed/traits.csv")
+#write.csv(fulltraits, file = "../data/database processed/traits.csv")
 ```
 
 ## Find SG species traits
 ```{r}
-sgspecies <- read.csv("data/database/rdbspecieslist.csv", header=T) %>% 
+sgspecies <- read.csv("../data/database/rdbspecieslist.csv", header=T) %>% 
   select(., 1,6,8,17,18,19)
 
 sgspptraits <- left_join(sgspecies, fulltraits, by="spp") %>% 
   rename(modgen = Genus, pastgen = Past.Gen)
 
-#write.csv(sgspptraits, file="data/database processed/sgspptraits.csv")
+#write.csv(sgspptraits, file="../data/database processed/sgspptraits.csv")
 rm(fulltraits);rm(sgspecies)
 ```
 
 ## Calculate SG genera traits
 Infill traits based on other available data
 ```{r}
-spp.trait.table <- read.csv("data/database processed/sgspptraits_edit.csv", header=T) %>%
+spp.trait.table <- read.csv("../data/database processed/sgspptraits_edit.csv", header=T) %>%
   select(., -starts_with("n.")) %>%
   select(., -starts_with("sd.")) %>%
   select(., spp:datadeficient)
@@ -276,17 +276,17 @@ spp.trait.table <- read.csv("data/database processed/sgspptraits_edit.csv", head
 pastgen.trait.table <- spp.trait.table %>%
   group_by(pastgen) %>%
   summarise_at(vars(grow:datadeficient), mean, na.rm=T)
-#write.csv(pastgen.traits, file="data/database processed/pastgentraits.csv")
+#write.csv(pastgen.traits, file="../data/database processed/pastgentraits.csv")
 ```
 
 # Calculate phylogenetic distance
 ## Read trees and species list
 ```{r}
-gen.tree<-read.nexus(file="data/database/Genus.tre")
-spp.tree<-read.nexus(file="data/database/RSTBtree.tre")
+gen.tree<-read.nexus(file="../data/database/Genus.tre")
+spp.tree<-read.nexus(file="../data/database/RSTBtree.tre")
 
-spp <- read.csv("data/database processed/species.t.csv", header=T)
-pastgen <- read.csv("data/database processed/genera.t.csv", header=T)
+spp <- read.csv("../data/database processed/species.t.csv", header=T)
+pastgen <- read.csv("../data/database processed/genera.t.csv", header=T)
 
 transect.spp.meta <- spp[,1:15]
 transect.pastgen.meta <- pastgen[,1:15]

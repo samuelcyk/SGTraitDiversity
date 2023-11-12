@@ -1,0 +1,186 @@
+---
+title: "Supplementary Modelling"
+author: "Samuel Chan"
+date: 10/11/2023
+date-format: "DD/MM/YYYY"
+format: html
+editor: visual
+---
+
+# Load libraries
+```{r}
+library(tidyverse)
+library(rstan)
+library(brms)
+library(performance)
+library(DHARMa)
+library(HDInterval)
+library(emmeans)
+library(tidybayes)
+library(patchwork)
+library(ggpubr)
+library(visibly)
+set.seed(13)
+```
+# Setting priors
+```{r}
+get_prior(Abun ~ s(Year) + (1|Site), data = res.sp.div)
+
+unscaled.priors <- prior(normal(0, 1), class = "Intercept") + 
+  prior(normal(0, 2), class = "b") +
+  prior(student_t(3, 0, 2), class = "sd") +
+  prior(normal(0, 2), class = "sds")
+```
+
+
+## Unscaled genus diversity models 
+### Abundance
+```{r}
+model.ge.abun.re <- brm(Abun ~ s(Year) + (1|Site), data=res.ge.div, 
+                           cores = 4, 
+                           iter = 5000,
+                           warmup = 1000,
+                           thin = 5)
+```
+
+### Taxonomic richness and diversity
+```{r}
+model.ge.tric.re <- brm(TRic ~ s(Year) + (1|Site), data=res.ge.div, 
+                           cores = 4, 
+                           iter = 5000,
+                           warmup = 1000,
+                           thin = 5)
+
+model.ge.tdiv.re <- brm(TDiv ~ s(Year) + (1|Site), data=res.ge.div, 
+                           cores = 4, 
+                           iter = 5000,
+                           warmup = 1000,
+                           thin = 5)
+```
+
+### Phylogenetic richness and diversity
+```{r}
+model.ge.pric.re <- brm(PRic ~ s(Year) + (1|Site), data=res.ge.div, 
+                           cores = 4, 
+                           iter = 5000,
+                           warmup = 1000,
+                           thin = 5)
+
+model.ge.pdiv.re <- brm(PDiv ~ s(Year) + (1|Site), data=res.ge.div, 
+                           cores = 4, 
+                           iter = 5000,
+                           warmup = 1000,
+                           thin = 5)
+```
+
+
+### Functional richness and diversity
+```{r}
+model.ge.fric.re <- brm(FRic ~ s(Year) + (1|Site), data=res.ge.div, 
+                           cores = 4, 
+                           iter = 5000,
+                           warmup = 1000,
+                           thin = 5)
+
+model.ge.fdiv.re <- brm(FDiv ~ s(Year) + (1|Site), data=res.ge.div, 
+                           cores = 4, 
+                           iter = 5000,
+                           warmup = 1000,
+                           thin = 5)
+```
+
+
+# Posterior predictions supplementary
+
+## Abundance
+
+```{r}
+pred.epre.abun <- posterior_epred(model.ge.abun.re, newdata = yeardata, re_formula = NA) %>%
+  as.tibble() %>%
+  summarise_all(.funs = list(mean = mean, sd = sd)) %>%
+  t() %>%
+  cbind(yeardata) %>%
+  cbind(rep(c("Mean", "SD"), each = 35)) %>%
+  select(., 1:3) %>%
+  rename("Stat" = 3, "Values" = 1) %>%
+  pivot_wider(names_from = Stat, names_prefix = c("Abun_"), values_from = Values)
+```
+
+## Taxonomic
+
+```{r}
+pred.epre.tric <- posterior_epred(model.ge.tric.re, newdata = yeardata, re_formula = NA) %>%
+  as.tibble() %>%
+  summarise_all(.funs = list(mean = mean, sd = sd)) %>%
+  t() %>%
+  cbind(yeardata) %>%
+  cbind(rep(c("Mean", "SD"), each = 35)) %>%
+  select(., 1:3) %>%
+  rename("Stat" = 3, "Values" = 1) %>%
+  pivot_wider(names_from = Stat, names_prefix = c("TRic_"), values_from = Values)
+pred.epre.tdiv <- posterior_epred(model.ge.tdiv.re, newdata = yeardata, re_formula = NA) %>%
+  as.tibble() %>%
+  summarise_all(.funs = list(mean = mean, sd = sd)) %>%
+  t() %>%
+  cbind(yeardata) %>%
+  cbind(rep(c("Mean", "SD"), each = 35)) %>%
+  select(., 1:3) %>%
+  rename("Stat" = 3, "Values" = 1) %>%
+  pivot_wider(names_from = Stat, names_prefix = c("TDiv_"), values_from = Values)
+```
+
+## Phylogenetic
+
+```{r}
+pred.epre.pric <- posterior_epred(model.ge.pric.re, newdata = yeardata, re_formula = NA) %>%
+  as.tibble() %>%
+  summarise_all(.funs = list(mean = mean, sd = sd)) %>%
+  t() %>%
+  cbind(yeardata) %>%
+  cbind(rep(c("Mean", "SD"), each = 35)) %>%
+  select(., 1:3) %>%
+  rename("Stat" = 3, "Values" = 1) %>%
+  pivot_wider(names_from = Stat, names_prefix = c("PRic_"), values_from = Values)
+pred.epre.pdiv <- posterior_epred(model.ge.pdiv.re, newdata = yeardata, re_formula = NA) %>%
+  as.tibble() %>%
+  summarise_all(.funs = list(mean = mean, sd = sd)) %>%
+  t() %>%
+  cbind(yeardata) %>%
+  cbind(rep(c("Mean", "SD"), each = 35)) %>%
+  select(., 1:3) %>%
+  rename("Stat" = 3, "Values" = 1) %>%
+  pivot_wider(names_from = Stat, names_prefix = c("PDiv_"), values_from = Values)
+```
+
+## Functional
+
+```{r}
+pred.epre.fric <- posterior_epred(model.ge.fric.re, newdata = yeardata, re_formula = NA) %>%
+  as.tibble() %>%
+  summarise_all(.funs = list(mean = mean, sd = sd)) %>%
+  t() %>%
+  cbind(yeardata) %>%
+  cbind(rep(c("Mean", "SD"), each = 35)) %>%
+  select(., 1:3) %>%
+  rename("Stat" = 3, "Values" = 1) %>%
+  pivot_wider(names_from = Stat, names_prefix = c("FRic_"), values_from = Values)
+pred.epre.fdiv <- posterior_epred(model.ge.fdiv.re, newdata = yeardata, re_formula = NA) %>%
+  as.tibble() %>%
+  summarise_all(.funs = list(mean = mean, sd = sd)) %>%
+  t() %>%
+  cbind(yeardata) %>%
+  cbind(rep(c("Mean", "SD"), each = 35)) %>%
+  select(., 1:3) %>%
+  rename("Stat" = 3, "Values" = 1) %>%
+  pivot_wider(names_from = Stat, names_prefix = c("FDiv_"), values_from = Values)
+```
+
+## Write results
+
+```{r}
+epred.re <- cbind(pred.epre.abun, pred.epre.tric[,c(2:3)], pred.epre.tdiv[,c(2:3)], 
+                  pred.epre.pric[,c(2:3)], pred.epre.pdiv[,c(2:3)], pred.epre.fric[,c(2:3)], pred.epre.fdiv[,c(2:3)])
+
+#write.csv(epred.re, file = "../outputs/epreds.unscaledmodel.csv")
+
+```

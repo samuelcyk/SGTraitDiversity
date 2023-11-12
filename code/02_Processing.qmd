@@ -68,8 +68,8 @@ rm(transect.spp.td.rm);rm(transect.pastgen.td.rm)
 rm(results.sp.TR);rm(results.sp.TD)
 rm(results.ge.TR);rm(results.ge.TD)
 
-#write.csv(results.sp.TDiv, file="output/results.sp.TDiv.csv")
-#write.csv(results.ge.TDiv, file="output/results.ge.TDiv.csv")
+#write.csv(results.sp.TDiv, file="../outputs/results.sp.TDiv.csv")
+#write.csv(results.ge.TDiv, file="../outputs/results.ge.TDiv.csv")
 ```
 
 ## FD
@@ -152,15 +152,15 @@ results.ge.FDiv <- as.data.frame(results.ge.FDiv)
 rm(spp.traits.fd.rm);rm(gen.traits.fd.rm)
 rm(wt.fd)
 
-#write.csv(results.sp.FDiv, file="output/results.sp.FDiv.csv")
-#write.csv(results.ge.FDiv, file="output/results.ge.FDiv.csv")
+#write.csv(results.sp.FDiv, file="../outputs/results.sp.FDiv.csv")
+#write.csv(results.ge.FDiv, file="../outputs/results.ge.FDiv.csv")
 ```
 
 ## PD
 ### Prepare data and checks
 ```{r}
-spp.tree <- read.nexus(file="data/database traits/RSTBtree.tre")
-gen.tree <- read.nexus(file="data/database traits/Genus.tre")
+spp.tree <- read.nexus(file="../data/database traits/RSTBtree.tre")
+gen.tree <- read.nexus(file="../data/database traits/Genus.tre")
 
 transect.spp.pd <- transect.spp.td %>% 
   filter(., nbsp > 0) %>% 
@@ -263,8 +263,8 @@ colnames(results.ge.PDiv)<- c("PRic", "PDiv")
 rm(overlap2);rm(phylotree2)
 rm(results.ge.PR.t);rm(results.ge.PD.t)
 
-#write.csv(results.sp.PDiv, file="output/results.sp.PDiv.csv")
-#write.csv(results.ge.PDiv, file="output/results.ge.PDiv.csv")
+#write.csv(results.sp.PDiv, file="../outputs/results.sp.PDiv.csv")
+#write.csv(results.ge.PDiv, file="../outputs/results.ge.PDiv.csv")
 ```
 
 ## Combine TD, FD, PD
@@ -291,7 +291,7 @@ results.ge.Div <- left_join(transect.pastgen.meta, results.ge.TDiv) %>%
   left_join(results.ge.PDiv) %>%
   left_join(results.ge.FDiv)
 
-#write.csv(results.sp.Div, file="output/results.sp.Div.csv")
-#write.csv(results.ge.Div, file="output/results.ge.Div.csv")
+#write.csv(results.sp.Div, file="../outputs/results.sp.Div.csv")
+#write.csv(results.ge.Div, file="../outputs/results.ge.Div.csv")
 ```
 

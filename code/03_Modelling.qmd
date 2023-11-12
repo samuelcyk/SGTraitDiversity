@@ -26,9 +26,9 @@ set.seed(13)
 ## Read data and preparation
 Data have been edited to include 0s which were not allowed for TD/PD/FD calculations
 ```{r}
-results.sp.Div <- read.csv("output/results.sp.Div2_edit.csv", header = T)
+results.sp.Div <- read.csv("../outputs/results.sp.Div2_edit.csv", header = T)
 
-results.ge.Div <- read.csv("output/results.ge.Div2_edit.csv", header = T)
+results.ge.Div <- read.csv("../outputs/results.ge.Div2_edit.csv", header = T)
 
 meta.sp  <- results.sp.Div %>%
   select(., Site, Location, Year:Replicate)
