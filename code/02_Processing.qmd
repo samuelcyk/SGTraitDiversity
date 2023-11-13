@@ -8,6 +8,7 @@ editor: visual
 ---
 
 # Load libraries
+
 ```{r}
 library(tidyverse)
 library(vegan)
@@ -18,9 +19,11 @@ library(geiger)
 ```
 
 # Calculate diversity metrics
+
 ## TD
 
 ### Calculate abundance, richness
+
 ```{r}
 transect.spp.td <- transect.spp %>% 
   rowwise() %>%
@@ -39,7 +42,9 @@ results.ge.TR <- transect.pastgen.td %>% select(., Code, total, nbsp) %>%
   mutate(total = total/2000) %>%
   column_to_rownames(., var="Code")
 ```
+
 ### Calculate diversity
+
 ```{r}
 transect.spp.td.rm <- transect.spp.td %>% 
   select(., -nbsp, -total) %>%
@@ -57,6 +62,7 @@ results.ge.TD <- as.matrix(results.ge.TD)
 ```
 
 ### Combine values
+
 ```{r}
 results.sp.TDiv<-cbind(results.sp.TR, results.sp.TD)
 colnames(results.sp.TDiv)<-c("Abun", "TRic", "TDiv")
@@ -73,7 +79,9 @@ rm(results.ge.TR);rm(results.ge.TD)
 ```
 
 ## FD
+
 ### Prepare data and checks
+
 ```{r}
 spp.traits.fd <- spp.trait.table %>% select(., spp, 4:17)  %>%
   mutate(., spp =  str_replace(spp, " ", "_"))
@@ -123,6 +131,7 @@ gen.traits.fd.rm <- gen.traits.fd.rm %>%
 ```
 
 ### Calculate diversity
+
 ```{r}
 wt.fd <- c(rep(1,8), rep(0.2,5))
 
@@ -157,7 +166,9 @@ rm(wt.fd)
 ```
 
 ## PD
+
 ### Prepare data and checks
+
 ```{r}
 spp.tree <- read.nexus(file="../data/database traits/RSTBtree.tre")
 gen.tree <- read.nexus(file="../data/database traits/Genus.tre")
@@ -216,6 +227,7 @@ name.check(phylotree2[[1]],transect.pastgen.pd.t)
 ```
 
 ### Calculate diversity
+
 ```{r}
 esults.sp.PR <- array(NA,dim=c(length(phylotree1),length(transect.spp.pd.t[1,])))
 colnames(results.sp.PR)<-colnames(transect.spp.pd.t)
@@ -268,6 +280,7 @@ rm(results.ge.PR.t);rm(results.ge.PD.t)
 ```
 
 ## Combine TD, FD, PD
+
 ```{r}
 results.sp.TDiv <- results.sp.TDiv %>% 
   rownames_to_column(., var = "Code")
@@ -294,4 +307,3 @@ results.ge.Div <- left_join(transect.pastgen.meta, results.ge.TDiv) %>%
 #write.csv(results.sp.Div, file="../outputs/results.sp.Div.csv")
 #write.csv(results.ge.Div, file="../outputs/results.ge.Div.csv")
 ```
-

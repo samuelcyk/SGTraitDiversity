@@ -8,6 +8,7 @@ editor: visual
 ---
 
 # Load libraries
+
 ```{r}
 library(tidyverse)
 library(rstan)
@@ -22,7 +23,9 @@ library(ggpubr)
 library(visibly)
 set.seed(13)
 ```
+
 # Setting priors
+
 ```{r}
 get_prior(Abun ~ s(Year) + (1|Site), data = res.sp.div)
 
@@ -30,13 +33,50 @@ unscaled.priors <- prior(normal(0, 1), class = "Intercept") +
   prior(normal(0, 2), class = "b") +
   prior(student_t(3, 0, 2), class = "sd") +
   prior(normal(0, 2), class = "sds")
+
+wong.ab.prior <- prior(normal(0.308, 0.192), class = "Intercept") +
+  prior(normal(0.308, 0.192), class = "b") +
+  prior(student_t(3, 0, 2), class = "sd") +
+  prior(normal(0.308, 0.192), class = "sds")
+
+wong.tr.prior <- prior(normal(15.3, 6.07), class = "Intercept") +
+  prior(normal(15.3, 6.07), class = "b") +
+  prior(student_t(3, 0, 2), class = "sd") +
+  prior(normal(15.3, 6.07), class = "sds")
+
+wong.td.prior <- prior(normal(0.843, 0.0884), class = "Intercept") +
+  prior(normal(0.843, 0.0884), class = "b") +
+  prior(student_t(3, 0, 2), class = "sd") +
+  prior(normal(0.843, 0.0884), class = "sds")
+
+wong.pr.prior <- prior(normal(1318, 276), class = "Intercept") +
+  prior(normal(1318, 276), class = "b") +
+  prior(student_t(3, 0, 2), class = "sd") +
+  prior(normal(1318, 276), class = "sds")
+
+wong.pd.prior <- prior(normal(171, 40.5), class = "Intercept") +
+  prior(normal(171, 40.5), class = "b") +
+  prior(student_t(3, 0, 2), class = "sd") +
+  prior(normal(171, 40.5), class = "sds")
+
+wong.fr.prior <- prior(normal(9.96, 10.7), class = "Intercept") +
+  prior(normal(9.96, 10.7), class = "b") +
+  prior(student_t(3, 0, 2), class = "sd") +
+  prior(normal(9.96, 10.7), class = "sds")
+
+wong.fd.prior <- prior(normal(0.0257, 0.00970), class = "Intercept") +
+  prior(normal(0.0257, 0.00970), class = "b") +
+  prior(student_t(3, 0, 2), class = "sd") +
+  prior(normal(0.0257, 0.00970), class = "sds")
 ```
 
+## Unscaled genus diversity models
 
-## Unscaled genus diversity models 
 ### Abundance
+
 ```{r}
 model.ge.abun.re <- brm(Abun ~ s(Year) + (1|Site), data=res.ge.div, 
+                        prior = wong.ab.prior,
                            cores = 4, 
                            iter = 5000,
                            warmup = 1000,
@@ -44,14 +84,17 @@ model.ge.abun.re <- brm(Abun ~ s(Year) + (1|Site), data=res.ge.div,
 ```
 
 ### Taxonomic richness and diversity
+
 ```{r}
 model.ge.tric.re <- brm(TRic ~ s(Year) + (1|Site), data=res.ge.div, 
+                        prior = wong.tr.prior,
                            cores = 4, 
                            iter = 5000,
                            warmup = 1000,
                            thin = 5)
 
 model.ge.tdiv.re <- brm(TDiv ~ s(Year) + (1|Site), data=res.ge.div, 
+                        prior = wong.td.prior,
                            cores = 4, 
                            iter = 5000,
                            warmup = 1000,
@@ -59,36 +102,40 @@ model.ge.tdiv.re <- brm(TDiv ~ s(Year) + (1|Site), data=res.ge.div,
 ```
 
 ### Phylogenetic richness and diversity
+
 ```{r}
-model.ge.pric.re <- brm(PRic ~ s(Year) + (1|Site), data=res.ge.div, 
+model.ge.pric.re <- brm(PRic ~ s(Year) + (1|Site), data=res.ge.div,
+                        prior = wong.pr.prior,
                            cores = 4, 
                            iter = 5000,
                            warmup = 1000,
                            thin = 5)
 
 model.ge.pdiv.re <- brm(PDiv ~ s(Year) + (1|Site), data=res.ge.div, 
+                        prior = wong.pd.prior,
                            cores = 4, 
                            iter = 5000,
                            warmup = 1000,
                            thin = 5)
 ```
 
-
 ### Functional richness and diversity
+
 ```{r}
 model.ge.fric.re <- brm(FRic ~ s(Year) + (1|Site), data=res.ge.div, 
+                        prior = wong.fr.prior,
                            cores = 4, 
                            iter = 5000,
                            warmup = 1000,
                            thin = 5)
 
 model.ge.fdiv.re <- brm(FDiv ~ s(Year) + (1|Site), data=res.ge.div, 
+                        prior = wong.fd.prior,
                            cores = 4, 
                            iter = 5000,
                            warmup = 1000,
                            thin = 5)
 ```
-
 
 # Posterior predictions supplementary
 
@@ -183,4 +230,107 @@ epred.re <- cbind(pred.epre.abun, pred.epre.tric[,c(2:3)], pred.epre.tdiv[,c(2:3
 
 #write.csv(epred.re, file = "../outputs/epreds.unscaledmodel.csv")
 
+```
+
+# Plots
+
+# Set theme
+
+```{r}
+theme_base <- theme_set(theme_bw(base_size = 10) + theme(legend.position="bottom")) #create theme
+```
+
+### Legend
+
+```{r}
+legend.data <- cbind(c("Coral Cover", "Non-abundance-weighted Richness", "Abundance-weighted Diversity"), seq(1,3,1)) %>%
+  as_tibble() %>%
+  rename(Metrics = V1, Values = V2)
+legend.data$Metrics <- factor(legend.data$Metrics, levels = c("Coral Cover", "Non-abundance-weighted Richness", "Abundance-weighted Diversity"))
+plot.legendgraph <- ggplot(data = legend.data) + 
+  geom_bar(aes(x = Values, fill = Metrics)) + 
+  scale_fill_manual(values = c("Coral Cover" =  "#e31a1c", 
+                                 "Non-abundance-weighted Richness" = "#33a02c", 
+                                 "Abundance-weighted Diversity" = "#1f78b4"))
+plot.legend <- get_legend(plot.legendgraph, position = "left") 
+plot.legend <- as_ggplot(plot.legend)
+```
+
+### Abundance
+
+```{r}
+plot.ge.abun.us <- plot(conditional_effects(model.ge.abun.re, ask = F), point_args = c(alpha = 0.5, size = 1.5), 
+                     points = T, ask=F, line_args = list(colour="#e31a1c", fill="#e31a1c", alpha=0.3))
+plot.ge.abun.us <- plot.ge.abun.us$Year + labs(x = NULL, y = "Coral Cover")
+```
+
+### TRic
+
+```{r}
+plot.ge.tric.us <- plot(conditional_effects(model.ge.tric.re), 
+                     point_args = c(alpha = 0.5, size = 1.5), 
+                     points = T, ask=F, line_args = list(colour="#33a02c", fill="#33a02c", alpha=0.3))
+plot.ge.tric.us <- plot.ge.tric.us$Year + labs(x = NULL, y = "Taxonomic Richness")
+```
+
+### TDiv
+
+```{r}
+plot.ge.tdiv.us <- plot(conditional_effects(model.ge.tdiv.re), 
+                     point_args = c(alpha = 0.5, size = 1.5), 
+                     points = T, ask=F, line_args = list(colour="#1f78b4", fill="#1f78b4", alpha=0.3))
+plot.ge.tdiv.us <- plot.ge.tdiv.us$Year + labs(x = NULL, y = "Taxonomic Diversity")
+```
+
+### PRic
+
+```{r}
+plot.ge.pric.us <- plot(conditional_effects(model.ge.pric.re), 
+                     point_args = c(alpha = 0.5, size = 1.5), 
+                     points = T, ask=F, line_args = list(colour="#33a02c", fill="#33a02c", alpha=0.3))
+plot.ge.pric.us <- plot.ge.pric.us$Year + labs(x = NULL, y ="Phylogenetic Richness")
+```
+
+### PDiv
+
+```{r}
+plot.ge.pdiv.us <- plot(conditional_effects(model.ge.pdiv.re), 
+                     point_args = c(alpha = 0.5, size = 1.5), 
+                     points = T, ask=F, line_args = list(colour="#1f78b4", fill="#1f78b4", alpha=0.3))
+plot.ge.pdiv.us <- plot.ge.pdiv.us$Year + labs(x = NULL, y ="Phylogenetic Diversity")
+```
+
+### FRic
+
+```{r}
+plot.ge.fric.us <- plot(conditional_effects(model.ge.fric.re), 
+                     point_args = c(alpha = 0.5, size = 1.5), 
+                     points = T, ask=F, line_args = list(colour="#33a02c", fill="#33a02c", alpha=0.3))
+plot.ge.fric.us <- plot.ge.fric.us$Year + labs(x = NULL, y ="Functional Richness")
+```
+
+### FDiv
+
+```{r}
+plot.ge.fdiv.us <- plot(conditional_effects(model.ge.fdiv.re), 
+                     point_args = c(alpha = 0.5, size = 1.5), 
+                     points = T, ask=F, line_args = list(colour="#1f78b4", fill="#1f78b4", alpha=0.3))
+plot.ge.fdiv.us <- plot.ge.fdiv.us$Year + labs(x = NULL, y ="Functional Diversity")
+```
+
+### Combined Plot
+
+```{r}
+layout.model <- "
+#A
+BC
+DE
+FG"
+
+plot.geusmodel <- plot.legend + plot.ge.abun.us + plot.ge.tric.us + plot.ge.tdiv.us +  
+  plot.ge.pric.us +  plot.ge.pdiv.us + plot.ge.fric.us + plot.ge.fdiv.us + 
+  plot_layout(ncol = 2) + plot_annotation(tag_levels = list(c("", "a", "b", "c", "d", "e", "f", "g")))
+
+#ggsave(plot.geusmodel, file = "../outputs/figs/modeleffects.ge.us.tiff", dpi=300, width=10, height=10)
+#ggsave(plot.geusmodel, file = "../outputs/figs/modeleffects.ge.us.pdf", width=10, height=10)
 ```

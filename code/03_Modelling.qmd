@@ -8,6 +8,7 @@ editor: visual
 ---
 
 # Load libraries
+
 ```{r}
 library(tidyverse)
 library(rstan)
@@ -24,7 +25,9 @@ set.seed(13)
 ```
 
 ## Read data and preparation
+
 Data have been edited to include 0s which were not allowed for TD/PD/FD calculations
+
 ```{r}
 results.sp.Div <- read.csv("../outputs/results.sp.Div2_edit.csv", header = T)
 
@@ -72,6 +75,7 @@ res.ge.cwm.scaled <- scale(res.ge.cwm, scale = T, center = T)
 ```
 
 ## Modelling datasets
+
 ```{r}
 res.sp.div.sc <- cbind(meta.sp, res.sp.scaled)
 res.ge.div.sc <- cbind(meta.ge, res.ge.scaled)
@@ -97,7 +101,9 @@ rm(res.sp.cwm.modes);rm(res.ge.cwm.modes)
 rm(res.sp.cwm.scaled);rm(res.ge.cwm.scaled)
 rm(res.sp.cwm);rm(res.ge.cwm)
 ```
+
 # Assess model fits for random effect structures
+
 ```{r}
 model.sp.abun <- brm(Abun ~ s(Year) + Site, data=res.sp.div, cores = 2)
 model.sp.tric <- brm(TRic ~ s(Year) + Site, data=res.sp.div, cores = 2)
@@ -133,6 +139,7 @@ model.sp.fdiv.ren <- brm(FDiv ~ s(Year) + (1|Location/Site), data=res.sp.div, co
 ```
 
 ## LOO comparisons
+
 ```{r}
 loo(model.sp.abun, model.sp.abun.re, model.sp.abun.re2, model.sp.abun.ren)
 loo(model.sp.tric, model.sp.tric.re, model.sp.tric.re2, model.sp.tric.ren)
@@ -154,6 +161,7 @@ rm(model.sp.abun);rm(model.sp.abun.re);rm(model.sp.abun.re2);rm(model.sp.abun.re
 LOO indicates little difference between Site as random effect vs nested Location/Site so we default to the simpler model
 
 # Setting priors
+
 ```{r}
 get_prior(Abun ~ s(Year) + (1|Site), data = res.sp.div)
 
@@ -168,8 +176,11 @@ scaled.priors.cor <- prior(normal(0, 1), class = "Intercept") +
 ```
 
 # Diversity models
+
 ## Species diversity models
+
 ### Abundance
+
 ```{r}
 model.sp.abun.re.sc <- brm(Abun ~ s(Year) + (1|Site), 
                            data=res.sp.div.sc, 
@@ -181,6 +192,7 @@ model.sp.abun.re.sc <- brm(Abun ~ s(Year) + (1|Site),
 ```
 
 ### Taxonomic richness and diversity
+
 ```{r}
 model.sp.tric.re.sc <- brm(TRic ~ s(Year) + (1|Site), 
                            data=res.sp.div.sc, 
@@ -198,6 +210,7 @@ model.sp.tdiv.re.sc <- brm(TDiv ~ s(Year) + (1|Site), data=res.sp.div.sc,
 ```
 
 ### Phylogenetic richness and diversity
+
 ```{r}
 model.sp.pric.re.sc <- brm(PRic ~ s(Year) + (1|Site), data=res.sp.div.sc, 
                            prior = scaled.priors,
@@ -214,6 +227,7 @@ model.sp.pdiv.re.sc <- brm(PDiv ~ s(Year) + (1|Site), data=res.sp.div.sc,
 ```
 
 ### Functional richness and diversity
+
 ```{r}
 model.sp.fric.re.sc <- brm(FRic ~ s(Year) + (1|Site), data=res.sp.div.sc, 
                            prior = scaled.priors,
@@ -230,7 +244,9 @@ model.sp.fdiv.re.sc <- brm(FDiv ~ s(Year) + (1|Site), data=res.sp.div.sc,
 ```
 
 ## Genus diversity models
+
 ### Abundance
+
 ```{r}
 model.ge.abun.re.sc <- brm(Abun ~ s(Year) + (1|Site), data=res.ge.div.sc, 
                            prior = scaled.priors,
@@ -241,6 +257,7 @@ model.ge.abun.re.sc <- brm(Abun ~ s(Year) + (1|Site), data=res.ge.div.sc,
 ```
 
 ### Taxonomic richness and diversity
+
 ```{r}
 model.ge.tric.re.sc <- brm(TRic ~ s(Year) + (1|Site), data=res.ge.div.sc, 
                            prior = scaled.priors,
@@ -257,6 +274,7 @@ model.ge.tdiv.re.sc <- brm(TDiv ~ s(Year) + (1|Site), data=res.ge.div.sc,
 ```
 
 ### Phylogenetic richness and diversity
+
 ```{r}
 model.ge.pric.re.sc <- brm(PRic ~ s(Year) + (1|Site), data=res.ge.div.sc, 
                            prior = scaled.priors,
@@ -273,6 +291,7 @@ model.ge.pdiv.re.sc <- brm(PDiv ~ s(Year) + (1|Site), data=res.ge.div.sc,
 ```
 
 ### Functional richness and diversity
+
 ```{r}
 model.ge.fric.re.sc <- brm(FRic ~ s(Year) + (1|Site), data=res.ge.div.sc, 
                            prior = scaled.priors,
@@ -289,8 +308,11 @@ model.ge.fdiv.re.sc <- brm(FDiv ~ s(Year) + (1|Site), data=res.ge.div.sc,
 ```
 
 # CWM models
+
 ## Species CWM models
+
 ### Continuous traits
+
 ```{r}
 model.sp.grow.re.sc <- brm(CWM.grow ~ s(Year) + (1|Site), 
                            data=res.sp.cwm.sc, 
@@ -323,6 +345,7 @@ model.sp.cmd.re.sc <- brm(CWM.cmd ~ s(Year) + (1|Site),
 ```
 
 ### Growth forms
+
 ```{r}
 model.sp.gfbr.re.sc <- brm(CWM.branching ~ s(Year) + (1|Site), 
                            data=res.sp.cwm.sc, 
@@ -362,7 +385,9 @@ model.sp.gfsu.re.sc <- brm(CWM.submassive ~ s(Year) + (1|Site),
 ```
 
 ## Genus CWM models
+
 ### Continuous traits
+
 ```{r}
 model.ge.grow.re.sc <- brm(CWM.grow ~ s(Year) + (1|Site), 
                            data=res.ge.cwm.sc, 
@@ -395,6 +420,7 @@ model.ge.cmd.re.sc <- brm(CWM.cmd ~ s(Year) + (1|Site),
 ```
 
 ### Growth forms
+
 ```{r}
 model.ge.gfbr.re.sc <- brm(CWM.branching ~ s(Year) + (1|Site), 
                            data=res.ge.cwm.sc, 
@@ -434,7 +460,9 @@ model.ge.gfsu.re.sc <- brm(CWM.submassive ~ s(Year) + (1|Site),
 ```
 
 # Assessing model fits for correlation models
+
 ## Species richness correlations
+
 ```{r}
 scor.pric.sc <- brm(PRic ~ s(TRic), data=res.sp.div.sc,
                     prior = scaled.priors.cor,
@@ -476,6 +504,7 @@ scor.pfric.sc2 <- brm(FRic ~ s(PRic) + (1|Site), data=res.sp.div.sc,
 ```
 
 ## Species diversity correlations
+
 ```{r}
 scor.pdiv.sc <- brm(PDiv ~ s(TDiv), data=res.sp.div.sc,
                  prior = scaled.priors.cor,
@@ -515,7 +544,9 @@ scor.pfdiv.sc2 <- brm(FDiv ~ s(PDiv) + (1|Site), data=res.sp.div.sc,
                     warmup = 1000,
                     thin = 5)
 ```
+
 ## Genus richness correlations
+
 ```{r}
 cor.pric.sc <- brm(PRic ~ s(TRic), data=res.ge.div.sc,
                    prior = scaled.priors.cor,
@@ -576,6 +607,7 @@ cor.pfdiv.sc2 <- brm(FDiv ~ s(PDiv) + (1|Site), data=res.ge.div.sc,
 ```
 
 ## Genus diversity correlations
+
 ```{r}
 cor.pdiv.sc <- brm(PDiv ~ s(TDiv), data=res.ge.div.sc,
                 prior = scaled.priors.cor,
@@ -598,6 +630,7 @@ cor.pfdiv.sc <- brm(FDiv ~ s(PDiv), data=res.ge.div.sc,
 ```
 
 ## LOO comparisons
+
 ```{r}
 loo(cor.fdiv.sc,cor.fdiv.sc2)
 loo(cor.pdiv.sc,cor.pdiv.sc2)
@@ -615,6 +648,7 @@ loo(scor.pfric.sc,scor.pfric.sc2)
 ```
 
 ## Bayes R2 calculations
+
 ```{r}
 bayes_R2(cor.pric.sc2)
 bayes_R2(cor.fric.sc2)
@@ -631,7 +665,9 @@ bayes_R2(scor.pfdiv.sc2)
 ```
 
 # Diversity models for modern comparisons
+
 ## Create data
+
 ```{r}
 res.sp.div.sc <- res.sp.div.sc %>%
   dplyr::filter(., Site == "CY-N" | Site == "CY-S" | Site == "HA-NE" | Site == "HA-W" | 
@@ -650,7 +686,9 @@ scaled.priors.mod <- prior(normal(0, 1), class = "Intercept") +
 ```
 
 ## Models
+
 ### Abundance
+
 ```{r}
 model.sp.abun.re.sc <- brm(Abun ~ Period + (1|Site), 
                            data=res.sp.div.sc, 
@@ -662,6 +700,7 @@ model.sp.abun.re.sc <- brm(Abun ~ Period + (1|Site),
 ```
 
 ### Taxonomic richness and diversity
+
 ```{r}
 model.sp.tric.re.sc <- brm(TRic ~ Period + (1|Site), 
                            data=res.sp.div.sc, 
@@ -679,6 +718,7 @@ model.sp.tdiv.re.sc <- brm(TDiv ~ Period + (1|Site), data=res.sp.div.sc,
 ```
 
 ### Phylogenetic richness and diversity
+
 ```{r}
 model.sp.pric.re.sc <- brm(PRic ~ Period + (1|Site), 
                            data=res.sp.div.sc, 
@@ -697,6 +737,7 @@ model.sp.pdiv.re.sc <- brm(PDiv ~ Period + (1|Site),
 ```
 
 ### Functional richness and diversity
+
 ```{r}
 model.sp.fric.re.sc <- brm(FRic ~ Period + (1|Site), 
                            data=res.sp.div.sc, 
@@ -714,6 +755,7 @@ model.sp.fdiv.re.sc <- brm(FDiv ~ Period + (1|Site), data=res.sp.div.sc,
 ```
 
 ### CWMs continuous traits
+
 ```{r}
 model.sp.grow.re.sc <- brm(CWM.grow ~ Period + (1|Site), 
                            data=res.sp.cwm.sc, 
@@ -746,6 +788,7 @@ model.sp.cmd.re.sc <- brm(CWM.cmd ~ Period + (1|Site),
 ```
 
 ### CWMs growth forms
+
 ```{r}
 model.sp.gfbr.re.sc <- brm(CWM.branching ~ Period + (1|Site), 
                            data=res.sp.cwm.sc, 
@@ -785,6 +828,7 @@ model.sp.gfsu.re.sc <- brm(CWM.submassive ~ Period + (1|Site),
 ```
 
 # Model validations
+
 ```{r}
 model.ge.abun.re.sc$fit |> stan_trace()
 model.ge.abun.re.sc$fit |> stan_ac()
@@ -799,6 +843,7 @@ plotResiduals(resids, form = factor(rep(1, nrow(model.ge.abun.re.sc))))
 ```
 
 # Functions from Murray Logan
+
 ```{r}
 #### functions ####
 make_brms_dharma_res <- function(brms_model, seed = 10, ...) {
@@ -841,4 +886,3 @@ DHARMa::createDHARMa(
 )
 }
 ```
-
