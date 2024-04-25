@@ -4,10 +4,11 @@ author: "Samuel Chan"
 date: 29/10/2023
 date-format: "DD/MM/YYYY"
 format: html
-editor: visual
+editor: source
 ---
 
 # Load libraries
+
 ```{r}
 library(tidyverse)
 library(vegan)
@@ -18,7 +19,9 @@ library(geiger)
 ```
 
 # Calculate trait values
+
 ## Read trait data
+
 ```{r}
 traits <- read.csv("../data/database/fulltraits.csv", header=T) #CoralTraits
 
@@ -26,6 +29,7 @@ unique(traits$trait_name)
 ```
 
 ### Growth rate
+
 ```{r}
 gr <- traits %>%
   filter(., trait_name == "Growth rate") %>%
@@ -65,6 +69,7 @@ rm(gr)
 ```
 
 ### Skeletal density
+
 ```{r}
 sd <- traits %>%
   filter(., trait_name == "Skeletal density") %>%
@@ -81,7 +86,9 @@ skeletaldensity <- traits %>%
 
 rm(sd)
 ```
+
 ### Corallite width
+
 ```{r}
 cw <- traits %>%
   filter(., trait_name == "Corallite width") %>%
@@ -107,6 +114,7 @@ rm(cw)
 ```
 
 ### Colony max diameter
+
 ```{r}
 cm <- traits %>%
   filter(., trait_name == "Colony maximum diameter") %>%
@@ -135,6 +143,7 @@ rm(cm)
 ```
 
 ### Calcification rate
+
 ```{r}
 cr <- traits %>%
   filter(., trait_name == "Calcification rate") %>%
@@ -153,6 +162,7 @@ rm(cr)
 ```
 
 ### Morphology
+
 ```{r}
 mo <- traits %>% 
   filter(., trait_name == "Growth form Veron") %>%
@@ -176,6 +186,7 @@ rm(mo)
 ```
 
 ### Coloniality
+
 ```{r}
 coloniality <- traits %>% 
   filter(., trait_name == "Coloniality") %>%
@@ -185,6 +196,7 @@ coloniality <- traits %>%
 ```
 
 ### Reproductive mode
+
 ```{r}
 reproductivemode <- traits %>% 
   filter(., trait_name == "Mode of larval development") %>%
@@ -194,6 +206,7 @@ reproductivemode <- traits %>%
 ```
 
 ### Sexual system
+
 ```{r}
 sexualsystem <- traits %>% 
   filter(., trait_name == "Sexual system") %>%
@@ -203,6 +216,7 @@ sexualsystem <- traits %>%
 ```
 
 ### Symbiodinium in propagules
+
 ```{r}
 symbiodiumpropagules <- traits %>% 
   filter(., trait_name == "Symbiodinium sp. in propagules") %>%
@@ -212,6 +226,7 @@ symbiodiumpropagules <- traits %>%
 ```
 
 ### Life history
+
 ```{r}
 lifehistory <-  traits %>% 
   filter(., trait_name == "Life history strategy") %>%
@@ -221,6 +236,7 @@ lifehistory <-  traits %>%
 ```
 
 ### IUCN Red list
+
 ```{r}
 iucnredlist <-  traits %>% 
   filter(., trait_name == "IUCN Red List category") %>%
@@ -231,6 +247,7 @@ iucnredlist <-  traits %>%
 ```
 
 ### Concatenate all traits
+
 ```{r}
 fulltraits <- growthrate %>%
   full_join(skeletaldensity, by = "specie_name") %>%
@@ -254,6 +271,7 @@ rm(sexualsystem);rm(skeletaldensity);rm(symbiodiumpropagules);
 ```
 
 ## Find SG species traits
+
 ```{r}
 sgspecies <- read.csv("../data/database/rdbspecieslist.csv", header=T) %>% 
   select(., 1,6,8,17,18,19)
@@ -266,7 +284,9 @@ rm(fulltraits);rm(sgspecies)
 ```
 
 ## Calculate SG genera traits
+
 Infill traits based on other available data
+
 ```{r}
 spp.trait.table <- read.csv("../data/database processed/sgspptraits_edit.csv", header=T) %>%
   select(., -starts_with("n.")) %>%
@@ -280,7 +300,9 @@ pastgen.trait.table <- spp.trait.table %>%
 ```
 
 # Calculate phylogenetic distance
+
 ## Read trees and species list
+
 ```{r}
 gen.tree<-read.nexus(file="../data/database/Genus.tre")
 spp.tree<-read.nexus(file="../data/database/RSTBtree.tre")
@@ -296,4 +318,3 @@ transect.spp <- spp[,c(1,16:242)] %>%
 transect.pastgen <- pastgen[,c(1,16:72)] %>% 
   select(., -Dendrophyllia, -Millepora, -Heliopora, -Tubastraea, -Unknown)
 ```
-
