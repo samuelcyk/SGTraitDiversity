@@ -267,7 +267,7 @@ rm(traits);rm(calcificationrate);rm(coloniality);rm(colonymaxdiameter);rm(colony
 rm(corallitewidth);rm(growthrate);rm(iucnredlist);rm(lifehistory);rm(morphology);rm(reproductivemode);
 rm(sexualsystem);rm(skeletaldensity);rm(symbiodiumpropagules);
 
-#write.csv(fulltraits, file = "../data/database processed/traits.csv")
+#write.csv(fulltraits, file = "../data/database processed/globalspptraits.csv")
 ```
 
 ## Find SG species traits

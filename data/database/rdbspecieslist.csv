@@ -1,0 +1,1681 @@
+﻿spp,Phylum,Class,Order,Family,Genus,Species,Past Gen,Authority,Common name,Migrants,Natural hybrid,Cryptic species complex,Endemic to Singapore,Global IUCN status,RDB2 status,RDB3 status,First known,Last known,No. of digital records and specimens,Actual generation time,Actual x 3,"% change [from 1980s to 2010s, based on 1980s]",Modelled rate of change,Modelled rate (p-value),pop <50,pop <250,pop <1000,pop <2500,pop <10000,Habitat loss,Habitat modification,Declining water quality,Sedimentation,Harmful algal blooms,Oil spills,Light pollution,Noise pollution,Warming,Acidification,Extraction,Invasive displacement,Threats still operating,Threats ceased,Habitat and ecology,sites ≤5 (named),sites >5,Area protection taken,Species recovery programme taken,Habitat restoration taken,Habitat creation taken,Maritime regulation taken,Area protection required,Species recovery programme required,Habitat restoration required,Habitat creation required,Maritime regulation required,Justifications,Remarks,References
+Acropora abrotanoides,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Acropora,abrotanoides,Acropora,"(Lamarck, 1816)",,No,No,No,No,LC,-,DD,1992 (REST Survey),1995 (Loo & Chou),1,10,30,-100,-0.00429,0.527623,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies branching. 
+Hermaphroditic broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Loo & Chou 1995
+Acropora aculeus,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Acropora,aculeus,Acropora,"(Dana, 1846)",Bottlebrush coral,No,No,No,No,VU,-,DD,"1985 (ZRC, 19850701)",2018 (Wong et al),9,10,30,,0.01022,0.002835,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies branching.
+Hermaphroditic broadcaster.","LZ-E, PSD-NW, PSL-SE, RL-W",,,"X (Sam et al, in situ nursery)",,,X (Raffles),,,,,,"DD, as % cover change only quantified for < 10 years. 
+",,"Iffah(LKCNHM); Huang et al 2009; Wong et al 2018
+
+Goh et al 1989 (anomuran symbionts); Sam et al 2018 (cuttlefish egg deposition)"
+Acropora acuminata,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Acropora,acuminata,Acropora,"(Verrill, 1864)",,No,No,No,No,VU,-,VU,"1986 (ZRC, 19860902)",2019 (Chow et al),4,10,30,-97.73195876,-0.01052,0.504073,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies branching, tabulate.
+Hermaphroditic broadcaster.",SJ-W,,,,,,,X,,X,,X,"Not found at many sites. Population decline not significant.
+
+Documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",,Iffah(LKCNHM); Loo & Chou 1995; Chow et al 2019
+Acropora anthocercis,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Acropora,anthocercis,Acropora,"(Brook, 1893)",,No,No,No,No,VU,-,VU,1995 (Loo & Chou),2019 (Chow et al),2,10,30,-86.30136986,-0.00046,0.945868,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies tabulate.
+Hermaphroditic broadcaster.",PSD-NW,,,,,,,X,,X,,X,"Not found at many sites. Population decline not significant.
+
+Documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",,Loo & Chou 1995; Chow et al 2019
+Acropora aspera,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Acropora,aspera,Acropora,"(Dana, 1846)",Green staghorn coral,No,No,No,No,VU,-,EN,2009 (Huang et al),2020 (Quek et al),2,10,30,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies branching. 
+Hermaphroditic broadcaster.",,,,,,,,X,X,X,,X,"Not found at many sites. Recent population change unknown.
+
+Documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.","May be listed as ""pinecone acropora"" in some intertidal areas (Hantu) by WildSingapore, but ID cannot be confirmed based on pictures alone.
+
+In Lim et al 2020, Acropora is only listed at genus level","Huang et al 2009
+
+Quek et al 2020 (baits)"
+Acropora austera,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Acropora,austera,Acropora,"(Dana, 1846)",,No,No,No,No,NT,-,DD,1881 (as Madrepora austera; Studer),2009 (Huang et al),4,10,30,-100,-0.00659,0.313323,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies branching.
+Hermaphroditic broadcaster.",,,,,,,X (Raffles),,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Studer 1881; Loo & Chou 1995; Guest et al 2005a; Huang et al 2009
+Acropora cerealis,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Acropora,cerealis,Acropora,"(Dana, 1846)",,No,No,No,No,LC,-,DD,1881 (as Madrepora cerealis; Studer),2009 (Huang et al),4,10,30,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies branching.
+Hermaphroditic broadcaster.",,,,,,,X (Raffles),,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Studer 1881; Iffah(LKCNHM); Guest et al 2005a; Huang et al 2009
+Acropora chesterfieldensis,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Acropora,chesterfieldensis,Acropora,"Veron & Wallace, 1984",,No,No,No,No,LC,-,DD,"1991 (ZRC, 19910600)",1995 (Loo & Chou),2,10,30,-100,-0.01294,0.22696,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies tabulate.
+Hermaphroditic broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Iffah(LKCNHM); Loo & Chou 1995
+Acropora cytherea,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Acropora,cytherea,Acropora,"(Dana, 1846)",Table coral,No,No,No,No,LC,-,DD,1956 (as Acropora cf. corymbosa; Purchon),2009 (Huang et al),7,10,30,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies tabulate.
+Hermaphroditic broadcaster.",,,,,,,X (Raffles),,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,"Purchon 1956; Chuang 1961; Iffah(LKCNHM); Huang et al 2009
+
+Goh et al 1989 (anomuran symbionts)"
+Acropora dendrum,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Acropora,dendrum,Acropora,"(Bassett-Smith, 1890)",,No,No,No,No,VU,-,DD,"1986 (ZRC, 19860909)",1989 (Goh et al),2,10,30,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies branching.
+Hermaphroditic broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,"Iffah(LKCNHM)
+
+Goh et al 1989 (anomuran symbionts)"
+Acropora digitifera,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Acropora,digitifera,Acropora,"(Dana, 1846)",Staghorn coral,No,No,No,No,NT,-,EN,2005 (Guest et al (a)),2012 (Ng et al),3,10,30,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies branching.
+Hermaphroditic broadcaster.",,,,"X (Ng et al, ex situ nursery)",,,X (Raffles),X,X,X,,X,"Not found at many sites. Recent population change unknown.
+
+Documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.","May be listed as ""pinecone acropora"" in some intertidal areas (Terumbu Berkas, Terumbu Salu) by WildSingapore, but ID cannot be confirmed based on pictures alone.
+
+In Lim et al 2020, Acropora is only listed at genus level","Guest et al 2005a; Huang et al 2009
+
+Ng et al 2012 (ex situ coral nursery)"
+Acropora divaricata,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Acropora,divaricata,Acropora,"(Dana, 1846)",,No,No,No,No,NT,-,DD,1881 (as Madrepora tenuispicata; Studer),"1985 (ZRC, 19850802)",2,10,30,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies tabulate.
+Hermaphroditic broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Studer 1881; Iffah(LKCNHM)
+Acropora donei,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Acropora,donei,Acropora,"Veron & Wallace, 1984",Purple-tipped acropora,No,No,No,No,VU,-,DD,"1986 (ZRC, 19860829)",2009 (Huang et al),6,10,30,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies branching.
+Hermaphroditic broadcaster.",,,,,,,X (Raffles),,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,"Iffah(LKCNHM); Guest et al 2005a; Huang et al 2009
+
+Goh et al 1989 (anomuran symbionts)"
+Acropora elseyi,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Acropora,elseyi,Acropora,"(Brook, 1892)",Bottlebrush coral,No,No,No,No,LC,-,DD,1995 (Loo & Chou),1995 (Loo & Chou),1,10,30,-100,-0.0079,0.260275,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies branching.
+Hermaphroditic broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Loo & Chou 1995
+Acropora florida,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Acropora,florida,Acropora,"(Dana, 1846)",,No,No,No,No,NT,-,DD,1881 (as Madrepora gravida; Studer),2009 (Huang et al),3,10,30,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies branching.
+Hermaphroditic broadcaster.",,,,,,,X (Raffles),,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Studer 1881; Guest et al 2005a; Huang et al 2009
+Acropora glauca,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Acropora,glauca,Acropora,"(Brook, 1893)",,No,No,No,No,NT,-,DD,2009 (Huang et al),2009 (Huang et al),1,10,30,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies tabulate.
+Hermaphroditic broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Huang et al 2009
+Acropora grandis,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Acropora,grandis,Acropora,"(Brook, 1892)",,No,No,No,No,LC,-,DD,1995 (Loo & Chou),2009 (Huang et al),3,10,30,-100,-0.00138,0.527623,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies branching.
+Hermaphroditic broadcaster.",,,,,,,X (Raffles),,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Loo & Chou 1995; Guest et al 2005a; Huang et al 2009
+Acropora granulosa,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Acropora,granulosa,Acropora,"(Milne Edwards, 1860)",Tubular table coral,No,No,No,No,NT,-,DD,2005 (Guest et al (a)),2009 (Huang et al),2,10,30,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies tabulate.
+Hermaphroditic broadcaster.",,,,,,,X (Raffles),,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Guest et al 2005a; Huang et al 2009
+Acropora horrida,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Acropora,horrida,Acropora,"(Dana, 1846)",Blue staghorn coral,No,No,No,No,VU,-,DD,1995 (Loo & Chou),1995 (Loo & Chou),1,10,30,-100,-0.02431,0.295836,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies branching, tabulate.
+Hermaphroditic broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Loo & Chou 1995
+Acropora humilis,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Acropora,humilis,Acropora,"(Dana, 1846)",Finger coral,No,No,No,No,NT,-,DD,2005 (Guest et al (a)),2009 (Huang et al),2,10,30,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies branching.
+Hermaphroditic broadcaster.",,,,,,,X (Raffles),,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Guest et al 2005a; Huang et al 2009
+Acropora hyacinthus,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Acropora,hyacinthus,Acropora,"(Dana, 1846)",Brush coral,No,No,No,No,NT,-,DD,1881 (as Madrepora surculosa; Studer),2019 (Chow et al),11,10,30,,0.016775,0.018398,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies tabulate.
+Hermaphroditic broadcaster.",RL-W,,,"X (Bongiorni et al, in situ nursery)",,,X (Raffles),,,,,,"DD, as % cover change only quantified for < 10 years. 
+",,"Studer 1881; Iffah(LKCNHM); Guest et al 2005a; Huang et al 2009; Chow et al 2019
+
+Goh et al 1989 (anomuran symbionts); Bongiorni et al 2011 (in situ coral nursery); Tay et al 2011 (larval settlement competencies); Toh et al 2012 (spawning timing)"
+Acropora intermedia,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Acropora,intermedia,Acropora,"(Brook, 1891)",,No,No,No,No,???,-,DD,2002 (Guest et al),2009 (Huang et al),3,10,30,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies branching.
+Hermaphroditic broadcaster.",,,,,,,X (Raffles),,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,"Guest et al 2005a; Huang et al 2009
+
+Guest et al 2002 (multispecific synchronus spawning)"
+Acropora latistella,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Acropora,latistella,Acropora,"(Brook, 1892)",,No,No,No,No,LC,-,DD,"1986 (ZRC, 19860829)",2009 (Huang et al),4,10,30,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies branching.
+Hermaphroditic broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,"Iffah(LKCNHM); Guest et al 2005a; Huang et al 2009
+
+Goh et al 1989 (anomuran symbionts)"
+Acropora longicyathus,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Acropora,longicyathus,Acropora,"(Milne Edwards, 1860)",,No,No,No,No,LC,-,DD,1881 (as Madrepora longecyathus; Studer),1991 (Huang et al),2,10,30,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies branching.
+Hermaphroditic broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Studer 1881; Huang et al 2009(ZRC.1991.624)
+Acropora loripes,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Acropora,loripes,Acropora,"(Brook, 1892)",Blue tip coral,No,No,No,No,NT,-,DD,2005 (Guest et al (a)),2017 (Taira et al),3,10,30,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies branching.
+Hermaphroditic broadcaster.",,,,"X (Taira et al (b), in situ nursery)",,,X (Raffles),,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,"Guest et al 2005a; Huang et al 2009
+
+Taira et al 2017b (juv. butterflyfishes inhabiting nursery)"
+Acropora lutkeni,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Acropora,lutkeni,Acropora,"Crossland, 1952",,No,No,No,No,NT,-,DD,1995 (Loo & Chou),1995 (Loo & Chou),1,10,30,-100,-0.00236,0.413527,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies tabulate.
+Hermaphroditic broadcaster.",,,,,,,"X (Raffles)
+X (SultanShoal)",,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Loo & Chou 1995
+Acropora microclados,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Acropora,microclados,Acropora,"(Ehrenberg, 1834)",,No,No,No,No,VU,-,DD,1881 (as Madrepora microclados; Studer),2009 (Huang et al),3,10,30,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies branching.
+Hermaphroditic broadcaster.",,,,,,,X (Raffles),,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Studer 1881; Guest et al 2005a; Huang et al 2009
+Acropora microphthalma,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Acropora,microphthalma,Acropora,"(Verrill, 1869)",Small staghorn coral,No,No,No,No,LC,-,LC,"1985 (ZRC, 19850614)",2018 (Wong et al),3,10,30,-23.23943662,0.010946,0.617387,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies branching.
+Hermaphroditic broadcaster.","HA-W, RL-W",,,,,,,,,,,,"Not found at many sites. Population decline not documented.
+
+Documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",,Iffah(LKCNHM); Loo & Chou 1995; Wong et al 2018
+Acropora millepora,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Acropora,millepora,Acropora,"(Ehrenberg, 1834)",Plate acropora,No,No,No,No,NT,-,EN,1881 (as Madrepora convexa & M.millepora; Studer),2021 (Lee et al),8,10,30,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies branching.
+Hermaphroditic broadcaster.",,,,"X (Bongiorni et al, in situ nursery)",,,X (Raffles),X,X,X,X,X,"Not found at many sites. Recent population change unknown.
+
+Documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.","May be listed as ""pinecone acropora"" in some intertidal areas (Terumbu Berkas, Terumbu Salu) by WildSingapore, but ID cannot be confirmed based on pictures alone.
+
+In Lim et al 2020, Acropora is only listed at genus level","Studer 1881; Guest et al 2005a; Huang et al 2009; Chow et al 2019; Lee et al 2021
+
+Bongiorni et al 2011 (in situ coral nursery); Tanzil et al 2016 (Symbiodinium diversity); Quek & Huang 2019 (phylotranscriptomic analysis)"
+Acropora muricata,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Acropora,muricata,Acropora,"(Linnaeus, 1758)",Staghorn coral,No,No,No,No,NT,-,LC,1881 (as Madrepora brachiata; Studer),2017 (REL collections),5,10,30,-9.427792916,0.020316,0.482713,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies branching.
+Hermaphroditic broadcaster.","HA-W, RL-W",,,,,,X (Raffles),,,,,,"Not found at many sites. Population decline not documented.
+
+Documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",,Studer 1881; Chuang 1977; Loo & Chou 1995; Guest et al 2005a; Huang et al 2009
+Acropora nana,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Acropora,nana,Acropora,"(Studer, 1879)",,No,No,No,No,NT,-,DD,1995 (Loo & Chou),1995 (Loo & Chou),1,10,30,-100,-0.00291,0.467971,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies branching.
+Hermaphroditic broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Loo & Chou 1995
+Acropora nasuta,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Acropora,nasuta,Acropora,"(Dana, 1846)",Branching staghorn coral,No,No,No,No,NT,-,EN,"1986 (ZRC, 19860826)",2009 (Huang et al),5,10,30,-100,-0.00432,0.270261,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies branching.
+Hermaphroditic broadcaster.",,,,,,,X (Raffles),X,X,X,,X,"Not found at many sites. Population decline not significant
+
+Documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",,"Iffah(LKCNHM); Loo & Chou 1995; Guest et al 2005a; Huang et al 2009
+
+Goh et al 1989 (anomuran symbionts)"
+Acropora palmerae,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Acropora,palmerae,Acropora,"Wells, 1954 ",,No,No,No,No,VU,-,DD,1995 (Loo & Chou),1995 (Loo & Chou),1,10,30,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies encrusting.
+Hermaphroditic broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Loo & Chou 1995
+Acropora polystoma,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Acropora,polystoma,Acropora,"(Brook, 1891)",,No,No,No,No,VU,-,DD,"1987 (ZRC.1987.1512, Huang et al)","1987 (ZRC.1987.1512, Huang et al)",1,10,30,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies branching.
+Hermaphroditic broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Huang et al 2009(ZRC.1987.1512)
+Acropora pulchra,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Acropora,pulchra,Acropora,"(Brook, 1891)",,No,No,No,No,LC,-,DD,"1985 (ZRC, 19850726)","1985 (ZRC, 19850726)",1,10,30,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies branching.
+Hermaphroditic broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Iffah(LKCNHM)
+Acropora robusta,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Acropora,robusta,Acropora,"(Dana, 1846)",,No,No,No,No,LC,-,DD,1881 (as Madrepora nobilis; Studer),1995 (Loo & Chou),2,10,30,-100,-0.0176,0.43347,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies branching.
+Hermaphroditic broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Studer 1881; Loo & Chou 1995
+Acropora samoensis,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Acropora,samoensis,Acropora,"(Brook, 1891)",,No,No,No,No,LC,-,DD,2005 (Guest et al (a)),2009 (Huang et al),2,10,30,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies branching.
+Hermaphroditic broadcaster.",,,,,,,X (Raffles),,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Guest et al 2005a; Huang et al 2009
+Acropora secale,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Acropora,secale,Acropora,"(Studer, 1878)",Purple tip acropora,No,No,No,No,NT,-,DD,1881 (as Madrepora secale; Studer),2017 (BioBlitz_SIMP2017),10,10,30,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies branching.
+Hermaphroditic broadcaster.",,,X (SIMP),,,,X (Raffles),,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,"Studer 1881; Purchon 1956; Chuang 1961; Chou & Teo 1983; Iffah(LKCNHM); Guest et al 2005a; Huang et al 2009; BioBlitz_SIMP2017
+
+Goh et al 1989 (anomuran symbionts)"
+Acropora selago,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Acropora,selago,Acropora,"(Studer, 1879)",,No,No,No,No,NT,-,DD,"1986 (ZRC, 19860909)",2009 (Huang et al),5,10,30,-100,-0.00177,0.467971,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies tabulate.
+Hermaphroditic broadcaster.",,,,,,,X (Raffles),,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,"Iffah(LKCNHM); Loo & Chou 1995; Guest et al 2005a; Huang et al 2009
+
+Goh et al 1989 (anomuran symbionts)"
+Acropora solitaryensis,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Acropora,solitaryensis,Acropora,"Veron & Wallace, 1984",,No,No,No,No,VU,-,DD,2009 (Huang et al),2009 (Huang et al),1,10,30,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies tabulate.
+Hermaphroditic broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Huang et al 2009
+Acropora spicifera,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Acropora,spicifera,Acropora,"(Dana, 1846)",,No,No,No,No,VU,-,EN,1881 (as Madrepora spicifera; Studer),2019 (Chow et al),3,10,30,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies tabulate.
+Hermaphroditic broadcaster.",,,,,,,,X,X,X,,X,"Not found at many sites. Recent population change unknown.
+
+Documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",,Studer 1881; Huang et al 2009; Chow et al 2019
+Acropora subglabra,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Acropora,subglabra,Acropora,"(Brook, 1891)",,No,No,No,No,LC,-,EN,2009 (Huang et al),2019 (Chow et al),2,10,30,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies tabulate.
+Hermaphroditic broadcaster.",,,,,,,,X,X,X,,X,"Not found at many sites. Recent population change unknown.
+
+Documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",,Huang et al 2009; Chow et al 2019
+Acropora subulata,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Acropora,subulata,Acropora,"(Dana, 1846)",,No,No,No,No,LC,-,DD,"1986 (ZRC, 19860819)",1989 (Goh et al),2,10,30,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies tabulate.
+Hermaphroditic broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,"Iffah(LKCNHM)
+
+Goh et al 1989 (anomuran symbionts)"
+Acropora tenuis,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Acropora,tenuis,Acropora,"(Dana, 1846)",,No,No,No,No,NT,-,DD,"1986 (ZRC, 19860812)",2005 (Guest et al (a)),4,10,30,-100,-0.01178,0.325768,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies branching, tabulate, encrusting.
+Hermaphroditic broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,"Iffah(LKCNHM); Loo & Chou 1995; Guest et al 2005a
+
+Goh et al 1989 (anomuran symbionts)"
+Acropora valenciennesi,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Acropora,valenciennesi,Acropora,"(Milne Edwards, 1860)",,No,No,No,No,LC,-,DD,2009 (Huang et al),2009 (Huang et al),1,10,30,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies branching.
+Hermaphroditic broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Huang et al 2009
+Acropora valida,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Acropora,valida,Acropora,"(Dana, 1846)",,No,No,No,No,LC,-,LC,1956 (as Acropora variabilis; Purchon),2020 (Loo et al),14,10,30,559.8666667,0.099366,2.14E-05,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies branching, tabulate, submassive.
+Hermaphroditic broadcaster.",,"HA-W, HP-W, JO-S, KU-NE, PSD-NW, RL-W, SJ-NW, SJ-S, TM-S, TPT-SW",X (SIMP),"X (Bongiorni et al, in situ nursery)",,,X (Raffles),,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",,"Purchon 1956; Chuang 1961; Chou & Wong 1986; Iffah(LKCNHM); Loo & Chou 1995; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019
+
+Goh et al 1989 (anomuran symbionts); Bongiorni et al 2011 (in situ coral nursery); Loo et al 2020 (optimal temperature)"
+Acropora verweyi,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Acropora,verweyi,Acropora,"Veron & Wallace, 1984",,No,No,No,No,VU,-,DD,1995 (Loo & Chou),2009 (Huang et al),3,10,30,-100,-0.00114,0.312576,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies tabulate.
+Hermaphroditic broadcaster.",,,,,,,X (Raffles),,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Loo & Chou 1995; Guest et al 2005a; Huang et al 2009
+Acropora willisae,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Acropora,willisae,Acropora,"Veron & Wallace, 1984",,No,No,No,No,VU,-,DD,"1986 (ZRC, 19860826)","1986 (ZRC, 19860826)",2,10,30,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies branching.
+Hermaphroditic broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Iffah(LKCNHM)
+Alveopora allingi,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Alveopora,allingi,Alveopora,"Hoffmeister, 1925",Net coral,No,No,No,No,VU,-,DD,1995 (Loo & Chou),1995 (Loo & Chou),1,10,30,-100,-0.00318,0.360664,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive.
+Hermaphroditic broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Loo & Chou 1995
+Alveopora catalai,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Alveopora,catalai,Alveopora,"Wells, 1968",Branching flower pot coral,No,No,No,No,NT,-,DD,"1987 (ZRC.1987.1890, Huang et al)","1987 (ZRC.1987.1890, Huang et al)",1,10,30,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies branching.
+Hermaphroditic broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Huang et al 2009(ZRC.1987.1890)
+Alveopora excelsa,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Alveopora,excelsa,Alveopora,"Verrill, 1864",,No,No,No,No,EN,-,DD,1881 (Studer),1961 (Chuang),3,10,30,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies submassive.
+Hermaphroditic broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Studer 1881; Purchon 1956; Chuang 1961
+Alveopora fenestrata,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Alveopora,fenestrata,Alveopora,"(Lamarck, 1816)",Flower coral,No,No,No,No,VU,-,DD,1881 (as Alveopora retusa; Studer),"1986 (ZRC, 19860400)",2,10,30,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive.
+Hermaphroditic broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Studer 1881; Iffah(LKCNHM)
+Alveopora marionensis,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Alveopora,marionensis,Alveopora,"Veron & Pichon, 1982",,No,No,No,No,VU,-,DD,1995 (Loo & Chou),1995 (Loo & Chou),1,10,30,-100,-0.00164,0.310086,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive.
+Hermaphroditic broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Loo & Chou 1995
+Alveopora spongiosa,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Alveopora,spongiosa,Alveopora,"Dana, 1846",,No,No,No,No,NT,-,DD,2009 (Huang et al),2018 (REL collections),1,10,30,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies encrusting.
+Hermaphroditic broadcaster.",,,,,,,X (Raffles),,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Huang et al 2009
+Alveopora tizardi,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Alveopora,tizardi,Alveopora,"Bassett-Smith, 1890",,No,No,No,No,LC,-,DD,2009 (Huang et al),2017 (REL collections),1,10,30,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies encrusting.
+Hermaphroditic broadcaster.",,,,,,,X (Raffles),,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",No records in WildSingapore or Lim et al 2020,Huang et al 2009
+Astreopora cucullata,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Astreopora,cucullata,Astreopora,"Lamberts, 1980",,No,No,No,No,VU,-,DD,1986 (REST Survey),2017 (REL collections),1,10,30,-100,-0.00627,0.089533,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, encrusting.
+Hermaphroditic broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Loo & Chou 1995
+Astreopora expansa,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Astreopora,expansa,Astreopora,"(Brüggemann, 1877)",,No,No,No,No,NT,-,DD,"1991 (ZRC.1991.692, Huang et al)",2020 (Quek et al),6,10,30,,0.111326,6.30E-05,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive, foliose.
+Hermaphroditic broadcaster.",,"HA-NE, HA-SE, HA-W, HP-W, JO-S, LZ-SW, PSL-SE, SE-NW, SJ-NW, SJ-S, TPT-SW",X (SIMP),,,,,,,,,,"DD, as % cover change only quantified for < 10 years. 
+",,"Huang et al 2009(ZRC.1991.695); BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019
+
+Quek & Huang 2019 (phylotranscriptomic analysis); Quek et al 2020 (baits)"
+Astreopora gracilis,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Astreopora,gracilis,Astreopora,"Bernard, 1896",,No,No,No,No,LC,-,NT,"1988 (ZRC, 19881209)",2021 (Lee et al),5,10,30,145,0.001831,0.753801,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies foliose, encrusting.
+Hermaphroditic broadcaster.",,,X (SIMP),,,,X (Raffles),X,,,,X,"Not found at many sites. Population decline not documented.
+
+Documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",Also documented on reef flats (Lee et al 2021),Iffah(LKCNHM); Loo & Chou 1995; Huang et al 2009; Chow et al 2019; Lee et al 2021
+Astreopora incrustans,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Astreopora,incrustans,Astreopora,"Bernard, 1896",,No,No,No,No,VU,-,DD,"1984 (ZRC, 19840410)",2017 (REL collections),1,10,30,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies encrusting.
+Hermaphroditic broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Iffah(LKCNHM)
+Astreopora listeri,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Astreopora,listeri,Astreopora,"Bernard, 1896",Starflower coral,No,No,No,No,LC,-,NT,"1986 (ZRC, 19860418)",2020 (Kikuzawa et al),5,10,30,-34.34782609,-0.00674,0.645923,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive, encrusting.
+Hermaphroditic broadcaster.
+
+Can colonise artificial structures.",,"CY-S, HA-NE, HP-E, RL-W, SE-SW",,,,,,X,,,,X,"Common at many sites. Population decline not significant
+
+Documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",,Iffah(LKCNHM); Loo & Chou 1995; Wong et al 2018; Chow et al 2019; Kikuzawa et al 2020
+Astreopora myriophthalma,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Astreopora,myriophthalma,Astreopora,"(Lamarck, 1816)",Porous star coral,No,No,No,No,LC,-,LC,1956 (as Astraeopora myriophthalma; Purchon),2020 (Lim et al),9,10,30,219.9203187,0.106884,7.18E-06,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, foliose, encrusting.
+Hermaphroditic broadcaster.",,"HA-NE, HA-SE, HA-W, HP-E, LA-S, RL-W, SE-NW, SE-SW, SJ-NW, TKK-W",X (SIMP),,,,X (Raffles),,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",,Purchon 1956; Loo & Chou 1995; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Lim et al 2020
+Isopora brueggemanni,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Isopora,brueggemanni,Acropora,"(Brook, 1893)",,No,No,No,No,VU,-,DD,1956 (as Acropora brueggemanni; Purchon),1995 (Loo & Chou),3,10,30,-100,-0.00235,0.342631,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies branching. 
+Hermaphroditic brooder.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Purchon 1956; Chuang 1961; Loo & Chou 1995
+Isopora palifera,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Isopora,palifera,Acropora,"(Lamarck, 1816)",Catch bowl coral,No,No,No,No,NT,-,DD,"1991 (ZRC.1991.596, Huang et al)","1991 (ZRC.1991.596, Huang et al)",1,10,30,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies branching. 
+Hermaphroditic brooder.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Huang et al 2009(ZRC.1991.596)
+Montipora aequituberculata,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Montipora,aequituberculata,Montipora,"Bernard, 1897",,No,No,No,No,LC,-,DD,"1989 (ZRC, 19892301)",2019 (Chow et al),4,10,30,-100,-0.00299,0.313322,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies encrusting.
+Hermaphroditic broadcaster.",,,,,,,X (Raffles),,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Loo & Chou 1995; Huang et al 2009; Kanisan 2017; Chow et al 2019
+Montipora angulata,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Montipora,angulata,Montipora,"(Lamarck, 1816)",,No,No,No,No,VU,-,DD,"1987 (ZRC, 19870216)","1992 (ZRC,N322,199206)",38,10,30,-100,-0.03925,0.00321,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, foliose, encrusting.
+Hermaphroditic broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Iffah(LKCNHM); Loo & Chou 1995; Kanisan 2017
+Montipora capricornis,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Montipora,capricornis,Montipora,"Veron, 1985",,No,No,No,No,VU,-,DD,"1988 (ZRC, BB42, 19880620",Loo and Chou 1995,4,10,30,-100,-0.00392,0.467971,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies foliose. 
+Hermaphroditic broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Loo & Chou 1995; Kanisan 2017
+Montipora corbettensis,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Montipora,corbettensis,Montipora,"Veron & Wallace, 1984",,No,No,No,No,VU,-,NT,"1985 (ZRC, 19850722)",2019 (Chow et al),29,10,30,-33.17307692,0.025325,0.600428,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies foliose, encrusting.
+Hermaphroditic broadcaster.","JO-S, RL-W, TM-S",,,,,,X (Raffles),X,,,,X,"Not found at many sites. Population decline not documented.
+
+Documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.","May be listed as ""plate montipora"" in some intertidal areas (e.g. Sisters') by WildSingapore, but ID cannot be confirmed based on pictures alone.
+
+In Lim et al 2020, Montipora is listed at genus level",Iffah(LKCNHM); Loo & Chou 1995; Huang et al 2009; Kanisan 2017; Wong et al 2018; Chow et al 2019
+Montipora crassituberculata,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Montipora,crassituberculata,Montipora,"Bernard, 1897",,No,No,No,No,VU,-,DD,"1985 (ZRC, 19850726)",Loo and Chou 1995,5,10,30,-100,-0.00159,0.39282,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies encrusting.
+Hermaphroditic broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Iffah(LKCNHM); Loo & Chou 1995; Kanisan 2017
+Montipora danae,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Montipora,danae,Montipora,"Milne Edwards & Haime, 1851",Poker star montipora,No,No,No,No,LC,-,NT,"1985 (ZRC, 19850802)",2019 (Chow et al),9,10,30,54.31818182,0.008137,0.250994,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies foliose, encrusting.
+Hermaphroditic broadcaster.","KU-NE, PSL-SE",,X (SIMP),,,,X (Raffles),X,,,,X,"Not found at many sites. Population decline not documented.
+
+Documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",,Iffah(LKCNHM); Loo & Chou 1995; Huang et al 2009; Kanisan 2017; Wong et al 2018; Chow et al 2019
+Montipora digitata,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Montipora,digitata,Montipora,"(Dana, 1846)",,No,No,No,No,LC,-,VU,1956 (as Montipora fruticosa; Purchon),2018 (Wong et al),31,10,30,-66.2004662,-0.00703,0.723905,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies branching, encrusting.
+Hermaphroditic broadcaster.","HA-W, PSD-NW, RL-W",,,"X (Bongiorni et al, in situ nursery)",,,,X,,X,,X,"Not found at many sites. Population decline not significant.
+
+Documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",Found at numerous intertidal sites (Lim et al 2020),"As Montipora laevis/lavis: Purchon 1956; Chuang 1961; Chuang 1977; Chou & Teo 1983; Chou & Wong 1986; Kanisan 2017
+
+As Montipora digitata: Iffah(LKCNHM); Loo & Chou 1995; Huang et al 2009; Wong et al 2018; Lim et al 2020
+
+Goh et al 1989 (anomuran symbionts); Bongiorni et al 2011 (in situ coral nursery)"
+Montipora efflorescens,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Montipora,efflorescens,Montipora,"Bernard, 1897",,No,No,No,No,NT,-,NT,1956 (Purchon),2020 (Ng et al),9,10,30,-45.6,0.000559,0.76801,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies encrusting.
+Hermaphroditic broadcaster.","HA-W, PSD-NW",,,,,,,X,,,,X,"Not found at many sites. Population decline not documented.
+
+Documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",,Purchon 1956; Chuang 1961; Chou & Teo 1983; Chou & Wong 1986; Loo & Chou 1995; Kanisan 2017; Ng et al 2020
+Montipora foliosa,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Montipora,foliosa,Montipora,"(Pallas, 1766)",Cabbage coral,No,No,No,No,NT,-,NT,1956 (as Montipora prolifera; Purchon),2018 (Wong et al),7,10,30,13.07692308,0.000497,0.809469,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies foliose, encrusting.
+Hermaphroditic broadcaster.",RL-W,,,,,,,X,,,,X,"Not found at many sites. Population decline not documented.
+
+Documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",,Purchon 1956; Chou & Teo 1983; Chou & Wong 1986; Loo & Chou 1995; Kanisan 2017; Wong et al 2018
+Montipora grisea,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Montipora,grisea,Montipora,"Bernard, 1897",,No,No,No,No,LC,-,VU,"1985 (ZRC, 19850805)",2020 (Ng et al),21,10,30,-54.07369498,-0.04914,0.405182,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies foliose, encrusting.
+Hermaphroditic broadcaster.",,"HA-NE, HP-E, KU-NE, PSL-SE, RL-W, SE-SW, SJ-NW, SS-S",X (SIMP),,,,X (Raffles),X,,X,,X,"Common at many sites. Population decline not significant
+
+Documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",,Iffah(LKCNHM); Loo & Chou 1995; Huang et al 2009; Wong et al 2018; Chow et al 2019; Kanisan 2017; Ng et al 2020
+Montipora hispida,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Montipora,hispida,Montipora,"(Dana, 1846)",,No,No,No,No,LC,-,NT,1881 (as Montipora hispida & M. expansa; Studer),2019 (Chow et al),119,10,30,-99.60278566,-0.9981,4.56E-07,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies branching, foliose, encrusting.
+Hermaphroditic broadcaster.",RL-W,,,,,,,X,,,,X,"Population decline significant.
+Not found at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",,Studer 1881; Iffah(LKCNHM); Loo & Chou 1995; Kanisan 2017; Chow et al 2019
+Montipora hoffmeisteri,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Montipora,hoffmeisteri,Montipora,"Wells, 1954",,No,No,No,No,LC,-,DD,"1985 (ZRC, 19850722)",2018 (Wong et al),2,10,30,,0.022023,0.000618,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies foliose.
+Hermaphroditic broadcaster.",RL-W,,,,,,,,,,,,"DD, as % cover change only quantified for < 10 years. 
+",,Iffah(LKCNHM); Kanisan 2017; Wong et al 2018
+Montipora informis,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Montipora,informis,Montipora,"Bernard, 1897",,No,No,No,No,LC,-,LC,"1954 (ZRC, 195407)",2019 (Chow et al),16,10,30,3190,0.191323,6.51E-08,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies foliose, encrusting.
+Hermaphroditic broadcaster.",,"KU-NE, LZ-E, PSL-SE, RL-W, SE-SW, SJ-S, TPT-SW",X (SIMP),,,,X (Raffles),,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).",,Purchon 1956; Chuang 1961; Chou & Wong 1986; Iffah(LKCNHM); Loo & Chou 1995; Huang et al 2009; Kanisan 2017; Wong et al 2018; Chow et al 2019
+Montipora millepora,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Montipora,millepora,Montipora,"Crossland, 1952",,No,No,No,No,LC,-,DD,"1992 (ZRC, 199204)",,5,10,30,-100,-0.02241,0.117832,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies foliose, encrusting.
+Hermaphroditic broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Loo & Chou 1995; Kanisan 2017
+Montipora mollis,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Montipora,mollis,Montipora,"Bernard, 1897",,No,No,No,No,LC,-,LC,"1985 (ZRC, 19850701)",2019 (Chow et al),7,10,30,6610.967742,0.200956,1.53E-06,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies foliose, encrusting.
+Hermaphroditic broadcaster.",,"HA-W, HP-E, JO-S, LZ-E, LZ-SW, PSL-SE, RL-W, SJ-NW, TM-S, TPT-SW",X (SIMP),,,,X (Raffles),,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).",,Iffah(LKCNHM); Loo & Chou 1995; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019
+Montipora monasteriata,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Montipora,monasteriata,Montipora,"(Forskål, 1775)",,No,No,No,No,LC,-,LC,1881 (Studer),2020 (Ng et al),24,10,30,255.9851301,0.032217,0.689349,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies foliose, encrusting.
+Hermaphroditic broadcaster.",,"HA-SE, HA-W, KU-NE, PSL-SE, RL-W",X (SIMP),,,,"X (Raffles)
+X (SultanShoal)",,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).",,Studer 1881; Iffah(LKCNHM); Loo & Chou 1995; Huang et al 2009; BioBlitz_SIMP2017; Kanisan 2017; Wong et al 2018; Chow et al 2019; Ng et al 2020
+Montipora peltiformis,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Montipora,peltiformis,Montipora,"Bernard, 1897",,No,No,No,No,NT,-,DD,"1985 (ZRC, 19850805)","1985 (ZRC, 19850805)",1,10,30,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies submassive. 
+Hermaphroditic broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Iffah(LKCNHM)
+Montipora spongodes,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Montipora,spongodes,Montipora,"Bernard, 1897",,No,No,No,No,LC,-,DD,"1986 (ZRC, 19850719)",2009 (Huang et al),5,10,30,-100,-0.00329,0.340492,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies foliose, encrusting.
+Hermaphroditic broadcaster.",,,,,,,X (Raffles),,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Iffah(LKCNHM); Loo & Chou 1995; Huang et al 2009; Kanisan 2017
+Montipora spumosa,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Montipora,spumosa,Montipora,"(Lamarck, 1816)",,No,No,No,No,LC,-,DD,"1986 (ZRC, 19860418)",2009 (Huang et al),5,10,30,-100,-0.00625,0.231439,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies foliose.
+Hermaphroditic broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Iffah(LKCNHM); Loo & Chou 1995; Huang et al 2009; Kanisan 2017
+Montipora stellata,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Montipora,stellata,Montipora,"Bernard, 1897",Velvet branch coral,No,No,No,No,LC,-,LC,1956 (as Montipora solanderi; Purchon),2020 (Ng et al),46,10,30,-2.452539764,0.057177,0.554361,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies foliose, branching, encrusting.
+Hermaphroditic broadcaster.","HA-W, RL-W",,X (SIMP),,,,X (Raffles),,,,,,"Population decline not observed and further decline not predicted.
+
+Also documented from other reefs in the region (Huang et al 2015).",,Purchon 1956; Chuang 1961; Chou & Teo 1983; Chou & Wong 1986; Loo & Chou 1995; Huang et al 2009; Kanisan 2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Lim et al 2020
+Montipora tuberculosa,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Montipora,tuberculosa,Montipora,"(Lamarck, 1816) ",,No,No,No,No,LC,-,NT,"1985 (ZRC, 19850721)",2020 (Ng et al),7,10,30,4.125,0.001776,0.846372,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies submassive, foliose, encrusting.
+Hermaphroditic broadcaster.","KU-NE, RL-W, TM-S",,,,,,X (Raffles),X,,,,X,"Not found at many sites. Population decline not documented.
+
+Documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",,Iffah(LKCNHM); Loo & Chou 1995; Huang et al 2009; Kanisan 2017; Wong et al 2018; Chow et al 2019; Ng et al 2020
+Montipora turgescens,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Montipora,turgescens,Montipora,"Bernard, 1897",,No,No,No,No,LC,-,DD,"1985 (ZRC, 19850510)",2021 (Lee et al),3,10,30,,0.001349,0.084987,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies submassive.
+Hermaphroditic broadcaster.",HA-W,,,,,,X (Raffles),,,,,,"DD, as % cover change only quantified for < 10 years. 
+",Also documented on reef flats (Lee et al 2021),Iffah(LKCNHM); Huang et al 2009; Lee et al 2021
+Montipora undata,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Montipora,undata,Montipora,"Bernard, 1897",,No,No,No,No,NT,-,VU,"1985 (ZRC, 19850802)",2019 (Chow et al),9,10,30,-68.69235629,-0.10782,0.376152,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies foliose, encrusting.
+Hermaphroditic broadcaster.",,"KU-NE, LZ-E, PSD-NW, RL-W, TM-E",,,,,,X,,X,,X,"Common at many sites. Population decline not significant
+
+Documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.","May be listed as ""ridged montipora"" in some intertidal areas (e.g. TPT, Kusu, Semakau) by WildSingapore, but ID cannot be confirmed based on pictures alone.
+
+In Lim et al 2020, Montipora is listed at genus level",Iffah(LKCNHM); Loo & Chou 1995; Kanisan 2017; Wong et al 2018; Chow et al 2019
+Montipora venosa,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Montipora,venosa,Montipora,"(Ehrenberg, 1834)",,No,No,No,No,NT,-,DD,1995 (Loo & Chou),,32,10,30,-100,-0.08762,0.008175,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive, foliose, encrusting.
+Hermaphroditic broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Loo & Chou 1995; Kanisan 2017
+Montipora verrucosa,Cnidaria,Anthozoa,Scleractinia,Acroporidae,Montipora,verrucosa,Montipora,"(Lamarck, 1816)",,No,No,No,No,LC,-,LC,"1992 (ZRC, 199203)",2018 (Wong et al),10,10,30,-8.67768595,0.014728,0.261176,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive, foliose, encrusting.
+Hermaphroditic broadcaster.",,"HA-NE, KU-NE, LZ-SW, RL-W, TPT-SW",X (SIMP),,,,,,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).",,Loo & Chou 1995; BioBlitz_SIMP2017; Kanisan 2017; Wong et al 2018
+Leptoseris explanata,Cnidaria,Anthozoa,Scleractinia,Agaricidae,Leptoseris,explanata,Leptoseris,"Yabe & Sugiyama, 1941",,No,No,No,No,LC,-,VU,"1987 (ZRC, 19870418)",2020 (Kikuzawa et al),5,10,30,-74.9197861,-0.02351,0.122195,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, foliose, encrusting.
+Gonochoric broadcaster.
+
+Can colonise artificial structures.",,,,,,,X (Raffles),X,,X,X,X,"Not found at many sites. Population decline not significant.
+
+Documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",,Iffah(LKCNHM); Loo & Chou 1995; Huang et al 2009; Wong et al 2018; Kikuzawa et al 2020
+Leptoseris hawaiiensis,Cnidaria,Anthozoa,Scleractinia,Agaricidae,Leptoseris,hawaiiensis,Leptoseris,"Vaughan, 1907",Porcelain coral,No,No,No,No,LC,-,DD,"1987 (ZRC, 19870212)","1987 (ZRC, 19870212)",1,10,30,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies encrusting. 
+Gonochoric broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Iffah(LKCNHM)
+Leptoseris scabra,Cnidaria,Anthozoa,Scleractinia,Agaricidae,Leptoseris,scabra,Leptoseris,"Vaughan, 1907",Rough plate coral,No,No,No,No,LC,-,DD,"1988 (ZRC, 19881206)",2020 (Ng et al),4,10,30,-100,-0.00906,0.053032,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies foliose, encrusting.
+Gonochoric broadcaster. ",,,,,,,"X (Raffles)
+",,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Iffah(LKCNHM); Loo & Chou 1995; Huang et al 2009; Ng et al 2020
+Gardineroseris planulata,Cnidaria,Anthozoa,Scleractinia,Agariciidae,Gardineroseris,planulata,Gardineroseris,"(Dana, 1846) ",Honeycomb coral,No,No,No,No,LC,-,DD,1995 (as Gardineroseris sp.; Loo & Chou),1995 (as Gardineroseris sp.; Loo & Chou),1,10,30,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive. 
+Gonochoric broadcaster. ",,,,X (NParks species recovery progr),,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Loo & Chou 1995
+Pavona cactus,Cnidaria,Anthozoa,Scleractinia,Agariciidae,Pavona,cactus,Pavona,"(Forskål, 1775)",Cactus coral,No,No,No,No,VU,-,VU,1878 (as Leptoseris venusta; Brüggemann),2020 (Kikuzawa et al),13,10,30,-96.82539683,-0.16085,0.000216,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies foliose, encrusting.
+Gonochoric broadcaster.
+
+Can colonise artificial structures.","RL-W, TPT-SW",,X (SIMP),,,,"X (Raffles)
+X (SultanShoal)",X,,X,X,X,"Population decline significant.
+Not found at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",,"Studer 1881; Iffah(LKCNHM); Loo & Chou 1995; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Kikuzawa et al 2020
+
+Goh et al 1989 (anomuran symbionts)"
+Pavona clavus,Cnidaria,Anthozoa,Scleractinia,Agariciidae,Pavona,clavus,Pavona,"Dana, 1846",Shoulderblade coral,No,No,No,No,LC,-,DD,1995 (Loo & Chou),1995 (Loo & Chou),1,10,30,-100,-0.00114,0.413527,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies encrusting.
+Gonochoric broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Loo & Chou 1995
+Pavona decussata,Cnidaria,Anthozoa,Scleractinia,Agariciidae,Pavona,decussata,Pavona,"(Dana, 1846)",Cactus coral,No,No,No,No,VU,-,NT,1881 (as Pavonia crassa; Studer),2021 (Lee et al),25,10,30,-73.04672897,-0.31285,0.000901,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive, foliose, encrusting.
+Gonochoric broadcaster.
+
+Can colonise artificial structures.",,"HA-NE, HA-W, HP-E, PSL-SE, RL-W, SE-SW, SJ-NW, SS-S, TM-S, TPT-SW",X (SIMP),"X (Chou et al, subtidal seawall transplant)
+X (Chou et al, subtidal seawall transplant)",,,X (Raffles),X,,,,X,"Population decline significant
+
+Common at many sites. 
+
+Documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",Also documented on reef flats (Lee et al 2021),"Studer 1881; Purchon 1956; Chuang 1961; Chou & Wong 1986; Iffah(LKCNHM); Loo & Chou 1995; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Kikuzawa et al 2020; Lee et al 2021
+
+Goh et al 1989 (anomuran symbionts); Chou et al 2017 (effectiveness of reef restoration); Chou et al 2018 (relevance of reef restoration)"
+Pavona explanulata,Cnidaria,Anthozoa,Scleractinia,Agariciidae,Pavona,explanulata,Pavona,"(Lamarck, 1816)",Peacock coral,No,No,No,No,LC,-,LC,"1985 (ZRC, 19850812)",2020 (Kikuzawa et al),11,10,30,86.24486442,0.022746,0.66881,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive, foliose, encrusting. 
+Gonochoric broadcaster.
+
+Can colonise artificial structures.",,"HA-SE, HP-W, JO-S, KU-NE, LZ-SW, PSD-NW, PSD-SW, RL-W, SE-NW, SE-SW, SJ-S, TKK-W, TM-S, TPT-SW",X (SIMP),,,,X (SultanShoal),,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).",,Iffah(LKCNHM); Loo & Chou 1995; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Kikuzawa et al 2020
+Pavona frondifera,Cnidaria,Anthozoa,Scleractinia,Agariciidae,Pavona,frondifera,Pavona,"(Lamarck, 1816)",Leaf coral,No,No,No,No,LC,-,LC,1881 (as Pavonia frondifera; Studer),2020 (Kikuzawa et al),28,7,21,88.48552339,0.106744,0.017123,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies foliose.
+Gonochoric broadcaster.
+
+Can colonise artificial structures.",,"CY-S, HA-W, JO-S, KU-NE, PSD-NW, PSD-SW, RL-W, SE-SW, SJ-NW, SS-N, SS-S, TM-S, TPT-SW",X (SIMP),"
+X (Chou et al, subtidal seawall transplant)",,,"X (Raffles)
+X (SultanShoal)",,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).",,"Studer 1881; Purchon 1956; Chuang 1961; Chou & Teo 1983; Chou & Wong 1986; Iffah(LKCNHM); Loo & Chou 1995; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Lim et al 2020; Kikuzawa et al 2020
+
+Goh et al 1989 (anomuran symbionts); Chou et al 2018 (relevance of reef restoration); Loo et al 2020 (optimal temperature)"
+Pavona varians,Cnidaria,Anthozoa,Scleractinia,Agariciidae,Pavona,varians,Pavona,"(Verrill, 1864)",Fungus coral,No,No,No,No,LC,-,VU,1995 (Loo & Chou),2019 (Chow et al),4,10,30,-81.13989637,-0.01189,0.406409,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies submassive, foliose.
+Gonochoric broadcaster.","RL-W, SJ-NW",,,,,,X (Raffles),X,,X,,X,"Not found at many sites. Population decline not significant.
+
+Documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",,Loo & Chou 1995; Huang et al 2009; Wong et al 2018; Chow et al 2019
+Stylocoeniella armata,Cnidaria,Anthozoa,Scleractinia,Astrocoeniidae,Stylocoeniella,armata,Stylocoeniella,"(Ehrenberg, 1834)",Thorn coral,No,No,No,No,LC,-,DD,"1985 (ZRC, 19850729)",2020 (Ng et al),6,10,30,,0.007318,0.173888,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies encrusting.
+Hermaphroditic brooder.","CY-S, JO-S, TM-S, TPT-SW",,X (SIMP),,,,X (Raffles),,,,,,"DD, as % cover change only quantified for < 10 years. 
+",,Iffah(LKCNHM); Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020
+Coscinaraea columna,Cnidaria,Anthozoa,Scleractinia,Coscinaraeidae,Coscinaraea,columna,Coscinaraea,"(Dana, 1846)",,No,No,No,No,LC,-,LC,"1985 (ZRC, 19850722)",2020 (Ng et al),7,10,30,576.5217391,0.05797,3.28E-05,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive, foliose, encrusting.
+Gonochoric broadcaster.",,"HA-NE, LZ-SW, PSD-NW, PSD-SW, RL-W, SJ-S",X (SIMP),X (NParks species recovery progr),,,"X (Raffles)
+X (SultanShoal)",,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",,Iffah(LKCNHM); Loo & Chou 1995; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020
+Coscinaraea exesa,Cnidaria,Anthozoa,Scleractinia,Coscinaraeidae,Coscinaraea,exesa,Coscinaraea,"(Dana, 1846)",Wrinkle coral,No,No,No,No,LC,-,DD,1995 (Loo & Chou),1995 (Loo & Chou),1,10,30,-100,-0.00117,0.342631,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, encrusting.
+Gonochoric broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Loo & Chou 1995
+Cladopsammia gracilis,Cnidaria,Anthozoa,Scleractinia,Dendrophylliidae,Cladopsammia,gracilis,Tubastraea,"(Milne Edwards & Haime, 1848)",,No,No,No,No,-,-,DD,1995 (as Dendrophyllia gracilis; Loo & Chou),1995 (as Dendrophyllia gracilis; Loo & Chou),1,Not stated,-,-100,-0.00051,0.467971,,,,,,X,X,,X,,,,,,X,,,X,,"Azooxanthellate.
+Gonochoric brooder.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Loo & Chou 1995
+Duncanopsammia peltata,Cnidaria,Anthozoa,Scleractinia,Dendrophylliidae,Duncanopsammia,peltata,Turbinaria,"(Esper, 1790)",Pagoda coral,No,No,No,No,VU,-,LC,1881 (as Turbinaria peltata; Studer),2021 (as Turbinaria peltata; Lee et al),23,10,30,410.2693603,0.037592,0.379742,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies foliose, encrusting.
+Gonochoric broadcaster.
+
+Can colonise artificial structures.",,"HA-NE, JO-S, KU-NE, LA-S, LZ-E, LZ-SW, PSD-NW, PSD-SW, PSL-SE, RL-W, SJ-NW, SJ-S, SS-N, SS-S, TKK-W, TM-E, TM-S",X (SIMP),"X (Ng et al, ex situ nursery)
+X (Chou et al, subtidal seawall transplant)
+X (Chou et al, subtidal seawall transplant)",,,"X (Raffles)
+X (SultanShoal)",,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).","Also documented on reef flats (Lee et al 2021).
+
+Changed genus from Turbinaria (Rowlett et al 2020).","Studer 1881; Purchon 1956; Chuang 1961; Chou & Teo 1983; Iffah(LKCNHM); Loo & Chou 1995; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Lim et al 2020; Kikuzawa et al 2020; Lee et al 2021
+
+Chou & Ng 2010 (atypical morphology); Ng et al 2012 (ex situ coral nursery); Chou et al 2017 (effectiveness of reef restoration); Chou et al 2018 (relevance of reef restoration); Afiq-Rosli et al 2019 (maximising genetic diversity); Ng et al 2019b (skeletal density)"
+Tubastraea aurea,Cnidaria,Anthozoa,Scleractinia,Dendrophylliidae,Tubastraea,aurea,Tubastraea,"(Quoy & Gaimard, 1833)",,No,No,No,No,-,-,DD,1956 (as Tubastrea aurea; Purchon),1995 (Loo & Chou),5,Not stated,-,,,,,,,,,X,X,,X,,,,,,X,,,X,,"Azooxanthellate.
+Gonochoric brooder.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,"As Tubastrea/Tubastraea aurea:
+Purchon 1956; Chuang 1961; Chuang 1977; Chou & Wong 1986; Loo & Chou 1995
+"
+Tubastraea coccinea,Cnidaria,Anthozoa,Scleractinia,Dendrophylliidae,Tubastraea,coccinea,Tubastraea,"Lesson, 1830",Orange cup coral,No,No,No,No,-,-,DD,1881 (as Coenopsammia cocinnea; Studer),2017 (BioBlitz_SIMP2017),0,Not stated,-,,,,,,,,,X,X,,X,,,,,,X,,,X,,"Azooxanthellate.
+Gonochoric brooder.",,,X (SIMP),,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,"Studer 1881; Purchon 1956; Chuang 1961; Chuang 1977; Chou & Wong 1986; Loo & Chou 1995
+
+As Tubastraea coccinea:
+BioBlitz_SIMP2017"
+Tubastraea diaphana,Cnidaria,Anthozoa,Scleractinia,Dendrophylliidae,Tubastraea,diaphana,Tubastraea,"(Dana, 1846)",Black cup coral,No,No,No,No,-,-,LC,1956 (as Tubastrea diaphana; Purchon),2020 (Lim et al),4,Not stated,-,,0.001499,0.084987,,,,,,X,X,,X,,,,,,X,,,X,,"Azooxanthellate.
+Gonochoric brooder.",RL-W,,X (SIMP),,,,,,,,,,"Population decline not observed and further decline not predicted.
+
+Common but not usually documented in surveys.",,Purchon 1956; Chuang 1961; BioBlitz_SIMP2017; Lim et al 2020
+Tubastraea micranthus,Cnidaria,Anthozoa,Scleractinia,Dendrophylliidae,Tubastraea,micranthus,Tubastraea,"(Ehrenberg, 1834)",Black turret coral,No,No,No,No,-,-,LC,1881 (as Coenopsammia equiserialis; Studer),2017 (BioBlitz_SIMP2017),7,Not stated,-,-91.54285714,-0.03948,0.037531,,,,,,X,X,,X,,,,,,X,,,X,,"Azooxanthellate.
+Gonochoric brooder.","PSD-NW, TKK-W",,X (SIMP),,,,,,,,,,"Population decline significant.
+
+Common but not usually documented in surveys.",,Studer 1881; Purchon 1956; Chuang 1961; Iffah(LKCNHM); Loo & Chou 1995; BioBlitz_SIMP2017
+Turbinaria frondens,Cnidaria,Anthozoa,Scleractinia,Dendrophylliidae,Turbinaria,frondens,Turbinaria,"(Dana, 1846)",Yellow cup coral,No,No,No,No,LC,-,LC,1995 (Loo & Chou),2020 (Kikuzawa et al),5,10,30,256.8627451,-0.00822,0.58947,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies foliose.
+Gonochoric broadcaster.
+
+Can colonise artificial structures.","TM-E, TM-S",,,,,,,,,,,,"Not found at many sites. Population decline not significant.
+
+Documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",,Loo & Chou 1995; Wong et al 2018; Chow et al 2019; Lim et al 2020; Kikuzawa et al 2020
+Turbinaria irregularis,Cnidaria,Anthozoa,Scleractinia,Dendrophylliidae,Turbinaria,irregularis,Turbinaria,"Bernard, 1896",,No,No,No,No,LC,-,DD,"1985 (ZRC, 19850819)",2020 (Lim et al),3,10,30,-100,-0.01144,0.413528,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies foliose.
+Gonochoric broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Iffah(LKCNHM); Loo & Chou 1995; Lim et al 2020
+Turbinaria mesenterina,Cnidaria,Anthozoa,Scleractinia,Dendrophylliidae,Turbinaria,mesenterina,Turbinaria,"(Lamarck, 1816)",Vase coral,No,No,No,No,VU,-,LC,2009 (Huang et al),2021 (Lee et al),13,10,30,,0.158891,8.70E-05,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies foliose, encrusting.
+Gonochoric broadcaster.
+
+Can colonise artificial structures.",,"CY-S, HA-SE, HA-W, HP-E, JO-S, KU-NE, LA-S, LZ-E, PSD-NW, PSL-SE, RL-W, SE-NW, SE-SW, SJ-NW, SJ-S, SS-N, SS-S, TKK-W, TM-E, TM-S, TPT-SW",X (SIMP),"X (Chou et al, subtidal seawall transplant)
+
+X (Chou et al, subtidal seawall transplant)",,,"X (Raffles)
+X (SultanShoal)",,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",Also documented on reef flats (Lee et al 2021),"Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Lim et al 2020; Kikuzawa et al 2020; Lee et al 2021
+
+Chou et al 2017 (effectiveness of reef restoration); Chou et al 2018 (relevance of reef restoration); Quek & Huang 2019 (phylotranscriptomic analysis); Loo et al 2020 (optimal temperature); Quek et al 2020 (baits)"
+Turbinaria radicalis,Cnidaria,Anthozoa,Scleractinia,Dendrophylliidae,Turbinaria,radicalis,Turbinaria,"Bernard, 1896",,No,No,No,No,NT,-,DD,1995 (Loo & Chou),1995 (Loo & Chou),1,10,30,-100,-0.00351,0.076727,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies foliose, encrusting.
+Gonochoric broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Loo & Chou 1995
+Turbinaria reniformis,Cnidaria,Anthozoa,Scleractinia,Dendrophylliidae,Turbinaria,reniformis,Turbinaria,"Bernard, 1896",Yellow scroll coral,No,No,No,No,VU,-,NT,1995 (Loo & Chou),2020 (Kikuzawa et al),5,10,30,-43.69189907,0.11405,0.09152,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies foliose, encrusting.
+Gonochoric broadcaster.
+
+Can colonise artificial structures.",,"HA-NE, HA-W, KU-NE, LZ-E, PSD-NW, RL-W, SE-NW, SE-SW, TKK-W, TM-E, TM-S",X (SIMP),,,,,X,,,,X,"Not found at many sites. Population decline not documented.
+
+Documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",,Loo & Chou 1995; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Kikuzawa et al 2020
+Turbinaria stellulata,Cnidaria,Anthozoa,Scleractinia,Dendrophylliidae,Turbinaria,stellulata,Turbinaria,"(Lamarck, 1816)",,No,No,No,No,VU,-,DD,"1987 (ZRC.1987.2174, Huang et al)",2020 (Kikuzawa et al),5,10,30,,0.002446,0.913972,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies foliose, encrusting.
+Gonochoric broadcaster.
+
+Can colonise artificial structures.","KU-NE, SS-N, SS-S",,,"
+X (Chou et al, subtidal seawall transplant)",,,X (SultanShoal),,,,,,"DD, as % cover change only quantified for < 10 years. 
+",,"Huang et al 2009(ZRC.1987.2174); Wong et al 2018; Ng et al 2020; Kikuzawa et al 2020
+
+Chou et al 2018 (relevance of reef restoration)"
+Diploastrea heliopora,Cnidaria,Anthozoa,Scleractinia,Diploastreidae,Diploastrea,heliopora,Diploastrea,"
+(Lamarck, 1816)",Double-star coral,No,No,No,No,NT,-,LC,1956 (Purchon),2021 (Lee et al),32,20,60,82.2278588,0.542221,0.000431,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive, encrusting.
+Gonochoric broadcaster.
+
+Can colonise artificial structures.",,"CY-S, HA-W, HP-E, HP-W, JO-S, KU-NE, LA-S, LZ-E, PSD-NW, PSL-SE, RL-W, SE-NW, SE-SW, SJ-NW, SS-S, TKK-W, TPT-SW",X (SIMP),"X (Bongiorni et al, in situ nursery)
+X (Ng et al, ex situ nursery & intertidal seawall transplant)",,,"X (Raffles)
+X (SultanShoal)",,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",Also documented on reef flats (Lee et al 2021),"Purchon 1956; Chuang 1961; Chou & Teo 1983; Iffah(LKCNHM); Loo & Chou 1995; Guest et al 2005b; Ang 2007; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Lim et al 2020; Kikuzawa et al 2020; Lee et al 2021
+
+Todd et al. 2013 (colour changes); Huang et al 2009b (pervasive paraphyly); Todd et al 2002a, 2002b (plastic corals); Todd et al 2004a, 2004b, 2004c (flesh or bone; aquarium expt; genotype x envir); Lam et al 2006 (ITS); Bongiorni et al 2011 (in situ coral nursery); Lui et al 2012 (sediment rejection); Guest et al 2012a (sexual systems); Ng et al 2015 (enhancing seawall biodiversity); Tanzil et al 2016 (Symbiodinium diversity); Ng et al 2019b (skeletal density); Quek & Huang 2019 (phylotranscriptomic analysis); Loo et al 2020 (optimal temperature); Quek et al 2020 (baits)"
+Euphyllia glabrescens,Cnidaria,Anthozoa,Scleractinia,Euphylliidae,Euphyllia,glabrescens,Euphyllia,"(Chamisso & Eysenhardt, 1821)",Torch anchor coral,No,No,No,No,NT,-,DD,1881 (as Euphyllia turgida; Studer),2020 (Lim et al),7,10,30,-100,-0.00966,0.045809,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies submassive.
+Hermaphroditic brooder.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Studer 1881; Purchon 1956; Chuang 1961; Iffah(LKCNHM); Loo & Chou 1995; Lim et al 2020
+Fimbriaphyllia ancora,Cnidaria,Anthozoa,Scleractinia,Euphylliidae,Fimbriaphyllia,ancora,Euphyllia,"(Veron & Pichon, 1980)",Brain anchor coral,No,No,No,No,VU,-,LC,1995 (as Euphyllia ancora; Loo & Chou),2020 (Lim et al),10,10,30,-35.29626253,-0.01084,0.708081,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive.
+Gonochoric broadcaster.",,"HA-W, JO-S, KU-NE, LZ-E, PSD-SW, PSL-SE, RL-W, SE-SW, TKK-W, TPT-SW",X (SIMP),,,,X (Raffles),,,,,,"Common at many sites. Population decline not significant
+
+Documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",,"Loo & Chou 1995; Guest et al 2005b; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Lim et al 2020
+
+Quek & Huang 2019 (phylotranscriptomic analysis); Quek et al 2020 (baits)"
+Fimbriaphyllia divisa,Cnidaria,Anthozoa,Scleractinia,Euphylliidae,Fimbriaphyllia,divisa,Euphyllia,"(Veron & Pichon, 1980)",Frogspawn coral,No,No,No,No,NT,-,VU,"1986 (ZRC, 19860506)",2019 (Chow et al),8,10,30,-67.93138244,-0.06807,0.051408,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive.","HA-SE, KU-NE, SJ-S",,X (SIMP),,,,X (Raffles),X,,X,,X,"Not found at many sites. Population decline not significant
+
+Documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",,Iffah(LKCNHM); Loo & Chou 1995; Guest et al 2005b; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019
+Fimbriaphyllia paraancora,Cnidaria,Anthozoa,Scleractinia,Euphylliidae,Fimbriaphyllia,paraancora,Euphyllia,"(Veron, 1990)",Branching anchor coral,No,No,No,No,VU,-,DD,2020 (Lim et al),2020 (Lim et al),1,10,30,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,"As Euphyllia paraancora:
+Lim et al 2020"
+Fimbriaphyllia paradivisa,Cnidaria,Anthozoa,Scleractinia,Euphylliidae,Fimbriaphyllia,paradivisa,Euphyllia,"(Veron, 1990)",Frogspawn coral,No,No,No,No,VU,-,DD,2020 (Ng et al),2020 (Lim et al),2,10,30,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,"As Euphyllia paradivisa:
+Ng et al 2020; Lim et al 2020"
+Galaxea astreata,Cnidaria,Anthozoa,Scleractinia,Euphylliidae,Galaxea,astreata,Galaxea,"(Lamarck, 1816)",Galaxy coral,No,No,No,No,VU,-,LC,1881 (as Galaxea clavus; Studer),2020 (Lim et al),12,8,24,0,0.076157,0.382847,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive, encrusting. 
+Gonochoric broadcaster. ",,"HA-NE, HA-W, HP-E, HP-W, KU-NE, LZ-E, PSD-NW, RL-W, SE-SW, SJ-S, SS-S, TKK-W, TM-S, TPT-SW",X (SIMP),,,,X (Raffles),,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",,"Studer 1881; Iffah(LKCNHM); Loo & Chou 1995; Guest et al 2005b; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Lim et al 2020
+
+Quek & Huang 2019 (phylotranscriptomic analysis); Quek et al 2020 (baits)"
+Galaxea fascicularis,Cnidaria,Anthozoa,Scleractinia,Euphylliidae,Galaxea,fascicularis,Galaxea,"(Linnaeus, 1767)",Galaxy coral,No,No,No,No,NT,-,LC,1881 (Studer),2020 (Kikuzawa et al),17,10,30,11.92295934,0.174408,0.080487,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive, encrusting. 
+Gonochoric broadcaster. 
+
+Can colonise artificial structures.",,"CY-S, HA-NE, HA-SE, HA-W, HP-E, JO-S, KU-NE, PSD-NW, PSD-SW, PSL-SE, RL-W, SE-NW, SE-SW, SJ-NW, SS-N, SS-S, TPT-SW",X (SIMP),"X (Ng et al, ex situ nursery)",,,"X (Raffles)
+X (SultanShoal)",,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",,"Studer 1881; Purchon 1956; Chuang 1961; Chou & Teo 1983; Chou & Wong 1986; Iffah(LKCNHM); Loo & Chou 1995; Guest et al 2005b; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Kikuzawa et al 2020
+
+Ng et al 2012 (ex situ coral nursery); Junjie et al 2014 (sediments on coral energetics)"
+Ctenactis albitentaculata,Cnidaria,Anthozoa,Scleractinia,Fungiidae,Ctenactis,albitentaculata,Fungia,"Hoeksema, 1989",Feather mushroom coral,No,No,No,No,NT,-,DD,1860s (record consolidated by Hoeksema & Koh 2009),1986-91 (record consolidated by Hoeksema & Koh 2009),1,10,30,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,"Free-living.
+Gonochoric broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Hoeksema & Koh 2009
+Ctenactis crassa,Cnidaria,Anthozoa,Scleractinia,Fungiidae,Ctenactis,crassa,Fungia,"(Dana, 1846)",Feather mushroom coral,No,No,No,No,LC,-,NT,1986-91 (record consolidated by Hoeksema & Koh 2009),2020 (Ng et al),3,10,30,-56.16438356,-0.00034,0.943537,,,,,,X,X,X,X,,,,,X,X,,,X,,"Free-living.
+Gonochoric broadcaster.","KU-NE, RL-W",,,,,,X (SultanShoal),X,,,,X,"Not found at many sites. Population decline not significant
+
+Documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",,Hoeksema & Koh 2009; Loo & Chou 1995; Ng et al 2020
+Ctenactis echinata,Cnidaria,Anthozoa,Scleractinia,Fungiidae,Ctenactis,echinata,Fungia,"(Pallas, 1766)",Feather mushroom coral,No,No,No,No,LC,-,LC,1860s (record consolidated by Hoeksema & Koh 2009),2020 (Prasetia et al),31,10,30,-1.082621083,0.032729,0.075563,,,,,,X,X,X,X,,,,,X,X,,,X,,"Free-living.
+Gonochoric broadcaster.",,"CY-S, HA-W, HP-E, HP-W, JO-S, KU-NE, LA-S, PSD-NW, PSL-SE, RL-W, SE-NW, SE-SW, SS-N, TM-E, TPT-SW",X (SIMP),,,,"X (Raffles)
+X (SultanShoal)",,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",,Studer 1881; Purchon 1956; Chuang 1961; Chou & Teo 1983; Hoeksema & Koh 2009; Iffah(LKCNHM); Loo & Chou 1995; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Lim et al 2020; Prasetia et al 2020
+Cycloseris costulata,Cnidaria,Anthozoa,Scleractinia,Fungiidae,Cycloseris,costulata,Fungia,"(Ortmann, 1889)",,No,No,No,No,LC,-,DD,"1987 (as ?Cycloseris marginata; ZRC, 19870603)",1995 (Loo & Chou),3,7,21,-100,-0.00042,0.231439,,,,,,X,X,X,X,,,,,X,X,,,X,,"Free-living.
+Gonochoric broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Iffah(LKCNHM); Loo & Chou 1995
+Cycloseris explanulata,Cnidaria,Anthozoa,Scleractinia,Fungiidae,Cycloseris,explanulata,Psammocora,"(van der Horst, 1922)",,No,No,No,No,LC,-,DD,1995 (as Psammocora explanulata; Loo & Chou),2020 (Kikuzawa et al),2,10,30,-100,-0.00263,0.313323,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies foliose. 
+Gonochoric broadcaster.
+
+Can colonise artificial structures.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Loo & Chou 1995; Kikuzawa et al 2020
+Cycloseris mokai,Cnidaria,Anthozoa,Scleractinia,Fungiidae,Cycloseris,mokai,Lithophyllon,"(Hoeksema, 1989)",,No,No,No,No,LC,-,DD,"1988 (ZRC, 19880900)",1995 (Loo & Chou),3,7,21,-100,-0.01057,0.051451,,,,,,X,X,X,X,,,,,X,X,,,X,,"Free-living.
+Gonochoric broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Iffah(LKCNHM); Loo & Chou 1995
+Cycloseris vaughani,Cnidaria,Anthozoa,Scleractinia,Fungiidae,Cycloseris,vaughani,Fungia,"(Boschma, 1923)",,No,No,No,No,LC,-,DD,1995 (as Fungia vaughani; Loo & Chou),1995 (as Fungia vaughani; Loo & Chou),1,5,15,-100,-0.00088,0.313323,,,,,,X,X,X,X,,,,,X,X,,,X,,"Free-living.
+Gonochoric broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Loo & Chou 1995
+Danafungia horrida,Cnidaria,Anthozoa,Scleractinia,Fungiidae,Danafungia,horrida,Fungia,"(Dana, 1846)",,No,No,No,No,LC,-,DD,1881 (as Fungia danai; Studer),1995 (Loo & Chou),10,10,30,-100,-0.01706,0.006117,,,,,,X,X,X,X,,,,,X,X,,,X,,"Free-living.
+Gonochoric broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Studer 1881; Hoeksema & Koh 2009; Iffah(LKCNHM); Loo & Chou 1995
+Danafungia scruposa,Cnidaria,Anthozoa,Scleractinia,Fungiidae,Danafungia,scruposa,Fungia,"(Klunzinger, 1879)",,No,No,No,No,LC,-,LC,1860s (record consolidated by Hoeksema & Koh 2009),2020 (Prasetia et al),33,10,30,-32.20472441,-3.23E-05,0.997023,,,,,,X,X,X,X,,,,,X,X,,,X,,"Free-living.
+Gonochoric broadcaster.","HA-NE, HA-W, HP-E, RL-W",,X (SIMP),,,,X (Raffles),,,,,,"Population decline not significant.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",,Hoeksema & Koh 2009; Iffah(LKCNHM); Loo & Chou 1995; Huang et al 2009; Wong et al 2018; Chow et al 2019; Prasetia et al 2020
+Fungia fungites,Cnidaria,Anthozoa,Scleractinia,Fungiidae,Fungia,fungites,Fungia,"(Linnaeus, 1758)",Common mushroom,No,No,No,No,NT,-,LC,1860s (record consolidated by Hoeksema & Koh 2009),2020 (Prasetia et al),56,10,30,-70.83333333,-0.07236,0.005124,,,,,,X,X,X,X,,,,,X,X,,,X,,"Free-living.
+Gonochoric broadcaster.",,"HA-NE, HP-E, KKU-NE, PSD-NW, RL-W, SE-SW, SJ-NW, SS-S, TKK-W, TPT-SW",X (SIMP),,,,X (Raffles),,,,,,"Population decline appears significant but individuals are not usually recorded during LIT surveys. 
+
+Thus further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",Surveys not done where the species is usually found,Studer 1881; Purchon 1956; Chuang 1961; Chou & Teo 1983; Chou & Wong 1986; Hoeksema & Koh 2009; Iffah(LKCNHM); Loo & Chou 1995; Huang et al 2009; Wong et al 2018; Chow et al 2019; Prasetia et al 2020
+Heliofungia actiniformis,Cnidaria,Anthozoa,Scleractinia,Fungiidae,Heliofungia,actiniformis,Heliofungia,"(Quoy & Gaimard, 1833)",Sunflower mushroom coral,No,No,No,No,VU,-,NT,1890s (record consolidated by Hoeksema & Koh 2009),2020 (Prasetia et al),12,10,30,-92.70833333,-0.01002,0.008772,,,,,,X,X,X,X,,,,,X,X,,,X,,"Free-living.
+Gonochoric broadcaster.",HA-NE,,,,,,X (Raffles),X,,,,X,"Population decline significant.
+Not found at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",,Chuang 1961; Hoeksema & Koh 2009; Iffah(LKCNHM); Loo & Chou 1995; Huang et al 2009; Wong et al 2018; Lim et al 2020; Prasetia et al 2020
+Herpolitha limax,Cnidaria,Anthozoa,Scleractinia,Fungiidae,Herpolitha,limax,Herpolitha,"(Esper, 1797) ",Tongue mushroom coral,No,No,No,No,LC,-,LC,1860s (record consolidated by Hoeksema & Koh 2009),2020 (Prasetia et al),40,10,30,53.83064516,0.041426,0.01654,,,,,,X,X,X,X,,,,,X,X,,,X,,"Free-living.
+Gonochoric broadcaster. 
+
+Can colonise artificial structures.",,"HA-NE, HA-SE, HP-E, JO-S, LA-S, PSD-NW, PSD-SW, RL-W, SE-SW, SS-S, TPT-SW",X (SIMP),,,,"X (Raffles)
+X (SultanShoal)",,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",,"Studer 1881; Purchon 1956; Chuang 1961; Hoeksema & Koh 2009; Chou & Wong 1986; Iffah(LKCNHM); Loo & Chou 1995; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Lim et al 2020; Kikuzawa et al 2020; Prasetia et al 2020
+
+Quek & Huang 2019 (phylotranscriptomic analysis); Quek et al 2020 (baits)"
+Lithophyllon concinna,Cnidaria,Anthozoa,Scleractinia,Fungiidae,Lithophyllon,concinna,Fungia,"(Verrill, 1864)",,No,No,No,No,LC,-,LC,1860s (record consolidated by Hoeksema & Koh 2009),2020 (Prasetia et al),43,7,21,21.91666667,0.014291,0.093354,,,,,,X,X,X,X,,,,,X,X,,,X,,"Free-living.
+Gonochoric broadcaster.",,"HA-W, HP-E, JO-S, KU-NE, PSD-NW, PSL-SE, RL-W, SS-S, TPT-SW",X (SIMP),,,,X (SultanShoal),,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",,"Hoeksema & Koh 2009; Loo & Chou 1995; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Ng et al 2020; Prasetia et al 2020
+"
+Lithophyllon repanda,Cnidaria,Anthozoa,Scleractinia,Fungiidae,Lithophyllon,repanda,Fungia,"(Dana, 1846)",,No,No,No,No,LC,-,LC,1860s (record consolidated by Hoeksema & Koh 2009),2020 (Prasetia et al),53,7,21,-11.15633673,0.021496,0.312418,,,,,,X,X,X,X,,,,,X,X,,,X,,"Free-living.
+Gonochoric broadcaster.",,"HA-NE, HA-W, HP-E, KU-NE, PSD-NW, PSD-SW, PSL-SE, RL-W, SE-SW, SS-N, SS-S, TPT-SW",X (SIMP),,,,"X (Raffles)
+X (SultanShoal)",,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",,Studer 1881; Purchon 1956; Chuang 1961; Hoeksema & Koh 2009; Loo & Chou 1995; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Prasetia et al 2020
+Lithophyllon scabra,Cnidaria,Anthozoa,Scleractinia,Fungiidae,Lithophyllon,scabra,Fungia,"(Döderlein, 1901)",,No,No,No,No,LC,-,LC,1860s (record consolidated by Hoeksema & Koh 2009),2020 (Prasetia et al),38,8,24,-34.31635389,-0.00314,0.754867,,,,,,X,X,X,X,,,,,X,X,,,X,,"Free-living.
+Gonochoric broadcaster.",,"HA-W, HP-W, JO-S, PSD-NW,RL-W, SE-NW, SE-SW, SS-S",X (SIMP),,,,X (SultanShoal),,,,,,"Population decline not significant.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",,"Hoeksema & Koh 2009; Loo & Chou 1995; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Prasetia et al 2020
+
+Loh et al 2004 (photophysiology)"
+Lithophyllon undulatum,Cnidaria,Anthozoa,Scleractinia,Fungiidae,Lithophyllon,undulatum,Lithophyllon,"Rehberg, 1892",,No,No,No,No,NT,-,LC,1986-91 (record consolidated by Hoeksema & Koh 2009),2020 (Lim et al),10,10,30,6534.666667,0.104583,9.18E-07,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies foliose.
+Gonochoric broadcaster. 
+
+Can colonise artificial structures.",,"CY-S, HA-SE, HA-W, HP-E, HP-W, KU-NE, LA-S, LZ-E, LZ-SW, PSD-NW, PSD-SW, PSL-SE, RL-W, SE-SW, SJ-NW, SJ-S, SS-N, SS-S, TKK-W, TM-E, TM-S, TPT-SW",X (SIMP),"
+X (Chou et al, subtidal seawall transplant)",,,"X (Raffles)
+X (SultanShoal)",,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",,"Hoeksema & Koh 2009; Loo & Chou 1995; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Kikuzawa et al 2020; Lim et al 2020
+
+Chou et al 2018 (relevance of reef restoration)"
+Lobactis scutaria,Cnidaria,Anthozoa,Scleractinia,Fungiidae,Lobactis,scutaria,Fungia,"(Lamarck, 1801)",,No,No,No,No,LC,-,DD,1881 (Studer),1995 (Loo & Chou),2,10,30,-100,-0.00408,0.285743,,,,,,X,X,X,X,,,,,X,X,,,X,,"Free-living.
+Gonochoric broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Studer 1881; Loo & Chou 1995
+Pleuractis granulosa,Cnidaria,Anthozoa,Scleractinia,Fungiidae,Pleuractis,granulosa,Fungia,"(Klunzinger, 1879)",,No,No,No,No,LC,-,DD,1986-91 (consolidated by Hoeksema & Koh 2009),1986-91 (consolidated by Hoeksema & Koh 2009),1,7,21,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,"Free-living.
+Gonochoric broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Hoeksema & Koh 2009
+Pleuractis moluccensis,Cnidaria,Anthozoa,Scleractinia,Fungiidae,Pleuractis,moluccensis,Fungia,"(Van der Horst, 1919)",,No,No,No,No,LC,-,NT,1860s (record consolidated by Hoeksema & Koh 2009),2020 (Prasetia et al),34,10,30,-100,-0.02736,0.000219,,,,,,X,X,X,X,,,,,X,X,,,X,,"Free-living.
+Gonochoric broadcaster.",,,X (SIMP),,,,,X,,,,X,"Population decline significant.
+Not found at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",,Hoeksema & Koh 2009; Iffah(LKCNHM); Loo & Chou 1995; BioBlitz_SIMP2017; Chow et al 2019; Prasetia et al 2020
+Pleuractis paumotensis,Cnidaria,Anthozoa,Scleractinia,Fungiidae,Pleuractis,paumotensis,Fungia,"(Stutchbury, 1833)",Elongate mushroom coral,No,No,No,No,LC,-,NT,1860s (record consolidated by Hoeksema & Koh 2009),2020 (Prasetia et al),27,8,24,-86.30872483,-0.01424,0.0594,,,,,,X,X,X,X,,,,,X,X,,,X,,"Free-living.
+Gonochoric broadcaster.","HA-W, RL-W",,X (SIMP),,,,X (Raffles),X,,,,X,"Not found at many sites. Population decline not significant.
+
+Documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",,Hoeksema & Koh 2009; Iffah(LKCNHM); Loo & Chou 1995; Huang et al 2009; BioBlitz_SIMP2017; Chow et al 2019; Prasetia et al 2020
+Podabacia crustacea,Cnidaria,Anthozoa,Scleractinia,Fungiidae,Podabacia,crustacea,Podabacia,"(Pallas, 1766)",Bracket mushroom coral,No,No,No,No,LC,-,LC,1860s (record consolidated by Hoeksema & Koh 2009),2021 (Lee et al),27,10,30,317.4103139,0.354859,5.39E-07,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies foliose, encrusting. 
+Gonochoric broadcaster.
+
+Can colonise artificial structures.",,"HA-NE, HA-SE, HA-W, HP-E, HP-W, JO-S, KU-NE, LA-S, LZ-E, PSD-NW, PSD-SW, PSL-SE, RL-W, SE-SW, SJ-NW, SJ-S, SS-N, SS-S, TKK-W, TM-E, TM-S, TPT-SW",X (SIMP),"X (Taira et al (b), in situ nursery)
+X (Toh et al (b), in situ nursery & subtidal seawall transplant)
+
+X (Chou et al, subtidal seawall transplant)
+X (Sam et al, in situ nursery)",,,"X (Raffles)
+X (SultanShoal)",,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",Also documented on reef flats (Lee et al 2021),"Studer 1881; Chuang 1961; Chou & Teo 1983; Hoeksema & Koh 2009; Iffah(LKCNHM); Loo & Chou 1995; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Lim et al 2020; Kikuzawa et al 2020; Lee et al 2021
+
+Taira et al 2017b (juv. butterflyfishes inhabiting nursery); Toh et al 2017b (cost-effective seawall biodiversity enhancement); Chou et al 2017 (effectiveness of reef restoration); Sam et al 2018 (cuttlefish egg deposition); Afiq-Rosli et al 2019 (maximising genetic diversity); Ng et al 2019b (skeletal density); Loo et al 2020 (optimal temperature)"
+Podabacia kunzmanni,Cnidaria,Anthozoa,Scleractinia,Fungiidae,Podabacia,kunzmanni,Podabacia,"Hoeksema, 2009",Bracket mushroom coral,No,No,No,No,DD,-,DD,2009 (Hoeksema),2009 (Hoeksema),3,Not stated,-,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies foliose. 
+Gonochoric broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,"Hoeksema & Koh 2009 (Podabacia kunzmanni, new sp.); Hoeksema 2009; Huang et al 2009"
+Podabacia motuporensis,Cnidaria,Anthozoa,Scleractinia,Fungiidae,Podabacia,motuporensis,Podabacia,"Veron, 1990",Bracket mushroom coral,No,No,No,No,NT,-,DD,1986-91 (consolidated by Hoeksema & Koh 2009),2018 (Wong et al),3,10,30,,0.003871,0.151033,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies foliose. 
+Gonochoric broadcaster.","HA-SE, KU-NE",,,,,,,,,,,,"DD, as % cover change only quantified for < 10 years. 
+",,Hoeksema & Koh 2009; Huang et al 2009; Wong et al 2018
+Polyphyllia talpina,Cnidaria,Anthozoa,Scleractinia,Fungiidae,Polyphyllia,talpina,Polyphyllia,"(Lamarck, 1801) ",Mole mushroom coral,No,No,No,No,LC,-,VU,1860s (record consolidated by Hoeksema & Koh 2009),2020 (Prasetia et al),16,10,30,-75,-0.00217,0.381384,,,,,,X,X,X,X,,,,,X,X,,,X,,"Free-living.
+Gonochoric broadcaster.","HA-SE, KU-NE",,X (SIMP),,,,,X,,X,,X,"Not found at many sites. Population decline not significant.
+
+Documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",,Studer 1881; Purchon 1956; Chuang 1961; Chou & Teo 1983; Hoeksema & Koh 2009; Iffah(LKCNHM); Loo & Chou 1995; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Lim et al 2020; Prasetia et al 2020
+Leptastrea purpurea,Cnidaria,Anthozoa,Scleractinia,Incertae sedis,Leptastrea,purpurea,Leptastrea,"(Dana, 1846)",,No,No,No,No,LC,-,LC,1977 (Chuang),2021 (Lee et al),19,10,30,1766.666667,"As L.pruinosa: 0.022662
+
+As L.purpurea: 0.011368","As L.pruinosa: 0.0000848
+
+As L.purpurea: 0.006162",,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies encrusting.
+Gonochoric broadcaster.
+
+Can colonise artificial structures.",,"CY-S, HA-NE, PSD-NW, RL-W, SS-N, SS-S, TM-S",X (SIMP),,,,"X (Raffles)
+X (SultanShoal)",,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+","Synonymised with Leptastrea pruinosa (Arrigoni et al. 2020)
+
+Also documented on reef flats (Lee et al 2021).","As Leptastrea pruinosa:
+Iffah(LKCNHM); Ang 2007; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Lim et al 2020; Lee et al 2021
+
+As Leptastrea purpurea:
+Chuang 1977; Iffah(LKCNHM); Ang 2007; Huang et al 2009; Wong et al 2018; Chow et al 2019; Ng et al 2020; Kikuzawa et al 2020"
+Leptastrea transversa,Cnidaria,Anthozoa,Scleractinia,Incertae sedis,Leptastrea,transversa,Leptastrea,"Klunzinger, 1879",Crust coral,No,No,No,No,LC,-,LC,"1985 (ZRC, 19850726)",2021 (Lee et al),8,10,30,35.71428571,0.001731,0.73941,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, encrusting.
+Gonochoric broadcaster.
+
+Can colonise artificial structures.","HA-NE, PSD-NW, RL-W, SS-N",,X (SIMP),,,,X (Raffles),,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",Also documented on reef flats (Lee et al 2021),Iffah(LKCNHM); Loo & Chou 1995; Ang 2007; Huang et al 2009; Wong et al 2018; Chow et al 2019; Kikuzawa et al 2020; Lee et al 2021
+Oulastrea crispata,Cnidaria,Anthozoa,Scleractinia,Oulastreidae,Oulastrea,crispata,Oulastrea,"(Lamarck, 1816)",Zebra coral,No,No,No,No,LC,-,LC,1956 (Purchon),2021 (Lee et al),14,10,30,,0.001306,0.104072,,,,,,X,X,X,X,,,,,,X,,,X,,"Colonies encrusting.
+Gonochoric broadcaster. 
+
+Can colonise artificial structures.","RL-W, TM-E, TM-S",,,,,,"X (Raffles)
+X (SultanShoal)",,,,,,"Population decline not observed and further decline not predicted.
+Common at many intertidal and seawall areas.
+
+Also documented from other reefs in the region (Huang et al 2015).
+","Found at numerous intertidal sites (Lim et al 2020)
+","Purchon 1956; Chuang 1961; Chou & Teo 1983; Ang 2007; Huang et al 2009; Wong et al 2018; Ng et al 2020; Lim et al 2020; Kikuzawa et al 2020; Lee et al 2021
+
+Huang et al 2009b (pervasive paraphyly); Lai et al 2013 (corals feeding on seagrass matter); Quek & Huang 2019 (phylotranscriptomic analysis); Quek et al 2020 (baits)"
+Pachyseris rugosa,Cnidaria,Anthozoa,Scleractinia,Incertae sedis,Pachyseris,rugosa,Pachyseris,"(Lamarck, 1801)",Castle coral,No,No,No,No,VU,-,LC,1881 (as Pachyseris valenciennesii; Studer),2020 (Kikuzawa et al),7,10,30,349.71537,0.258459,2.45E-09,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies submassive, foliose, encrusting.
+Gonochoric broadcaster.
+
+Can colonise artificial structures.",,"CY-S, HA-W, HP-E, JO-S, KU-NE, LZ-E, PSD-NW, PSL-SE, RL-W, SE-SW, TPT-SW",,,,,X (Raffles),,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",,Studer 1881; Loo & Chou 1995; Huang et al 2009; Wong et al 2018; Chow et al 2019; Lim et al 2020; Kikuzawa et al 2020
+Pachyseris speciosa,Cnidaria,Anthozoa,Scleractinia,Incertae sedis,Pachyseris,speciosa,Pachyseris,"(Dana, 1846)",Castle coral,No,No,No,No,LC,-,LC,1881 (as Pachyseris speciosa & P. levicollis; Studer),2021 (Lee et al),29,10,30,84.57117885,0.795941,8.11E-06,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies foliose, encrusting.
+Gonochoric broadcaster.
+
+Can colonise artificial structures.",,"CY-S, HA-NE, HA-SE, HA-W, HP-E, HP-W, JO-S, KU-NE, LZ-E, LZ-SW, PSD-NW, PSD-SW, PSL-SE, RL-W, SE-NW, SE-SW, SJ-NW, SJ-S, SS-S, TKK-W, TM-S, TPT-SW",X (SIMP),"X (Ng & Chou; COPs)
+X (Afiq-Rosli et al; in situ nursery & subtidal seawall transplant)
+X (Chou et al, reef & subtidal seawall transplant)
+
+X (Chou et al, subtidal seawall transplant)",,,X (Raffles),,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+","Also documented on reef flats (Lee et al 2021).
+
+Comprises 2 cryptic species (Feldman et al 2021).","Studer 1881; Purchon 1956; Chuang 1961; Chou & Teo 1983; Chou & Wong 1986; Iffah(LKCNHM); Loo & Chou 1995; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Lim et al 2020; Kikuzawa et al 2020; Lee et al 2021
+
+Ng & Chou 2014 (COPs); Browne et al. 2014 (photophysiological stress); Browne et al. 2015a (coral-sediment thresholds); Browne et al. 2015b (fluctuation in coral health); Tanzil et al 2016 (Symbiodinium diversity); Chou et al 2017 (effectiveness of reef restoration); Chou et al 2018 (relevance of reef restoration); Quek & Huang 2019 (phylotranscriptomic analysis); Jain et al 2020 (endosymbiont communities); Loo et al 2020 (optimal temperature); Quek et al 2020 (baits)"
+Acanthastrea echinata,Cnidaria,Anthozoa,Scleractinia,Lobophylliidae,Acanthastrea,echinata,Acanthastrea,"(Dana, 1846)",Brain coral,No,No,No,No,LC,-,LC,1995 (Loo & Chou),2020 (Kikuzawa et al),9,10,30,248.8888889,0.018626,0.076319,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies encrusting, massive. 
+Hermaphroditic broadcaster.
+
+Can colonise artificial structures.
+",,"JO-S, KU-NE, LZ-E, PSD-NW, PSL-SE, RL-W, SS_S, TM-E, TM-S, TPT-SW",X (SIMP),"
+X (Chou et al, subtidal seawall transplant)",,,X (SultanShoal),,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",,"Loo & Chou 1995; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Kikuzawa et al 2020
+
+Huang et al 2009b (pervasive paraphyly); Chou et al 2018 (relevance of reef restoration)"
+Acanthastrea rotundoflora,Cnidaria,Anthozoa,Scleractinia,Lobophylliidae,Acanthastrea,rotundoflora,Acanthastrea,"Chevalier, 1975",Brain coral,No,No,No,No,NT,-,DD,2009 (Huang et al),2020 (Ng et al),6,10,30,,0.001825,0.736152,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies encrusting, massive. 
+Hermaphroditic broadcaster.","PSD-NW, SS-N, TPT-SW",,,"X (Chou et al, subtidal seawall transplant)
+X (Chou et al, subtidal seawall transplant)",,,X (SultanShoal),,,,,,"DD, as % cover change only quantified for < 10 years. 
+",,"Huang et al 2009; Wong et al 2018; Chow et al 2019; Ng et al 2020
+
+Chou et al 2017 (effectiveness of reef restoration); Chou et al 2018 (relevance of reef restoration)"
+Echinophyllia aspera,Cnidaria,Anthozoa,Scleractinia,Lobophylliidae,Echinophyllia,aspera,Echinophyllia,"(Ellis & Solander, 1786)",Flat lettuce coral,No,No,No,No,LC,-,LC,"1985 (ZRC, 19850805)",2020 (Kikuzawa et al),15,10,30,-45.00649632,-0.14137,0.208225,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies foliose, encrusting.
+Hermaphroditic broadcaster.
+
+Can colonise artificial structures.",,"CY-S, HA-SE, HA-W, HP-W, JO-S, KU-NE, LA-S, LZ-E, LZ-SW, PSD-NW, PSD-SW, PSL-SE, RL-W, SE-SW, SJ-NW, SJ-S, SS-S, TKK-W, TPT-SW",X (SIMP),,,,"X (Raffles)
+X (SultanShoal)",,,,,,"Common at many sites. Population decline not significant
+
+Documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",,"Iffah(LKCNHM); Loo & Chou 1995; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Kikuzawa et al 2020
+
+Teo et al. 2016 (quantification of coral sperm)
+"
+Echinophyllia echinoporoides,Cnidaria,Anthozoa,Scleractinia,Lobophylliidae,Echinophyllia,echinoporoides,Echinophyllia,"Veron & Pichon, 1980",Red stone coral,No,No,No,No,LC,-,LC,1995 (Loo & Chou),2020 (Ng et al),4,10,30,5325,0.154046,7.81E-13,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies foliose, encrusting.
+Hermaphroditic broadcaster.",,"HA-NE, HA-W, HP-E, HP-W, JO-S, KU-NE, LZ-E, LZ-SW, PSD-SW, PSL-SE, RL-W, SE-NW, SJ-S, SS-S, TKK-W, TPT-SW",,,,,X (SultanShoal),,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",,Loo & Chou 1995; Wong et al 2018; Chow et al 2019; Ng et al 2020
+Echinophyllia glabra,Cnidaria,Anthozoa,Scleractinia,Lobophylliidae,Echinophyllia,glabra,Oxypora,"Nemenzo, 1959 ",Chalice coral,No,No,No,No,LC,-,VU,"1985 (ZRC, 19850701)",2020 (Ng et al),4,10,30,-88.13559322,-0.01444,0.187998,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies foliose, encrusting.
+Hermaphroditic broadcaster.",PSL-SE,,,,,,,X,,X,,X,"Not found at many sites. Population decline not significant.
+
+Documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",,Iffah(LKCNHM); Loo & Chou 1995; Wong et al 2018; Ng et al 2020
+Homophyllia bowerbanki,Cnidaria,Anthozoa,Scleractinia,Lobophylliidae,Homophyllia,bowerbanki,Acanthastrea,"(Milne Edwards & Haime, 1857)",Brain coral,No,No,No,No,VU,-,DD,1995 (as Acanthastrea hillae; Loo & Chou),2009 (Huang et al),2,10,30,-100,-0.00196,0.467971,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive. 
+Hermaphroditic broadcaster.",,,,,,,X (Raffles),,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Loo & Chou 1995; Huang et al 2009
+Lobophyllia agaricia,Cnidaria,Anthozoa,Scleractinia,Lobophylliidae,Lobophyllia,agaricia,Symphyllia,"(Milne Edwards & Haime, 1849)",Grooved brain coral,No,No,No,No,LC,-,LC,1881 (as Symphyllia indica; Studer),2020 (Kikuzawa et al),7,10,30,1233.333333,0.037109,7.04E-07,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive. 
+Hermaphroditic broadcaster.
+
+Can colonise artificial structures.",,"HP-E, HP-W, KU-NE, LZ-E, PSD-NW, PSL-SE, RL-W, SJ-NW, TM-E, TPT-SW",X (SIMP),,,,X (Raffles),,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",,Studer 1881; Guest et al 2005b; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Kikuzawa et al 2020
+Lobophyllia corymbosa,Cnidaria,Anthozoa,Scleractinia,Lobophylliidae,Lobophyllia,corymbosa,Lobophyllia,"(Forskål, 1775)",Lobed brain coral,No,No,No,No,LC,-,LC,"1986 (ZRC, 19860506)",2020 (Lim et al),6,10,30,4318.75,0.078554,2.78E-10,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive, encrusting.
+Hermaphroditic broadcaster.",,"HP-E, HP-W, JO-S, KU-NE,PSD-NW, RL-W, SE-SW, TKK-W, TPT-SW",X (SIMP),,,,,,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",,Iffah(LKCNHM); Loo & Chou 1995; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Lim et al 2020
+Lobophyllia flabelliformis,Cnidaria,Anthozoa,Scleractinia,Lobophylliidae,Lobophyllia,flabelliformis,Lobophyllia,"Veron, 2000",,No,No,No,No,VU,-,DD,2019 (Chow et al),2020 (Ng et al),2,10,30,,0.032201,3.61E-05,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive.
+Hermaphroditic broadcaster.",,"HA-W, HP-W, JO-S, KU-NE, LZ-E, PSD-NW, RL-W, SJ-NW, TM-E, TPT-SW",,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Chow et al 2019; Ng et al 2020
+Lobophyllia hataii,Cnidaria,Anthozoa,Scleractinia,Lobophylliidae,Lobophyllia,hataii,Lobophyllia,"Yabe, Sugiyama & Eguchi, 1936",Lobed brain coral,No,No,No,No,LC,-,VU,"1986 (ZRC, 19860506)",2020 (Kikuzawa et al),5,10,30,-66.84210526,-0.01141,0.23763,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive.
+Hermaphroditic broadcaster.
+
+Can colonise artificial structures.",,"CY-S, HA-W, HP-W, JO-S, SE-SW, TKK-W",,,,,,X,,X,X,X,"Common at many sites. Population decline not significant
+
+Documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",,Iffah(LKCNHM); Loo & Chou 1995; Wong et al 2018; Chow et al 2019; Kikuzawa et al 2020
+Lobophyllia hemprichii,Cnidaria,Anthozoa,Scleractinia,Lobophylliidae,Lobophyllia,hemprichii,Lobophyllia,"(Ehrenberg, 1834)",Lobed brain coral,No,No,No,No,LC,-,LC,1881 (as Mussa tenuidentata; Studer),2020 (Kikuzawa et al),13,10,30,30.31141869,-0.02721,0.405499,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive, encrusting.
+Hermaphroditic broadcaster.
+
+Can colonise artificial structures.",,"HA-NE, JO-S, KU-NE, PSD-NW, PSL-SE, RL-W, SE-SW, SJ-NW, SJ-S, TKK-W, TM-E, TM-S, TPT-SW",X (SIMP),"
+X (Chou et al, subtidal seawall transplant)",,,"X (Raffles)
+X (SultanShoal)",,,,,,"Population decline not significant.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",,"Studer 1881; Purchon 1956; Chuang 1961; Iffah(LKCNHM); Loo & Chou 1995; Guest et al 2005b; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Kikuzawa et al 2020
+
+Chou et al 2018 (relevance of reef restoration)"
+Lobophyllia radians,Cnidaria,Anthozoa,Scleractinia,Lobophylliidae,Lobophyllia,radians,Symphyllia,"(Milne Edwards & Haime, 1849)",Grooved brain coral,No,No,No,No,LC,-,LC,1881 (as Symphyllia radians & S. grandis; Studer),2021 (Lee et al),14,10,30,271.653027,0.098774,0.001807,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive.
+Hermaphroditic broadcaster.
+
+Can colonise artificial structures.",,"HA-NE, HA-W, HP-E, JO-S, KU-NE, LZ-E, LZ-SW, PSD-NW, PSD-SW, PSL-SE, RL-W, SE-SW, SJ-S, SS-N, SS-S, TM-E, TPT-SW",X (SIMP),,,,"X (Raffles)
+X (SultanShoal)",,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",Also documented on reef flats (Lee et al 2021),"Studer 1881; Iffah(LKCNHM); Loo & Chou 1995; Guest et al 2005b; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Lim et al 2020; Kikuzawa et al 2020; Lee et al 2021
+
+Quek & Huang 2019 (phylotranscriptomic analysis); Quek et al 2020 (baits)"
+Lobophyllia recta,Cnidaria,Anthozoa,Scleractinia,Lobophylliidae,Lobophyllia,recta,Symphyllia,"(Dana, 1846)",Grooved brain coral,No,No,No,No,LC,-,LC,1956 (as Symphyllia nobilis; Purchon),2020 (Kikuzawa et al),14,10,30,808.1081081,0.032506,0.000607,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive.
+Hermaphroditic broadcaster.
+
+Can colonise artificial structures.",,"CY-S, PSD-NW, PSD-SW, RL-W, SJ-NW, SS-N",X (SIMP),"X (Chou et al, subtidal seawall transplant)
+X (Chou et al, subtidal seawall transplant)",,,"X (Raffles)
+X (SultanShoal)",,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",,"Purchon 1956; Chuang 1961; Chou & Teo 1983; Chou & Wong 1986; Loo & Chou 1995; Guest et al 2005b; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Kikuzawa et al 2020
+
+Chou et al 2017 (effectiveness of reef restoration); Chou et al 2018 (relevance of reef restoration)"
+Lobophyllia valenciennesii,Cnidaria,Anthozoa,Scleractinia,Lobophylliidae,Lobophyllia,valenciennesii,Symphyllia,"(Milne Edwards & Haime, 1849)",Grooved brain coral,No,No,No,No,LC,-,DD,2009 (as Symphyllia valenciennesii; Huang et al),2020 (Ng et al),5,10,30,,0.004226,2.41E-01,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive.
+Hermaphroditic broadcaster.","JO-S, KU-NE, PSD-NW, SJ-NW",,X (SIMP),,,,X (SultanShoal),,,,,,"DD, as % cover change only quantified for < 10 years. 
+",,Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020
+Micromussa amakusensis,Cnidaria,Anthozoa,Scleractinia,Lobophylliidae,Micromussa,amakusensis,Acanthastrea,"(Veron, 1990)",,No,No,No,No,NT,-,DD,2019 (Ng et al),2019 (Ng et al),1,10,30,,,,X,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies encrusting. 
+Hermaphroditic broadcaster.
+
+On dead coral skeletons, bare rocky substrate, or on artificial structures.
+","KU-NE, SS-S",,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",Detected only after >3 decades of reef monitoring; likelihood of misidentification in view of other similar looking taxa e.g. Dipsastraea or Acanthastrea spp. ,Ng et al 2019a (New genus and species record)
+Oxypora crassispinosa,Cnidaria,Anthozoa,Scleractinia,Lobophylliidae,Oxypora,crassispinosa,Oxypora,"Nemenzo, 1979",Porous lettuce coral,No,No,No,No,LC,-,DD,1995 (as Oxypora crassispinosa; Loo & Chou),1995 (as Oxypora crassispinosa; Loo & Chou),1,10,30,-100,-0.01042,0.288936,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies foliose, encrusting.
+Hermaphroditic broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Loo & Chou 1995
+Oxypora echinata,Cnidaria,Anthozoa,Scleractinia,Lobophylliidae,Oxypora,echinata,Oxypora,"(Saville Kent, 1871)",,No,No,No,No,LC,-,LC,1995 (Loo & Chou),2018 (Wong et al),2,10,30,-34.7826087,-0.00067,0.69726,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies foliose, encrusting.
+Hermaphroditic broadcaster.",TM-S,,,,,,,,,,,,"Not found at many sites. Population decline not significant.
+
+Documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",,Loo & Chou 1995; Wong et al 2018
+Oxypora lacera,Cnidaria,Anthozoa,Scleractinia,Lobophylliidae,Oxypora,lacera,Oxypora,"(Verrill, 1864)",Ragged chalice coral,No,No,No,No,LC,-,NT,1878 (Brüggemann),2020 (Kikuzawa et al),23,10,30,-49.18821678,-0.08143,0.271434,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies foliose, encrusting.
+Hermaphroditic broadcaster.
+
+Can colonise artificial structures.",,"HA-NE, HP-E, JO-S, KU-NE, LZ-SW, PSD-NW, RL-W, SE-SW, SJ-NW, SS-S, TKK-W, TPT-SW",,,,,X (Raffles),X,,,,X,"Common at many sites. Population decline not significant
+
+Documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",,Brüggemann 1878; Studer 1881; Purchon 1956; Chuang 1961; Chou & Teo 1983; Chou & Wong 1986; Iffah(LKCNHM); Loo & Chou 1995; Huang et al 2009; Wong et al 2018; Chow et al 2019; Ng et al 2020; Kikuzawa et al 2020
+Astrea annuligera,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Astrea,annuligera,Montastraea,"Milne Edwards & Haime, 1849 ",,No,No,No,No,NT,-,DD,1986 (REST Survey),1995 (as Montastrea annuligera; Loo & Chou),1,10,30,-100,-0.00839,0.052015,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies encrusting.
+Hermaphroditic broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Loo & Chou 1995
+Astrea curta,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Astrea,curta,Montastraea,"Dana, 1846",,No,No,No,No,LC,-,DD,"1985 (ZRC, 19850729)",2009 (Huang et al),6,10,30,-100,-0.02035,0.010533,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive.
+Hermaphroditic broadcaster.",,,X (SIMP),,,,X (Raffles),,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,"Iffah(LKCNHM); Loo & Chou 1995; Ang 2007; Huang et al 2009
+
+Huang et al 2009b (pervasive paraphyly)"
+Caulastraea echinulata,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Caulastraea,echinulata,Caulastraea,"(Milne Edwards & Haime, 1849)",,No,No,No,No,VU,-,NT,1881 (as Dasyphyllia echinulata; Studer),2020 (Lim et al),10,10,30,193.3333333,0.022379,0.033006,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies submassive, encrusting.
+Hermaphroditic broadcaster.",,"HA-NE, LZ-E, RL-W, SE-SW, SS-S",,,,,X (Raffles),X,,,,X,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",,"Studer 1881; Iffah(LKCNHM); Loo & Chou 1995; Ang 2007; Huang et al 2009; Wong et al 2018; Chow et al 2019; Ng et al 2020; Lim et al 2020
+
+Huang et al 2009b (pervasive paraphyly)"
+Caulastraea furcata,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Caulastraea,furcata,Caulastraea,"Dana, 1846",,No,No,No,No,LC,-,DD,"1977 (as Caulastrea furcata, Chuang)",2012 (Ng et al),4,10,30,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies submassive.
+Hermaphroditic broadcaster.",,,,"X (Ng et al, ex situ nursery)",,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,"Chuang 1977; Ang 2007; Huang et al 2009
+
+Ng et al 2012 (ex situ coral nursery)"
+Coelastrea incrustans,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Coelastrea,incrustans,Goniastrea,"(Verrill, 1866) ",,No,No,No,No,LC,-,LC,1977 (as Goniastrea mantonae; Chuang),2021 (as Coelastrea aspera; Lee et al),17,10,30,-68.7150838,-0.02694,0.048348,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, encrusting.
+Hermaphroditic broadcaster.
+
+Can colonise artificial structures.",,"CY-S, HP-E, SE-SW, SS-S, TM-S, TPT-SW",X (SIMP),,,,"X (Raffles)
+X (SultanShoal)",,,,,,"Population decline observed subtidally but known to be found in intertidal areas also.
+Common at many sites.
+Further decline not predicted.
+
+Also documented from other reefs in the region (Huang et al 2015)","Also documented on reef flats (Lee et al 2021).
+
+This species is morphologically and genetically distinct from C. aspera (Mitsuki et al 2021).","Chuang 1977; Iffah(LKCNHM); Loo & Chou 1995; Huang et al 2009; Ang 2007; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Lim et al 2020; Kikuzawa et al 2020; Lee et al 2021
+
+Huang et al 2009b (pervasive paraphyly)"
+Coelastrea palauensis,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Coelastrea,palauensis,Goniastrea,"(Yabe & Sugiyama, 1936)",,No,No,No,No,NT,-,DD,1986 (as Goniastrea palauensis; Chou & Wong),2019 (Chow et al),6,10,30,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive.
+Hermaphroditic broadcaster.",,,X (SIMP),,,,X (Raffles),,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,"Chou & Wong 1986; Ang 2007; Huang et al 2009; BioBlitz_SIMP2017; Chow et al 2019
+
+Huang et al 2009b (pervasive paraphyly)"
+Cyphastrea chalcidicum,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Cyphastrea,chalcidicum,Cyphastrea,"(Forskål, 1775)",Meteor corals,No,No,No,No,LC,-,LC,1956 (Purchon),2021 (Lee et al),11,10,30,137.7615572,0.076369,3.22E-06,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive, encrusting.
+Hermaphroditic broadcaster.",,"HA-NE, HA-SE, HA-W, HP-E, HP-W, JO-S, PSD-NW, PSL-SE, RL-W, SE-NW, SE-SW, SJ-NW, SJ-S, SS-N, SS-S, TKK-W, TM-S, TPT-SW",X (SIMP),,,,"X (Raffles)
+X (SultanShoal)",,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",Also documented on reef flats (Lee et al 2021),"Purchon 1956; Chou & Teo 1983; Chou & Wong 1986; Loo & Chou 1995; Ang 2007; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Lee et al 2021
+
+Huang et al 2009b (pervasive paraphyly)"
+Cyphastrea microphthalma,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Cyphastrea,microphthalma,Cyphastrea,"(Lamarck, 1816)",Meteor corals,No,No,No,No,LC,-,LC,1977 (Chuang),2020 (Ng et al),11,10,30,-23.21649485,0.006816,0.78884,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive, encrusting.
+Hermaphroditic broadcaster.",,"HA-SE, HA-W, HP-W, JO-S, PSD-NW, PSD-SW, PSL-SE, RL-W, SE-NW, SJ-NW, SJ-S, SS-N, SS-S, TKK-W, TPT-SW",X (SIMP),"
+X (Chou et al, subtidal seawall transplant)",,,X (SultanShoal),,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",,"Chuang 1977; Iffah(LKCNHM); Loo & Chou 1995; Ang 2007; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020
+
+Huang et al 2009b (pervasive paraphyly); Chou et al 2018 (relevance of reef restoration)"
+Cyphastrea serailia,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Cyphastrea,serailia,Cyphastrea,"(Forskål, 1775)",,No,No,No,No,LC,-,LC,1977 (Chuang),2020 (Kikuzawa et al),19,10,30,79.42528736,0.06335,0.000202,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive, encrusting.
+Hermaphroditic broadcaster.
+
+Can colonise artificial structures.",,"HA-NE, HA-SE, HA-W, HP-E, JO-S, LA-S, LZ-E, PSD-NW, PSD-SW, PSL-SE, RL-W, SE-NW, SE-SW, SJ-NW, SJ-S, SS-N, SS-S, TM-E",X (SIMP),"X (Ng et al, ex situ nursery)",,,"X (Raffles)
+X (SultanShoal)",,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",,"Chuang 1977; Iffah(LKCNHM); Loo & Chou 1995; Ang 2007; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Lim et al 2020; Kikuzawa et al 2020
+
+Huang et al 2009b (pervasive paraphyly); Ng et al 2012 (ex situ coral nursery); Quek & Huang 2019 (phylotranscriptomic analysis); Quek et al 2020 (baits)"
+Dipsastraea amicorum,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Dipsastraea,amicorum,Favia,"(Milne Edwards & Haime, 1849)",Basket coral,No,No,No,No,LC,-,DD,"1985 (ZRC, 19850715)",2009 (Huang et al),4,10,30,-100,-0.00193,0.527623,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive.
+Hermaphroditic broadcaster.",,,,,,,X (Raffles),,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,"Iffah(LKCNHM); Loo & Chou 1995; Huang et al 2009
+
+Huang et al 2009b (pervasive paraphyly)"
+Dipsastraea danai,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Dipsastraea,danai,Favia,"(Milne Edwards & Haime, 1857)",,No,No,No,No,LC,-,DD,2009 (as Favia danae; Huang et al),2020 (Ng et al),4,10,30,,0.003286,0.284601,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, encrusting.
+Hermaphroditic broadcaster.","HA-SE, KU-NE, RL-W",,,,,,"X (Raffles)
+X (SultanShoal)",,,,,,"DD, as % cover change only quantified for < 10 years. 
+",,"Huang et al 2009; Wong et al 2018; Ng et al 2020
+
+Huang et al 2009b (pervasive paraphyly)"
+Dipsastraea favus,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Dipsastraea,favus,Favia,"(Forskål, 1775)",,No,No,No,No,LC,-,LC,1881 (as Favia affinis; Studer),2021 (Lee et al),16,10,30,963,0.107048,1.38E-06,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive, encrusting.
+Hermaphroditic broadcaster.
+
+Can colonise artificial structures.",,"HA-NE, HA-SE, HA-W, HP-E, HP-W, JO-S, KU-NE, LZ-E, PSD-NW, PSD-SW, PSL-SE, RL-W, SE-NW, SE-SW, SJ-NW, SJ-S, SS-N, SS-S, TKK-W, TM-E, TM-S, TPT-SW",X (SIMP),,,,"X (Raffles)
+X (SultanShoal)",,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",Also documented on reef flats (Lee et al 2021),"Studer 1881; Chou & Wong 1986; Iffah(LKCNHM); Loo & Chou 1995; Ang 2007; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Lim et al 2020; Kikuzawa et al 2020; Lee et al 2021
+
+Huang et al 2009b (pervasive paraphyly)"
+Dipsastraea helianthoides,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Dipsastraea,helianthoides,Favia,"(Wells, 1954)",,No,No,No,No,NT,-,DD,2009 (as Favia helianthoides; Huang et al (b)),2009 (as Favia helianthoides; Huang et al (b)),1,10,30,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies submassive.
+Hermaphroditic broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Huang et al 2009b (pervasive paraphyly)
+Dipsastraea laxa,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Dipsastraea,laxa,Favia,"(Klunzinger, 1879) ",,No,No,No,No,NT,-,DD,1995 (as Favia laxa; Loo & Chou),2017 (as Dipsastraea cf. laxa; REL collections),3,10,30,-100,-0.00527,0.175898,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, encrusting. 
+Hermaphroditic broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Loo & Chou 1995; Ang 2007; Huang et al 2009
+Dipsastraea lizardensis,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Dipsastraea,lizardensis,Favia,"(Veron, Pichon & Wijsman-Best, 1977) ",,No,No,No,No,NT,-,LC,1995 (as Favia lizardensis; Loo & Chou),2020 (Lim et al),8,10,30,28.87323944,0.0151,0.125011,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, encrusting.
+Hermaphroditic broadcaster.",,"HA-W, HP-E, HP-W, JO-S, LZ-E, PSD-NW, SJ-NW, SS-S, TM-S",X (SIMP),,,,"X (Raffles)
+X (SultanShoal)",,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",,"Loo & Chou 1995; Ang 2007; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Lim et al 2020
+
+Huang et al 2009b (pervasive paraphyly)"
+Dipsastraea maritima,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Dipsastraea,maritima,Favia,"(Nemenzo, 1971) ",,No,No,No,No,NT,-,DD,1995 (as Favia maritima; Loo & Chou),2020 (Ng et al),3,10,30,,0.002431,0.126136,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive.
+Hermaphroditic broadcaster.","PSD-NW, SE-SW, TM-S",,,,,,,,,,,,"DD, as % cover change only quantified for < 10 years. 
+",,Loo & Chou 1995; Wong et al 2018; Ng et al 2020
+Dipsastraea matthaii,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Dipsastraea,matthaii,Favia,"(Vaughan, 1918) ",,No,No,No,No,NT,-,LC,1995 (as Favia matthaii; Loo & Chou),2020 (Kikuzawa et al),8,10,30,11.68091168,0.008355,0.489653,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, encrusting.
+Hermaphroditic broadcaster.
+
+Can colonise artificial structures.",,"HP-E, KU-NE, LZ-E, PSD-NW, PSD-SW, PSL-SE, SE-SW, SS-S, TM-E, TM-S",X (SIMP),,,,"X (Raffles)
+X (SultanShoal)",,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",,"Loo & Chou 1995; Ang 2007; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Kikuzawa et al 2020
+
+Huang et al 2009b (pervasive paraphyly)"
+Dipsastraea maxima,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Dipsastraea,maxima,Favia,"(Veron, Pichon & Wijsman-Best, 1977) ",,No,No,No,No,NT,-,DD,2007 (as Favia maxima; Ang),2020 (Kikuzawa et al),9,10,30,,0.006059,0.26605,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive.
+Hermaphroditic broadcaster.
+
+Can colonise artificial structures.",,"LZ-SW, PSD-NW, SE-SW, SJ-NW, SS-N, SS-S, TM-E, TPT-SW",X (SIMP),,,,"X (Raffles)
+X (SultanShoal)",,,,,,"DD, as % cover change only quantified for < 10 years. 
+",,"Ang 2007; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Kikuzawa et al 2020
+
+Huang et al 2009b (pervasive paraphyly); Quek et al 2020 (baits)"
+Dipsastraea mirabilis,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Dipsastraea,mirabilis,Favia,"(Yabe & Sugiyama, 1941)",,No,No,No,No,-,-,DD,2017 (BioBlitz_SIMP2017),2018 (Wong et al),2,Not stated,-,,0.002305,0.020683,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, encrusting. 
+Hermaphroditic broadcaster.",RL-W,,X (SIMP),,,,,,,,,,"DD, as % cover change only quantified for < 10 years. 
+",,BioBlitz_SIMP2017; Wong et al 2018
+Dipsastraea pallida,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Dipsastraea,pallida,Favia,"(Dana, 1846)",Knob coral,No,No,No,No,LC,-,VU,1977 (Chuang),2020 (Kikuzawa et al),17,10,30,-89.41060904,-0.15494,0.038316,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, encrusting.
+Hermaphroditic broadcaster.
+
+Can colonise artificial structures.",,"HA-NE, HA-W, HP-E, KU-NE, RL-W, SE-NW, SE-SW, SJ-NW, SS-N, SS-S, TM-S",X (SIMP),,,,"X (Raffles)
+X (SultanShoal)",X,,X,X,X,"Population decline significant
+
+Common at many sites. 
+
+Documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",,"Chuang 1977; Iffah(LKCNHM); Loo & Chou 1995; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Ng et al 2020; Lim et al 2020; Kikuzawa et al 2020
+
+Huang et al 2009b (pervasive paraphyly)"
+Dipsastraea rotumana,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Dipsastraea,rotumana,Favia,"(Gardiner, 1899)",,No,No,No,No,LC,-,DD,2009 (as Favia rotumana; Huang et al),2009 (as Favia rotumana; Huang et al),2,10,30,-100,-0.0034,0.226111,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive.
+Hermaphroditic broadcaster.",,,,,,,X (Raffles),,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,"Huang et al 2009
+
+Huang et al 2009b (pervasive paraphyly)"
+Dipsastraea speciosa,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Dipsastraea,speciosa,Favia,"(Dana, 1846)",,No,No,No,No,LC,-,LC,1881 (as Favia speciosa; Studer),2021 (Lee et al),23,10,30,206.2650602,0.266706,6.04E-10,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive, encrusting.
+Hermaphroditic broadcaster.
+
+Can colonise artificial structures.",,"CY-S, HA-NE, HA-SE, HA-W, HP-E, HP-W, JO-S, KU-NE, LZ-E, LZ-SW, PSD-NW, PSD-SW, PSL-SE, RL-W, SE-NW, SE-SW, SJ-NW, SJ-S, SS-N, SS-S, TKK-W, TM-E, TM-S, TPT-SW",X (SIMP),"X (Ng et al, ex situ nursery)",,,"X (Raffles)
+X (SultanShoal)",,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",Also documented on reef flats (Lee et al 2021),"Studer 1881; Purchon 1956; Chuang 1961; Chou & Teo 1983;  Chou & Wong 1986; Loo & Chou 1995; Ang 2007; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Kikuzawa et al 2020; Lee et al 2021
+
+Todd et al. 2013 (colour changes); Huang et al 2009b (pervasive paraphyly); Todd et al 2001 (morphological variation); Todd et al 2002a, 2002b (plastic corals); Todd et al 2004a, 2004b, 2004c (flesh or bone; aquarium expt; genotype x envir); Ng et al 2012 (ex situ coral nursery)"
+Dipsastraea veroni,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Dipsastraea,veroni,Favia,"(Moll & Best, 1984) ",,No,No,No,No,NT,-,DD,1995 (as Favia veroni; Loo & Chou),2009 (as Favia veroni; Huang et al),3,10,30,-100,-0.00163,0.235423,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive.
+Hermaphroditic broadcaster.",,,,,,,X (Raffles),,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Loo & Chou 1995; Ang 2007; Huang et al 2009
+Echinopora gemmacea,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Echinopora,gemmacea,Echinopora,"(Lamarck, 1816)",Hedgehog coral,No,No,No,No,LC,-,LC,1995 (Loo & Chou),2020 (Ng et al),9,10,30,5450.909091,0.395929,9.54E-10,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies foliose, encrusting.
+Hermaphroditic broadcaster.",,"CY-S, HA-W, HP-E, JO-S, KU-NE, LZ-E, PSD-NW, PSD-SW, PSL-SE, RL-W, SJ-NW, TPT-SW",X (SIMP),"
+X (Chou et al, subtidal seawall transplant)",,,"X (Raffles)
+X (SultanShoal)",,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",,"Loo & Chou 1995; Ang 2007; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020
+
+Huang et al 2009b (pervasive paraphyly); Chou et al 2018 (relevance of reef restoration)"
+Echinopora hirsutissima,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Echinopora,hirsutissima,Echinopora,"Milne Edwards & Haime, 1849",Prickly-pored coral,No,No,No,No,LC,-,DD,1995 (Loo & Chou),2009 (Huang et al),3,10,30,-100,-0.0617,0.020991,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies braching, foliose, encrusting. 
+Hermaphroditic broadcaster.",,,,,,,X (Raffles),,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Loo & Chou 1995; Ang 2007; Huang et al 2009
+Echinopora horrida,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Echinopora,horrida,Echinopora,"Dana, 1846",Hedgehog coral,No,No,No,No,NT,-,LC,"
+1878 (Brüggemann)",2018 (Wong et al),7,10,30,148.2591093,0.037097,0.153627,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies branching.
+Hermaphroditic broadcaster.","PSD-NW, SE-SW, SS-S, TPT-SW",,X (SIMP),,,,,,,,,,"Not found at many sites. Population decline not documented.
+
+Documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",,"Brüggemann 1878; Studer 1881; Iffah(LKCNHM); Loo & Chou 1995; Ang 2007; BioBlitz_SIMP2017; Wong et al 2018
+"
+Echinopora lamellosa,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Echinopora,lamellosa,Echinopora,"(Esper, 1795)",Blue chalice coral,No,No,No,No,LC,-,LC,1881 (as Echinopora flexuosa & E. reflexa; Studer),2020 (Kikuzawa et al),28,10,30,-1.812536387,0.083062,0.459914,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies foliose, encrusting.
+Hermaphroditic broadcaster.
+
+Can colonise artificial structures.",,"HA-W, HP-E, JO-S, KU-NE, LZ-E, PSD-NW, PSD-SW, PSL-SE, RL-W, SJ-NW, SJ-S, SS-S, TKK-W, TM-E, TPT-SW",X (SIMP),"X (Taira et al (b), in situ nursery)
+X (Toh et al (b), in situ nursery & subtidal seawall transplant)
+X (Chou et al, reef & subtidal seawall transplant)
+X (Chou et al, in situ nursery)
+X (Wee et al, in situ nursery)",,,"X (Raffles)
+X (SultanShoal)",,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",,"Studer 1881; Purchon 1956; Chuang 1961;  Chou & Wong 1986; Iffah(LKCNHM); Loo & Chou 1995; Guest et al 2005b; Ang 2007; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Lim et al 2020; Kikuzawa et al 2020
+
+Huang et al 2009b (pervasive paraphyly); Taira et al 2017b (juv. butterflyfishes inhabiting nursery); Toh et al 2017b (cost-effective seawall biodiversity enhancement); Chou et al 2017 (effectiveness of reef restoration); Afiq-Rosli et al 2019 (maximising genetic diversity); Chou et al 2019a (re-fragmentation); Ng et al 2019b (skeletal density); Wee et al 2019 (epifauna)"
+Echinopora pacifica,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Echinopora,pacifica,Echinopora,"Veron, 1990",Hedgehog coral,No,No,No,No,NT,-,DD,2009 (as Echinopora pacificus; Huang et al),2018 (Wong et al),3,10,30,,0.024467,0.007652,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies foliose.
+Hermaphroditic broadcaster.","HA-W, PSD-NW, RL-W",,,,,,X (Raffles),,,,,,"DD, as % cover change only quantified for < 10 years. 
+",,"Huang et al 2009; Wong et al 2018
+
+Huang et al 2009b (pervasive paraphyly)"
+Favites abdita,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Favites,abdita,Favites,"(Ellis & Solander, 1786)",Large star coral,No,No,No,No,NT,-,LC,"1881 (as Prionastraea abdita, P. magnifica & P. robusta; Studer)",2021 (Lee et al),25,10,30,8.059259259,0.021447,0.570955,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive, encrusting.
+Hermaphroditic broadcaster.
+
+Can colonise artificial structures.",,"HA-NE, HA-W, HP-E, JO-S, KU-NE, LA-S, LZ-E, PSD-NW, PSL-SE, RL-W, SE-NW, SE-SW, SJ-NW, SS-N, SS-S, TM-E, TM-S, TPT-SW",X (SIMP),"X (Ng et al, ex situ nursery)",,,"X (Raffles)
+X (SultanShoal)",,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",Also documented on reef flats (Lee et al 2021),"Studer 1881; Purchon 1956; Chuang 1961; Chou & Teo 1983; Chou & Wong 1986; Iffah(LKCNHM); Loo & Chou 1995; Guest et al 2005b; Ang 2007; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Lim et al 2020; Kikuzawa et al 2020; Lee et al 2021
+
+Ng et al 2012 (ex situ coral nursery); Teo et al. 2016 (quantification of coral sperm); "
+Favites chinensis,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Favites,chinensis,Favites,"(Verrill, 1866)",,No,No,No,No,NT,-,LC,1986 (Chou & Wong),2021 (Lee et al),12,10,30,196.0199005,0.041375,0.008245,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive, encrusting.
+Hermaphroditic broadcaster.
+
+Can colonise artificial structures.",,"HA-NE, JO-S, LA-S, PSD-NW, PSL-SE, RL-W, SE-NW, SS-N, TKK-W, TM-S, TPT-SW",X (SIMP),,,,"X (Raffles)
+X (SultanShoal)",,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",,"Chou & Wong 1986; Loo & Chou 1995; Ang 2007; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Lim et al 2020; Kikuzawa et al 2020; Lee et al 2021
+
+Teo et al. 2016 (quantification of coral sperm)"
+Favites colemani,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Favites,colemani,Montastraea,"(Veron, 2000)",,No,No,No,No,NT,-,DD,2009 (as Montastrea colemani; Huang et al),2009 (Huang et al),1,10,30,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies encrusting. 
+Hermaphroditic broadcaster.",,,,,,,X (Raffles),,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Huang et al 2009
+Favites complanata,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Favites,complanata,Favites,"(Ehrenberg, 1834)",Large star coral,No,No,No,No,NT,-,LC,"1985 (ZRC, 19850721)",2021 (Lee et al),12,10,30,370.1886792,0.034003,0.012435,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, encrusting.
+Hermaphroditic broadcaster.
+
+Can colonise artificial structures.",,"HA-NE, JO-S, KU-NE, PSD-NW, PSL-SE, RL-W, SE-SW, SJ-NW, SS-N",X (SIMP),,,,"X (Raffles)
+X (SultanShoal)",,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",Also documented on reef flats (Lee et al 2021),"Iffah(LKCNHM); Loo & Chou 1995; Guest et al 2005b; Ang 2007; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Kikuzawa et al 2020; Lee et al 2021
+
+Huang et al 2009b (pervasive paraphyly)"
+Favites flexuosa,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Favites,flexuosa,Favites,"(Dana, 1846)",,No,No,No,No,NT,-,VU,1986 (REST Survey),2020 (Ng et al),7,10,30,-87.29264476,-0.04726,0.011445,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive, encrusting.
+Hermaphroditic broadcaster.","KU-NE, PSL-SE, RL-W",,X (SIMP),,,,"X (Raffles)
+X (SultanShoal)",X,,X,,X,"Population decline significant.
+Not found at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",,"Loo & Chou 1995; Ang 2007; Huang et al 2009; BioBlitz_SIMP2017; Chow et al 2019; Ng et al 2020
+
+Huang et al 2009b (pervasive paraphyly)"
+Favites halicora,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Favites,halicora,Favites,"(Ehrenberg, 1834)",,No,No,No,No,NT,-,LC,"1985 (ZRC, 19850706)",2020 (Ng et al),12,10,30,345.6338028,0.034301,2.83E-05,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive, encrusting.
+Hermaphroditic broadcaster.",,"HA-W, HP-E, PSD-NW, PSL-SE, RL-W, SE-SW, SJ-NW, SS-S, TM-S",X (SIMP),"X (Chou et al, subtidal seawall transplant)
+X (Chou et al, subtidal seawall transplant)",,,"X (Raffles)
+X (SultanShoal)",,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",,"Iffah(LKCNHM); Loo & Chou 1995; Guest et al 2005b; Ang 2007; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020
+
+Chou et al 2017 (effectiveness of reef restoration); Chou et al 2018 (relevance of reef restoration)"
+Favites magnistellata,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Favites,magnistellata,Montastraea,"(Milne Edwards & Haime, 1849)",,No,No,No,No,NT,-,NT,"1986 (ZRC, 19860509)",2017 (REL Collections),5,10,30,-34.37,-0.00084,0.777195,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive.
+Hermaphroditic broadcaster.","PSD-NW,TPT-SW",,X (SIMP),,,,X (Raffles),X,,,,X,"Not found at many sites. Population decline not significant
+
+Documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",,"Iffah(LKCNHM); Loo & Chou 1995; Ang 2007; Huang et al 2009
+
+Huang et al 2009b (pervasive paraphyly)"
+Favites paraflexuosus,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Favites,paraflexuosus,Favites,"Veron, 2000",,No,No,No,No,NT,-,DD,2009 (as Favites paraflexuosa; Huang et al),2020 (Ng et al),3,10,30,,0.000935,0.657715,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive.
+Hermaphroditic broadcaster.",JO-S,,X (SIMP),,,,X (SultanShoal),,,,,,"DD, as % cover change only quantified for < 10 years. 
+",,Huang et al 2009; Wong et al 2018; Ng et al 2020
+Favites pentagona,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Favites,pentagona,Favites,"(Esper, 1795)",,No,No,No,No,LC,-,LC,1995 (Loo & Chou),2021 (Lee et al),12,10,30,900.8645533,0.288236,5.50E-12,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive, encrusting.
+Hermaphroditic broadcaster.
+
+Can colonise artificial structures.",,"CY-S, HA-NE, HA-SE, HA-W, HP-W, JO-S, KU-NE, LA-S, LZ-E, LZ-SW, PSD-NW, PSD-SW, PSL-SE, RL-W, SE-NW, SE-SW, SJ-NW, SJ-S, SS-N, SS-S, TKK-W, TM-E, TM-S, TPT-SW",X (SIMP),"X (Chou et al, subtidal seawall transplant)
+X (Chou et al, subtidal seawall transplant)",,,"X (Raffles)
+X (SultanShoal)",,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",Also documented on reef flats (Lee et al 2021),"Loo & Chou 1995; Ang 2007; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Kikuzawa et al 2020; Lee et al 2021
+
+Chou et al 2017 (effectiveness of reef restoration); Chou et al 2018 (relevance of reef restoration); Ng et al 2019b (skeletal density)"
+Favites rotundata,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Favites,rotundata,Favia,"Veron, Pichon & Wijsman-Best, 1977",,No,No,No,No,NT,-,DD,1995 (as Favia rotundata; Loo & Chou),2020 (Ng et al),4,10,30,-100,-0.00104,0.231439,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive.
+Hermaphroditic broadcaster.",,,,,,,"X (Raffles)
+X (SultanShoal)",,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Loo & Chou 1995; Ang 2007; Huang et al 2009; Ng et al 2020
+Favites valenciennesi,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Favites,valenciennesi,Montastraea,"(Milne Edwards & Haime, 1849) ",,No,No,No,No,NT,-,LC,1977 (Chuang),2021 (Lee et al),11,10,30,282.1052632,0.103798,0.006147,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive, encrusting.
+Hermaphroditic broadcaster.",,"CY-S, HA-NE, HA-SE, HA-W, HP-W, JO-S, KU-NE, LA-S, LZ-E, LZ-SW, PSD-NW, PSD-SW, PSL-SE, RL-W, SE-NW, SE-SW, SJ-NW, SS-S, TKK-W, TM-E, TM-S, TPT-SW",X (SIMP),,,,"X (Raffles)
+X (SultanShoal)",,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",Also documented on reef flats (Lee et al 2021),"As Favia valenciennesi:
+Chuang 1977
+
+As Montastrea valenciennesi:
+Iffah(LKCNHM); Loo & Chou 1995; Ang 2007; Huang et al 2009
+
+As Favites valenciennesi: 
+BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Lee et al 2021
+
+Huang et al 2009b (pervasive paraphyly)"
+Goniastrea edwardsi,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Goniastrea,edwardsi,Goniastrea,"Chevalier, 1971",,No,No,No,No,LC,-,LC,1881 (as Goniastraea capitata; Studer),2019 (Chow et al),11,10,30,-23.8267148,9.72E-03,4.51E-01,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive, encrusting.
+Hermaphroditic broadcaster.",,"JO-S, PSD-NW, RL-W, SS-S, TPT-SW",X (SIMP),,,,X (Raffles),,,,,,"Common at many sites. Population decline not observed.
+
+Documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",,"Studer 1881; Iffah(LKCNHM); Loo & Chou 1995; Guest et al 2005b; Ang 2007; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019
+
+Huang et al 2009b (pervasive paraphyly); Leveque et al 2019 (Symbiodiniaceae communities in merulinids)"
+Goniastrea favulus,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Goniastrea,favulus,Goniastrea,"(Dana, 1846)",,No,No,No,No,NT,-,LC,1995 (Loo & Chou),2020 (Ng et al),7,10,30,-35.86046512,-0.00066,0.983292,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive, encrusting.
+Hermaphroditic broadcaster.",,"HA-NE, HA-W, HP-E, JO-S, KUE-NE, LZ-E, PSD-NW, PSL-SE, RL-W, SE-NW",,,,,"X (Raffles)
+X (SultanShoal)",,,,,,"Common at many sites. Population decline not significant
+
+Documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",,"Loo & Chou 1995; Ang 2007; Huang et al 2009; Wong et al 2018; Chow et al 2019; Ng et al 2020
+
+Huang et al 2009b (pervasive paraphyly)"
+Goniastrea minuta,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Goniastrea,minuta,Goniastrea,"Veron, 2000",,No,No,No,No,NT,-,DD,2005 (Guest et al (b)),2015 (Ng et al),4,10,30,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies submassive.
+Hermaphroditic broadcaster.",,,,"X (Ng et al, ex situ nursery)
+X (Ng et al, ex situ nursery & intertidal seawall transplant)",,,X (Raffles),,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,"Guest et al 2005b; Huang et al 2009
+
+Ng et al 2012 (ex situ coral nursery); Ng et al 2015 (enhancing seawall biodiversity)"
+Goniastrea pectinata,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Goniastrea,pectinata,Goniastrea,"(Ehrenberg, 1834) ",,No,No,No,No,LC,-,LC,1956 (Purchon),2020 (Kikuzawa et al),22,10,30,267.6559287,1.107194,2.41E-27,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive, encrusting. 
+Hermaphroditic broadcaster.
+
+Can colonise artificial structures.",,"CY-S, HA-NE, HA-SE, HA-W, HP-E, HP-W, JO-S, KU-NE, LZ-SW, PSD-NW, PSD-SW, PSL-SE, RL-W, SE-NW, SE-SW, SJ-NW, SJ-S, SS-S, TM-E, TM-S, TPT-SW",X (SIMP),"X (Ng et al, ex situ nursery)",,,"X (Raffles)
+X (SultanShoal)",,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",,"Purchon 1956; Chuang 1961; Chou & Teo 1983; Chou & Wong 1986; Iffah(LKCNHM); Loo & Chou 1995; Guest et al 2005b; Ang 2007; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Kikuzawa et al 2020
+
+Huang et al 2009b (pervasive paraphyly); Ow & Todd 2010 (plasticity); Ng et al 2012 (ex situ coral nursery); Leveque et al 2019 (Symbiodiniaceae communities in merulinids)"
+Goniastrea retiformis,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Goniastrea,retiformis,Goniastrea,"(Lamarck, 1816)",,No,No,No,No,LC,-,LC,1961 (Chuang),2021 (Lee et al),20,10,30,-54.72027972,-0.01159,0.648014,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive, encrusting.
+Hermaphroditic broadcaster.
+
+Can colonise artificial structures.","HA-W, JO-S, PSL-SE, RL-W",,X (SIMP),"X (Chou et al, subtidal seawall transplant)
+X (Chou et al, subtidal seawall transplant)",,,"X (Raffles)
+X (SultanShoal)",,,,,,"Not found at many sites. Population decline not significant.
+
+Documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",Also documented on reef flats (Lee et al 2021),"Chuang 1961; Chou & Wong 1986; Iffah(LKCNHM); Loo & Chou 1995; Ang 2007; Huang et al 2009; Wong et al 2018; Chow et al 2019; Ng et al 2020; Lim et al 2020; Kikuzawa et al 2020; Lee et al 2021
+
+Huang et al 2009b (pervasive paraphyly); Chou et al 2017 (effectiveness of reef restoration); Chou et al 2018 (relevance of reef restoration); Leveque et al 2019 (Symbiodiniaceae communities in merulinids); Quek & Huang 2019 (phylotranscriptomic analysis); Quek et al 2020 (baits)"
+Goniastrea stelligera,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Goniastrea,stelligera,Favia,"(Dana, 1846) ",,No,No,No,No,NT,-,DD,"1985 (ZRC, 19850715)",2009 (Huang),4,10,30,-100,-0.0007,0.467971,,,,,,X,X,X,,,,,,X,X,,,X,,"Colonies massive.
+Hermaphroditic broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Iffah(LKCNHM); Loo & Chou 1995; Ang 2007; Huang et al 2009
+Hydnophora exesa,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Hydnophora,exesa,Hydnophora,"(Pallas, 1766)",,No,No,No,No,NT,-,LC,1881 (Studer),2020 (Kikuzawa et al),14,10,30,42.02061856,0.060311,0.377425,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive, branching, foliose, encrusting. Hermaphroditic broadcaster.
+
+Can colonise artificial structures.",,"HA-NE, HA-W, HP-E, HP-W, JO-S, KU-NE, LZ-E, LZ-SW, PSD-NW, PSL-SE, RL-W, SJ-NW, TKK-W, TM-S, TPT-SW",X (SIMP),"X (Ng et al, ex situ nursery)
+X (Chou et al, subtidal seawall transplant)",,,"X (Raffles)
+X (SultanShoal)",,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",,"Studer 1881; Purchon 1956; Chuang 1961; Iffah(LKCNHM); Loo & Chou 1995; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Lim et al 2020; Kikuzawa et al 2020
+
+Ng et al 2012 (ex situ coral nursery); Chou et al 2018 (relevance of reef restoration)"
+Hydnophora grandis,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Hydnophora,grandis,Hydnophora,"Gardiner, 1904",spine coral,No,No,No,No,LC,-,NT,2018 (Wong et al),2020 (Kikuzawa et al),4,10,30,,0.043212,0.000241,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies branching.
+Hermaphroditic broadcaster.
+
+Can colonise artificial structures.",,"HA-W, HP-E, HP-W, KU-NE, PSL-SE, RL-W, SS-S",,,,,X (SultanShoal),X,,,,X,"Common at many sites. Population decline not observed.
+
+Documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",,Wong et al 2018; Chow et al 2019; Ng et al 2020; Kikuzawa et al 2020
+Hydnophora microconos,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Hydnophora,microconos,Hydnophora,"(Lamarck, 1816)",,No,No,No,No,NT,-,DD,1977 (Chuang),2017 (BioBlitz_SIMP2017),2,10,30,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive. 
+Hermaphroditic broadcaster.",,,X (SIMP),,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,"Chuang 1977
+
+as Hydnophora cf. microconos: BioBlitz_SIMP2017"
+Hydnophora rigida,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Hydnophora,rigida,Hydnophora,"(Dana, 1846)",,No,No,No,No,LC,-,NT,1881 (Studer),2020 (Lim et al),16,10,30,-98.70588235,-0.17774,2.16E-05,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies branching.
+Hermaphroditic broadcaster.","RL-W, SS-N",,,"X (Bongiorni et al, in situ nursery)
+X (Ng et al, ex situ nursery)
+X (Ng et al, ex situ nursery & intertidal seawall transplant)
+X (Toh et al (b), in situ nursery & subtidal seawall transplant)
+X (Chou et al, subtidal seawall transplant)",,,X (Raffles),X,,,,X,"Population decline significant.
+Not found at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",,"Studer 1881; Purchon 1956; Chuang 1961; Chou & Wong 1986; Iffah(LKCNHM); Loo & Chou 1995; Huang et al 2009; Chow et al 2019; Lim et al 2020
+
+Bongiorni et al 2011 (in situ coral nursery); Ng et al 2012 (ex situ coral nursery); Ng et al 2015 (enhancing seawall biodiversity); Toh et al 2017b (cost-effective seawall biodiversity enhancement); Chou et al 2017 (effectiveness of reef restoration)"
+Leptoria phrygia,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Leptoria,phrygia,Leptoria,"(Ellis & Solander, 1786)",,No,No,No,No,NT,-,LC,1956 (Purchon),2018 (Wong et al),8,15,45,332.8571429,0.008985,0.65621,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, encrusting.
+Hermaphroditic broadcaster.","KU-NE, PSL-SE, SJ-NW, SS-S",,X (SIMP),,,,X (Raffles),,,,,,"Not found at many sites. Population decline not documented.
+
+Documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",,"Purchon 1956; Chuang 1961; Loo & Chou 1995; Ang 2007; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018
+
+Huang et al 2009b (pervasive paraphyly)"
+Merulina ampliata,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Merulina,ampliata,Merulina,"(Ellis & Solander, 1786)",,No,No,No,No,LC,-,LC,1881 (Studer),2020 (Kikuzawa et al),27,10,30,-8.153452013,0.22354,0.224476,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies foliose, encrusting.
+Hermaphroditic broadcaster.
+
+Can colonise artificial structures.",,"CY-S, HA-NE, HA-SE, HA-W, HP-E, HP-W, JO-S, KU-NE, LZ-E, LZ-SW, PSD-NW, PSD-SW, PSL-SE, RL-W, SE-NW, SE-SW, SJ-S, SS-N, SS-S, TKK-W, TM-E, TM-S, TPT-SW",X (SIMP),"X (Toh et al (b), in situ nursery & subtidal seawall transplant)
+X (Chou et al, subtidal seawall transplant)",,,"X (Raffles)
+X (SultanShoal)",,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",,"Studer 1881; Purchon 1956; Chuang 1961; Chou & Teo 1983; Iffah(LKCNHM); Loo & Chou 1995; Guest et al 2005b; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Lim et al 2020; Kikuzawa et al 2020
+
+Browne et al. 2014 (photophysiological stress); Browne et al. 2015a (coral-sediment thresholds); Browne et al. 2015b (fluctuation in coral health); Teo et al. 2016 (quantification of coral sperm); Tanzil et al 2016 (Symbiodinium diversity); Toh et al 2017b (cost-effective seawall biodiversity enhancement); Chou et al 2017 (effectiveness of reef restoration); Teo & Todd 2018 (simulation of broadcast spawning event); Afiq-Rosli et al 2019 (maximising genetic diversity); Leveque et al 2019 (Symbiodiniaceae communities in merulinids); Ng et al 2019b (skeletal density)"
+Merulina scabricula,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Merulina,scabricula,Merulina,"Dana, 1846",,No,No,No,No,LC,-,LC,"1985 (ZRC, 19850621)",2020 (Kikuzawa et al),11,10,30,116,0.544739,1.39E-13,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies foliose, branching.
+Hermaphroditic broadcaster.
+
+Can colonise artificial structures.",,"HA-NE, HA-W, HP-E, HP-W, JO-S, KU-NE, PSL-SE, RL-W, SE-NW, SE-SW, SJ-NW, SS-S, TM-E, TM-S, TPT-SW",X (SIMP),,,,"X (Raffles)
+X (SultanShoal)",,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",,"Iffah(LKCNHM); Loo & Chou 1995; Guest et al 2005b; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Kikuzawa et al 2020
+
+Teo et al. 2016 (quantification of coral sperm); Leveque et al 2019 (Symbiodiniaceae communities in merulinids)"
+Mycedium elephantotus,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Mycedium,elephantotus,Mycedium,"(Pallas, 1766)",,No,No,No,No,LC,-,LC,1956 (as Mycedium tubifex; Purchon),2020 (Kikuzawa et al),16,10,30,190.8191654,0.166473,0.012767,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies foliose, encrusting.
+Hermaphroditic broadcaster.
+
+Can colonise artificial structures.",,"HA-NE, HA-SE, HA-W, HP-E, HP-W, JO-S, KU-NE, LZ-E, LZ-SW, PSD-NW, PSD-SW, PSL-SE, RL-W, SE-NW, SE-SW, SJ-NW, SJ-S, SS-S, TKK-W, TM-S, TPT-SW",X (SIMP),"X (Chou et al, subtidal seawall transplant)
+
+X (Chou et al, subtidal seawall transplant)",,,X (Raffles),,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",,"Purchon 1956; Chuang 1961; Chou & Wong 1986; Iffah(LKCNHM); Loo & Chou 1995; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Lim et al 2020; Kikuzawa et al 2020
+
+Chou et al 2017 (effectiveness of reef restoration); Chou et al 2018 (relevance of reef restoration)"
+Oulophyllia bennettae,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Oulophyllia,bennettae,Oulophyllia,"(Veron, Pichon & Wijsman-Best, 1977)",Intermediate valley coral,No,No,No,No,NT,-,DD,2005 (Guest et al (b)),2020 (Kikuzawa et al),8,10,30,,0.044422,4.27E-06,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive.
+Hermaphroditic broadcaster.
+
+Can colonise artificial structures.",,"HA-SE, JO-S, PSD-NW, RL-W, TPT-SW",X (SIMP),,,,X (Raffles),,,,,,"DD, as % cover change only quantified for < 10 years. 
+",,"Guest et al 2005b; Ang 2007; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Kikuzawa et al 2020
+
+Huang et al 2009b (pervasive paraphyly)"
+Oulophyllia crispa,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Oulophyllia,crispa,Oulophyllia,"(Lamarck, 1816)",,No,No,No,No,NT,-,LC,1995 (as Oulophyllia crispata; Loo & Chou),2017 (BioBlitz_SIMP2017),5,10,30,312.8712871,0.039944,0.068453,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive.
+Hermaphroditic broadcaster.","KU-NE, RL-W, TPT-SW",,X (SIMP),,,,X (Raffles),,,,,,"Population decline not observed and further decline not predicted.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",,"Loo & Chou 1995; Ang 2007; Huang et al 2009; BioBlitz_SIMP2017
+
+Huang et al 2009b (pervasive paraphyly)"
+Paragoniastrea australensis,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Paragoniastrea,australensis,Goniastrea,"(Milne Edwards & Haime, 1857) ",,No,No,No,No,LC,-,LC,1956 (as Goniastrea benhami; Purchon),2021 (Lee et al),12,10,30,47.75510204,0.0193,0.028972,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, encrusting.
+Hermaphroditic broadcaster.",,"JO-S, RL-W, SE-SW, SS-S, TM-E, TPT-SW",X (SIMP),,,,X (Raffles),,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",,"Purchon 1956; Chuang 1961; Chou & Teo 1983; Iffah(LKCNHM); Chou & Wong 1986; Loo & Chou 1995; Ang 2007; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Lee et al 2021
+
+Huang et al 2009b (pervasive paraphyly)"
+Paragoniastrea russelli,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Paragoniastrea,russelli,Favites,"(Wells, 1954) ",,No,No,No,No,NT,-,DD,1995 (as Favites russelli; Loo & Chou),2017 (REL Collections),1,10,30,-100,-0.00368,0.296529,,,,,,X,X,X,X,,,,,X,X,,,X,,Colonies massive.,,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Loo & Chou 1995
+Pectinia alcicornis,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Pectinia,alcicornis,Pectinia,"(Saville Kent, 1871)",Antler coral,No,No,No,No,VU,-,NT,"1986 (ZRC, 19860429)",2020 (Kikuzawa et al),11,10,30,-93.41161707,-0.87847,3.55E-16,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies branching, foliose, encrusting.
+Hermaphroditic broadcaster.
+
+Can colonise artificial structures.",,"HA-NE, HA-W, HP-W, JO-S, KU-NE, PSD-NW, RL-W, TPT-SW",X (SIMP),,,,X (Raffles),X,,,,X,"Population decline significant
+
+Common at many sites. 
+
+Documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",,Iffah(LKCNHM); Loo & Chou 1995; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Kikuzawa et al 2020
+Pectinia crassa,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Pectinia,crassa,Pectinia,"Ditlev, 2003",,No,No,No,No,DD,-,LC,2017 (BioBlitz_SIMP2017),2020 (Kikuzawa et al),5,Not stated,-,,0.261888,1.15E-37,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies foliose.
+Hermaphroditic broadcaster.
+
+Can colonise artificial structures.",,"HA-NE, HA-SE, HA-W, HP-E, HP-W, JO-S, KU-NE, LZ-E, LZ-SW, PSD-NW, PSD-SW, PSL-SE, RL-W, SE-NW, SE-SW, SJ-NW, SJ-S, SS-N, SS-S, TKK-W, TM-E, TPT-SW",X (SIMP),,,,X (SultanShoal),,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",,BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Kikuzawa et al 2020
+Pectinia lactuca,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Pectinia,lactuca,Pectinia,"(Pallas, 1766)",Carnation coral,No,No,No,No,VU,-,NT,1881 (as Tridacophyllia lactuca & T. symphylloides; Studer),2020 (Kikuzawa et al),19,10,30,-69.38239501,-0.44726,9.99E-07,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies submassive, branching, foliose.
+Hermaphroditic broadcaster.
+
+Can colonise artificial structures.",,"HA-NE, HA-SE, HA-W, HP-E, JO-S, KU-NE, PSD-NW, PSD-SW, PSL-SE, RL-W, SE-NW, SE-SW, SJ-NW, SJ-S, SS-N, SS-S, TKK-W, TM-S, TPT-SW",X (SIMP),,,,"X (Raffles)
+X (SultanShoal)",X,,,,X,"Population decline significant
+
+Common at many sites. 
+
+Documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",,"Studer 1881; Purchon 1956; Chou & Teo 1983; Chou & Wong 1986; Iffah(LKCNHM); Loo & Chou 1995; Guest et al 2005b; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Kikuzawa et al 2020
+
+Tay et al 2011 (larval settlement competencies); Toh et al 2012 (spawning timing)"
+Pectinia paeonia,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Pectinia,paeonia,Pectinia,"(Dana, 1846)",,No,No,No,No,NT,-,LC,1881 (as Tridacophyllia laciniata; Studer),2021 (Lee et al),19,10,30,251.9080706,1.230925,2.98E-36,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies foliose, encrusting.
+Hermaphroditic broadcaster.
+
+Can colonise artificial structures.",,"CY-S, HA-NE, HA-SE, HA-W, HP-E, HP-W, JO-S, KU-NE, LA-S, LZ-E, LZ-SW, PSD-NW, PSD-SW, PSL-SE, RL-W, SE-NW, SE-SW, SJ-NW, SJ-S, SS-N, SS-S, TKK-W, TM-E, TM-S, TPT-SW",X (SIMP),X (Ng & Chou; COPs),,,"X (Raffles)
+X (SultanShoal)",,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",Also documented on reef flats (Lee et al 2021),"Studer 1881; Iffah(LKCNHM); Loo & Chou 1995; Guest et al 2005b; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Lim et al 2020; Kikuzawa et al 2020; Lee et al 2021
+
+Ng & Chou 2014 (COPs); Ng et al 2019b (skeletal density)"
+Physophyllia ayleni,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Physophyllia,ayleni,Pectinia,"(Wells, 1934)",,No,No,No,No,NT,-,DD,2009 (as Pectinia ayleni; Huang et al 2009),2019 (Chow et al),2,10,30,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies foliose. 
+Hermaphroditic broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Huang et al 2009; Chow et al 2019
+Platygyra daedalea,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Platygyra,daedalea,Platygyra,"(Ellis & Solander, 1786)",Brain coral,No,No,No,No,LC,-,LC,1881 (as Coeloria daedalea; Studer),2021 (Lee et al),11,10,30,106.5306122,0.022768,0.19262,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive.
+Hermaphroditic broadcaster.",,"HA-W, JO-S, KU-NE, PSD-NW, PSL-SE, RL-W, SE-SW, SJ-NW, SS-N, TPT-SW",X (SIMP),,,,"X (Raffles)
+X (SultanShoal)",,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",Also documented on reef flats (Lee et al 2021),"Studer 1881; Iffah(LKCNHM); Loo & Chou 1995; Ang 2007; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Lee et al 2021
+
+Huang et al 2009b (pervasive paraphyly)"
+Platygyra lamellina,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Platygyra,lamellina,Platygyra,"(Ehrenberg, 1834)",Lesser valley coral,No,No,No,No,NT,-,VU,1956 (Purchon),2020 (Kikuzawa et al),15,10,30,-61.1744186,-0.09488,0.004389,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive, encrusting.
+Hermaphroditic broadcaster.
+
+Can colonise artificial structures.",,"CY-S, HA-NE, HA-W, JO-S, KU-NE, PSD-NW, PSL-SE, RL-W, SE-SW, SS-N, SS-S, TPT-SW",,,,,"X (Raffles)
+X (SultanShoal)",X,,X,X,X,"Population decline significant
+
+Common at many sites. 
+
+Documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",,"Purchon 1956; Chuang 1961; Chou & Teo 1983; Chou & Wong 1986; Iffah(LKCNHM); Loo & Chou 1995; Ang 2007; Huang et al 2009; Wong et al 2018; Chow et al 2019; Ng et al 2020; Lim et al 2020; Kikuzawa et al 2020
+
+Huang et al 2009b (pervasive paraphyly)"
+Platygyra pini,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Platygyra,pini,Platygyra,"Chevalier, 1975",,No,No,No,No,LC,-,LC,1995 (Loo & Chou),2021 (Lee et al),13,10,30,211.862069,0.024803,0.250455,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, encrusting.
+Hermaphroditic broadcaster.
+
+Can colonise artificial structures.",,"HA-NE, HA-W, JO-S, KU-NE, LA-S, LZ-SW, PSD-NW, PSL-SE, RL-W, SE-NW, SS-N, SS-S, TM-S, TPT-SW",X (SIMP),,,,"X (Raffles)
+X (SultanShoal)",,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).",Also documented on reef flats (Lee et al 2021),"Loo & Chou 1995; Guest et al 2005b; Ang 2007; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Lim et al 2020; Kikuzawa et al 2020; Lee et al 2021
+
+Huang et al 2009b (pervasive paraphyly); Guest et al 2012b (reproductive seasonality)"
+Platygyra ryukyuensis,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Platygyra,ryukyuensis,Platygyra,"Yabe & Sugiyama, 1935",Maze brain coral,No,No,No,No,NT,-,DD,2005 (Guest et al (b)),2009 (Huang et al),2,10,30,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive. 
+Hermaphroditic broadcaster.",,,,,,,X (Raffles),,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Guest et al 2005b; Huang et al 2009
+Platygyra sinensis,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Platygyra,sinensis,Platygyra,"(Milne Edwards & Haime, 1849)",,No,No,No,No,LC,-,LC,1881 (as Coeloria stricta & C. sinensis; Studer),2021 (Lee et al),33,10,30,430.4873752,0.755957,1.13E-20,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive, encrusting.
+Hermaphroditic broadcaster.
+
+Can colonise artificial structures.",,"CY-S, HA-NE, HA-SE, HA-W, HP-E, HP-W, JO-S, KU-NE, LA-S, LZ-E, LZ-SW, PSD-NW, PSD-SW, PSL-SE, RL-W, SE-NW, SE-SW, SJ-NW, SJ-S, SS-N, SS-S, TKK-W, TM-E, TM-S, TPT-SW",X (SIMP),"X (Ng et al, ex situ nursery)
+X (Taira et al (b), in situ nursery)
+X (Toh et al (b), in situ nursery & subtidal seawall transplant)
+X (Chou et al, reef & subtidal seawall transplant)
+X (Sam et al, in situ nursery)
+X (Wee et al, in situ nursery)",,,"X (Raffles)
+X (SultanShoal)",,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).",Also documented on reef flats (Lee et al 2021),"Studer 1881; Iffah(LKCNHM); Loo & Chou 1995; Guest et al 2005b; Ang 2007; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Lim et al 2020; Kikuzawa et al 2020; Lee et al 2021
+
+Huang et al 2009b (pervasive paraphyly); Tay et al 2011 (larval settlement competencies); Ng et al 2012 (ex situ coral nursery); Browne et al. 2014 (photophysiological stress); Browne et al. 2015a (coral-sediment thresholds); Browne et al. 2015b (fluctuation in coral health); Tay et al 2015 (microsatellite markers); Taira et al 2017a (relocating bleached colonies); Taira et al 2017b (juv. butterflyfishes inhabiting nursery); Toh et al 2017b (cost-effective seawall biodiversity enhancement); Chou et al 2017 (effectiveness of reef restoration); Sam et al 2018 (cuttlefish egg deposition); Ng et al 2019b (skeletal density); Quek & Huang 2019 (phylotranscriptomic analysis); Wee et al 2019 (epifauna); Loo et al 2020 (optimal temperature); Quek et al 2020 (baits)"
+Platygyra verweyi,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Platygyra,verweyi,Platygyra,"Wijsman-Best, 1976",,No,No,No,No,NT,-,NT,1995 (Loo & Chou),2021 (Lee et al),10,10,30,-37.93103448,0.004858,0.567985,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, encrusting.
+Hermaphroditic broadcaster.","HP-W, LA-S, LZ-E, TKK-W",,X (SIMP),,,,"X (Raffles)
+X (SultanShoal)",X,,,,X,"Not found at many sites. Population decline not documented.
+
+Documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",Also documented on reef flats (Lee et al 2021),"Loo & Chou 1995; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Lim et al 2020; Lee et al 2021
+
+Guest et al 2002 (multispecific synchronus spawning); Huang et al 2009b (pervasive paraphyly)"
+Plerogyra sinuosa,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Plerogyra,sinuosa,Plerogyra,"(Dana, 1846)",Pearl bubble coral,No,No,No,No,NT,-,VU,1881 (as Plerogyra laxa; Studer),2020 (Kikuzawa et al),15,10,30,-70.86746375,-0.14795,0.040624,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive.
+Gonochoric broadcaster.
+
+Can colonise artificial structures.",,"CY-S, HA-NE, HA-W, HP-E, KU-NE, LZ-E, LZ-SW, PSD-NW, RL-W, SE-NW, SJ-NW, SS-S, TKK-W, TPT-SW",X (SIMP),,,,X (Raffles),X,,X,X,X,"Population decline significant
+
+Common at many sites. 
+
+Documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",Found at some intertidal sites (Lim et al 2020),Studer 1881; Purchon 1956; Chuang 1961; Chou & Teo 1983; Iffah(LKCNHM); Loo & Chou 1995; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Lim et al 2020; Kikuzawa et al 2020
+Scapophyllia cylindrica,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Scapophyllia,cylindrica,Scapophyllia,"Milne Edwards & Haime, 1849",Columniform crust coral,No,No,No,No,LC,-,VU,1956 (Purchon),2019 (Leveque et al),6,10,30,-94.11764706,-0.03463,0.039358,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive, encrusting.
+Hermaphroditic broadcaster.",KU-NE,,,,,,X (Raffles),X,,X,,X,"Population decline significant.
+Not found at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",Not recorded at intertidal sites by both WildSingapore and Lim et al 2020.,"Purchon 1956; Loo & Chou 1995; Guest et al 2005b; Huang et al 2009
+
+Huang et al 2009b (pervasive paraphyly); Leveque et al 2019 (Symbiodiniaceae communities in merulinids)"
+Trachyphyllia geoffroyi,Cnidaria,Anthozoa,Scleractinia,Merulinidae,Trachyphyllia,geoffroyi,Trachyphyllia,"(Audouin, 1826)",Green open brain coral,No,No,No,No,NT,-,EN,1881 (as Trachyphyllia armaranthus; Studer),2020 (Lim et al),8,10,30,-100,-0.00608,0.06218,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies free-living.
+Broadcaster.",,,X (SIMP),,,,X (Raffles),X,X,X,,X,"Population decline significant.
+Not found at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",,Studer 1881; Purchon 1956; Iffah(LKCNHM); Chou & Teo 1983; Loo & Chou 1995; Huang et al 2009; BioBlitz_SIMP2017; Lim et al 2020
+Physogyra lichtensteini,Cnidaria,Anthozoa,Scleractinia,Plesiastreidae,Physogyra,lichtensteini,Physogyra,"(Milne Edwards & Haime, 1851)",Pearl bubble coral,No,No,No,No,VU,-,VU,"1986 (ZRC, 19860418)",2018 (Wong et al),3,10,30,-95.31339031,-0.14104,0.001405,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive.
+Gonochoric broadcaster.","HP-W, LZ-E, SE-NW",,,,,,,X,,X,,X,"Population decline significant.
+Not found at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",,Iffah(LKCNHM); Loo & Chou 1995; Wong et al 2018
+Plesiastrea versipora,Cnidaria,Anthozoa,Scleractinia,Plesiastreidae,Plesiastrea,versipora,Plesiastrea,"(Lamarck, 1816)",Pock-marked coral,No,No,No,No,LC,-,DD,2017 (BioBlitz_SIMP2017),2020 (Quek et al),7,10,30,,0.021329,0.034134,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive, encrusting.
+Gonochoric broadcaster.
+
+Can colonise artificial structures.",,"HP-E, LA-S, LZ-E, PSD-NW, RL-W, SJ-NW, SJ-S, SS-S, TKK-W, TM-S",X (SIMP),X (NParks species recovery progr),,,,,,,,,"DD, as % cover change only quantified for < 10 years. 
+",,"BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Lim et al 2020; Kikuzawa et al 2020
+
+Quek & Huang 2019 (phylotranscriptomic analysis); Quek et al 2020 (baits)"
+Madracis kirbyi,Cnidaria,Anthozoa,Scleractinia,Pocilloporidae,Madracis,kirbyi,Madracis,"Veron & Pichon, 1976",Ten coral,No,No,No,No,LC,-,DD,1995 (Loo & Chou),2019 (REL Collections),1,10,30,-100,-0.00527,0.313323,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive.
+Hermaphroditic brooder.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Loo & Chou 1995
+Pocillopora acuta,Cnidaria,Anthozoa,Scleractinia,Pocilloporidae,Pocillopora,acuta,Pocillopora,"Lamarck, 1816",Cauliflower coral,No,No,No,No,-,-,LC,1881 (as Pocillopora damicornis and P. bulbosa; Studer),2021 (Lee et al),65,5,15,59.55555556,0.055446,0.06904,,,,,,X,X,X,X,,,,,X,X,,,X,,"Usually in shallow areas; exhibit two distinct branching morphologies: compact (> 20 mm diameter) in exposed environments while thinner (~ 7 to 20 mm diameter) for those found in sheltered areas. Hermaphroditic brooder.
+
+Colonies branching.
+Can colonise artificial structures.",,"HP-E, KU-NE, PSD-NW, PSL-SE, RL-W, TM-E, TM-S, TPT-SW",X (as P.dam in Huang2009 in SIMP),"As Pocillopora damicornis:
+X (Bongiorni et al, in situ nursery)
+X (Ng et al, ex situ nursery)
+X (Toh et al 2014, ex situ nursery & reef transplant)
+X (Ng et al, ex situ nursery & intertidal seawall transplant)
+X (Afiq-Rosli et al, in situ nursery & subtidal seawall transplant)
+X (Toh et al (b), in situ nursery & subtidal seawall transplant)
+X (Chou et al, reef & subtidal seawall transplant)
+
+As Pocillopora acuta:
+X (Poquita-Du et al (b), in situ nursery)
+X (Sam et al, in situ nursery)
+X (Wee et al, in situ nursery)","X (Loh et al, REUs; as P.dam recruits)",,"X (as P.dam in Huang 2009, Raffles)",,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+",,"Surveyed as Pocillopora damicornis: Studer 1881; Chuang 1977; Loo & Chou 1995; Huang et al 2009 
+
+Surveyed as Pocillopora bulbosa (now acuta): Studer 1881
+
+Surveyed as Pocillopora acuta: BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Lim et al 2020; Kikuzawa et al 2020; Lee et al 2021
+
+Expts as Pocillopora damicornis:
+Goh et al 1989 (anomuran symbionts); Loh et al 2006 (REUs); Bongiorni et al 2011 (in situ coral nursery); Ng et al 2012 (ex situ coral nursery); Toh et al 2013a, b, c, d (grazers, early zooplanktivory, heterotrophy, aggregated settlement); Toh et al 2014 (nutritional enhancement); Browne et al. 2015 (fluctuation in coral health); Ng et al 2015 (enhancing seawall biodiversity); Afiq-Rosli et al 2017 (in situ nursery); Toh et al 2017a (marina epibiotic assemblages); Toh et al 2017b (cost-effective seawall biodiversity enhancement); Chou et al 2017 (effectiveness of reef restoration); Chou et al 2019b (planulation in 1990)
+
+Expts as Pocillopora acuta:
+Sam et al 2016 (Drupella egg sighting); Tanzil et al 2016 (Symbiodinium diversity); Poquita-Du et al 2017a ('damicornis'-like); Poquita-Du et al 2017b (nursery orientation); Sam et al 2017 (Drupella veliger development); Sam et al 2018 (cuttlefish egg deposition); Samsuri et al 2018 (Trapezia); Fong et al 2019 (allelopathic effects); Ng et al 2019b (skeletal density); Poquita-Du et al 2019 (exposure to heat and sediment); Wainwright et al 2019 (coral-associated bacteria); Wee et al 2019 (epifauna); Poquita-Du et al 2020a, b (heat stress and recovery; contribution of Durusdinium); Loo et al 2020 (optimal temperature); Quek et al 2020 (baits)"
+Pocillopora cf. verrucosa,Cnidaria,Anthozoa,Scleractinia,Pocilloporidae,Pocillopora,cf. verrucosa,Pocillopora,"(Ellis and Solander, 1786)",Cauliflower coral,No,No,No,No,LC,-,DD,Studder 1881,2009 (Lee & Sin),3,5,15,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,Hermaphroditic broadcaster. Associated with two co-occuring ectosymbionts such as (Trapezia septata) and coral- dwelling alpheid shrimps (Alpheus lottini),,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Goh et al 1989 (anomuran symbionts); Lee & Sin 2009 (relationship with Trapezia septata)
+Seriatopora hystrix,Cnidaria,Anthozoa,Scleractinia,Pocilloporidae,Seriatopora,hystrix,Seriatopora,"Dana, 1846",Thin birdsnest coral,No,No,No,No,LC,CR,NEx,1956 (Purchon),1961 (Chuang) ,4,5,15,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,"Inhabit sloping rock surfaces and can be found as deep as ~ 40 m. Relatively uncommon compared with other members of the family. Morphological features exhibit variation related to wave motion and light intensity.
+
+Colonies branching.
+Hermaphroditic brooder. ",,,,,,,,X,X,X,,X,"Although also documented from other reefs in the region (Huang et al 2015), this species has not been observed on Singapore reefs since 1961. Status is therefore not downgraded from Part 1 [initial (local) assessment based on RDB2 methodology], i.e. despite potential immigration of propagules from the region, the species has not managed to reestablish.",,Purchon 1956; Chuang 1961; Poquita-Du et al 2019 (Last species standing)
+Stylophora pistillata,Cnidaria,Anthozoa,Scleractinia,Pocilloporidae,Stylophora,pistillata,Stylophora,"Esper, 1797",Smooth cauliflower coral,No,No,No,No,NT,CR,CR,Studder 1881,"2010 (K Tun, as per comms)",9,7,21,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,"Typically dominant on shallow reefs. Colonies exhibit wide morphological variation across different habitats: ivy-colored and subspherical in shallow waters while appear planar and dark in deeper waters. 
+
+Colonies branching.
+Hermaphroditic brooder. ",,,,,,,X (Raffles),X,X,X,,X,"Since 1977, only one colony observed at Raffles Lighthouse (Tun pers comm), but it has since perished.
+
+Although also documented from other reefs in the region (Huang et al 2015), this species has not been observed on Singapore reefs since 2010. Status is therefore not downgraded from Part 1 [initial (local) assessment based on RDB2 methodology], i.e. despite potential immigration of propagules from the region, the species has not managed to reestablish.",,Studder 1881; Purchon 1956; Chuang 1977; Poquita-Du et al 2019 (Last species standing)
+Bernardpora stutchburyi,Cnidaria,Anthozoa,Scleractinia,Poritidae,Bernardpora,stutchburyi,Goniopora,"(Wells, 1955)",Anemone coral,No,No,No,No,LC,-,LC,1956 (as Goniopora stutchburyi; Purchon),2020 (Kikuzawa et al),10,10,30,1250.30303,0.021918,0.044749,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive, encrusting.
+Gonochoric broadcaster.
+
+Can colonise artificial structures.",,"CY-S, HA-SE, JO-S, KU-NE, LA-S, LZ-E, LZ-SW, PSD-NW, RL-W, SJ-NW, SS-N, SS-S, TKK-W, TM-E, TM-S",X (SIMP),,,,X (SultanShoal),,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",,Purchon 1956; Chuang 1961; Chou & Wong 1986; Loo & Chou 1995; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Lim et al 2020; Kikuzawa et al 2020
+Goniopora columna,Cnidaria,Anthozoa,Scleractinia,Poritidae,Goniopora,columna,Goniopora,"Dana, 1846",anemone coral,No,No,No,No,NT,-,LC,1956 (Purchon),2021 (Lee et al),14,10,30,1048.71066,1.488955,5.64E-10,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive.
+Gonochoric broadcaster.
+
+Can colonise artificial structures.",,"HA-NE, HA-SE, HA-W, HP-E, JO-S, KU-NE, LZ-E, PSD-NW, RL-W, SE-NW, SE-SW, TKK-W, TM-E, TPT-SW",X (SIMP),,,,"X (Raffles)
+X (SultanShoal)",,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",Also documented on reef flats (Lee et al 2021),"Purchon 1956; Chuang 1961; Iffah(LKCNHM); Loo & Chou 1995; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Lim et al 2020; Kikuzawa et al 2020; Lee et al 2021
+
+Guest et al 2007 (effect of transplantation); Quek & Huang 2019 (phylotranscriptomic analysis)"
+Goniopora djiboutiensis,Cnidaria,Anthozoa,Scleractinia,Poritidae,Goniopora,djiboutiensis,Goniopora,"Vaughan, 1907",flowerpot coral,No,No,No,No,LC,-,NT,"1986 (ZRC, 19860429)",2020 (Ng et al),6,10,30,-83.86093321,-0.07669,0.029864,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive, encrusting.
+Gonochoric broadcaster.",,"HA-W, JO-S, KU-NE, LZ-E, PSD-SW, SE-SW",X (SIMP),,,,,X,,,,X,"Population decline significant
+
+Common at many sites. 
+
+Documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",,Iffah(LKCNHM); Loo & Chou 1995; BioBlitz_SIMP2017; Wong et al 2018; Ng et al 2020
+Goniopora eclipsensis,Cnidaria,Anthozoa,Scleractinia,Poritidae,Goniopora,eclipsensis,Goniopora,"Veron & Pichon, 1982",,No,No,No,No,LC,-,DD,"1985 (ZRC, 19850719)","1985 (ZRC, 19850719)",1,10,30,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies branching. 
+Gonochoric broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Iffah(LKCNHM)
+Goniopora fruticosa,Cnidaria,Anthozoa,Scleractinia,Poritidae,Goniopora,fruticosa,Goniopora,"Saville-Kent, 1891",,No,No,No,No,LC,-,DD,1956 (Purchon),1995 (Loo & Chou),4,10,30,-100,-0.00413,0.527623,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies encrusting. 
+Gonochoric broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Purchon 1956; Chuang 1961; Chou & Teo 1983; Loo & Chou 1995
+Goniopora lobata,Cnidaria,Anthozoa,Scleractinia,Poritidae,Goniopora,lobata,Goniopora,"Milne Edwards, 1860",flower pot true red coral,No,No,No,No,NT,-,LC,1956 (Purchon),2020 (Kikuzawa et al),14,10,30,1232.380952,0.224289,0.000162,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive, encrusting.
+Gonochoric broadcaster.
+
+Can colonise artificial structures.",,"HA-W, HP-E, HP-W, JO-S, KU-NE, LA-S, LZ-SW, PSD-NW, RL-W, SE-NW, TKK-W, TM-S",X (SIMP),"X (Ng et al, ex situ nursery)",,,X (Raffles),,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",,"Purchon 1956; Chuang 1961; Chou & Wong 1986; Iffah(LKCNHM); Loo & Chou 1995; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Kikuzawa et al 2020
+
+Ng et al 2012 (ex situ coral nursery); Quek et al 2020 (baits)"
+Goniopora pandoraensis,Cnidaria,Anthozoa,Scleractinia,Poritidae,Goniopora,pandoraensis,Goniopora,"Veron & Pichon, 1982",branching flower pot coral,No,No,No,No,LC,-,LC,1995 (Loo & Chou),2019 (Chow et al),3,10,30,85.79439252,0.072683,0.016446,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive.
+Gonochoric broadcaster. ",,"HA-NE, HA-W, JO-S, KU-NE, LZ-E, PSD-NW, RL-W, SE-SW, TKK-W",,,,,,,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",,Loo & Chou 1995; Wong et al 2018; Chow et al 2019
+Goniopora pedunculata,Cnidaria,Anthozoa,Scleractinia,Poritidae,Goniopora,pedunculata,Goniopora,"Quoy & Gimard, 1833",,No,No,No,No,NT,-,DD,2017 (as Goniopora minor; BioBlitz_SIMP2017),2021 (Lee et al),6,10,30,,0.01979,0.061526,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies encrusting. 
+Gonochoric broadcaster. 
+
+Can colonise artificial structures.",,"HA-SE, LA-S, PSD-SW, PSL-SE, RL-W, SE-NW, TKK-W, TM-S, TPT-SW",X (SIMP),,,,,,,,,,"DD, as % cover change only quantified for < 10 years. 
+",Also documented on reef flats (Lee et al 2021),"As Goniopora minor:
+BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Kikuzawa et al 2020
+
+As Goniopora pedunculata:
+Lee et al 2021"
+Goniopora pendulus,Cnidaria,Anthozoa,Scleractinia,Poritidae,Goniopora,pendulus,Goniopora,"Veron, 1985",,No,No,No,No,LC,-,DD,"1987 (ZRC.1987.1916, Huang et al)",2020 (Ng et al),3,10,30,,0.013198,0.004577,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive.
+Gonochoric broadcaster. ","HA-NE, HA-W, TKK-W",,,,,,X (SultanShoal),,,,,,"DD, as % cover change only quantified for < 10 years. 
+",,Huang et al 2009(ZRC.1987.1916); Wong et al 2018; Ng et al 2020
+Goniopora somaliensis,Cnidaria,Anthozoa,Scleractinia,Poritidae,Goniopora,somaliensis,Goniopora,"Vaughan, 1907",,No,No,No,No,LC,-,DD,"1985 (ZRC, 19850721)",2014 (Junjie et al),4,10,30,-100,-0.00826,0.119727,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies submassive.
+Gonochoric broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,"Iffah(LKCNHM); Loo & Chou 1995
+
+Junjie et al 2014 (sediments on coral energetics)"
+Goniopora stokesi,Cnidaria,Anthozoa,Scleractinia,Poritidae,Goniopora,stokesi,Goniopora,"Milne Edwards & Haime, 1851",daisy coral,No,No,No,No,NT,-,NT,"1987 (ZRC, 19870209)",2018 (Wong et al),4,10,30,-54.11111111,-0.01046,0.56872,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive.
+Gonochoric broadcaster.","HA-W, PSD-NW, TPT-SW",,X (SIMP),,,,,X,,,,X,"Not found at many sites. Population decline not significant.
+
+Documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",,Iffah(LKCNHM); Loo & Chou 1995; BioBlitz_SIMP2017; Wong et al 2018
+Goniopora tenuidens,Cnidaria,Anthozoa,Scleractinia,Poritidae,Goniopora,tenuidens,Goniopora,"(Quelch, 1886)",blue purple goniopora,No,No,No,No,LC,-,DD,2018 (Wong et al),2020 (Ng et al),3,10,30,,0.013452,0.018384,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies submassive, encrusting. 
+Gonochoric broadcaster.","LZ-E, RL-W, SE-SW",,,,,,,,,,,,"DD, as % cover change only quantified for < 10 years. 
+",,"Wong et al 2018; Chow et al 2019; Ng et al 2020
+"
+Porites australiensis,Cnidaria,Anthozoa,Scleractinia,Poritidae,Porites,australiensis,Porites,"Vaughan, 1918",,No,No,No,No,LC,-,LC,1986 (REST Survey),2020 (Ng et al),6,10,30,-21.36170213,-0.00342,0.918129,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive, encrusting.
+Gonochoric broadcaster.",,"HA-NE, HA-SE, HA-W, HP-E, KU-NE, LA-S,, PSL-SE, RL-W, SE-SW, SJ-NW, TM-E",X (SIMP),,,,"X (SultanShoal, as Porites massive)",,,,,,"Common at many sites. Population decline not significant
+
+Documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",,Loo & Chou 1995; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020
+Porites cylindrica,Cnidaria,Anthozoa,Scleractinia,Poritidae,Porites,cylindrica,Porites,"Dana, 1846 ",Yellow finger coral,No,No,No,No,NT,-,VU,"1986 (ZRC, 19860418)",2020 (Kikuzawa et al),5,10,30,-93.70503597,-0.09185,0.012845,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies submassive, branching, encrusting.
+Gonochoric broadcaster.
+
+Can colonise artificial structures.",HA-W,,,,,,,X,,X,X,X,"Population decline significant.
+Not found at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",,Iffah(LKCNHM); Loo & Chou 1995; Wong et al 2018; Kikuzawa et al 2020
+Porites deformis,Cnidaria,Anthozoa,Scleractinia,Poritidae,Porites,deformis,Porites,"Nemenzo, 1955",,No,No,No,No,NT,-,DD,2009 (Huang et al),2020 (Ng et al),2,10,30,,0.002711,0.199397,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies submassive.
+Gonochoric broadcaster.",KU-NE,,,,,,X (Raffles),,,,,,"DD, as % cover change only quantified for < 10 years. 
+",,Huang et al 2009; Ng et al 2020
+Porites lichen,Cnidaria,Anthozoa,Scleractinia,Poritidae,Porites,lichen,Porites,"(Dana, 1846)",Lichen coral,No,No,No,No,LC,-,DD,"1985 (ZRC, 19850614)",2009 (Huang et al),9,10,30,-100,-0.13662,0.00574,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies foliose, encrusting.
+Gonochoric broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Iffah(LKCNHM); Loo & Chou 1995; Huang et al 2009
+Porites lobata,Cnidaria,Anthozoa,Scleractinia,Poritidae,Porites,lobata,Porites,"Dana, 1846 ",Lobe coral,No,No,No,No,NT,-,LC,1977 (Chuang),2021 (Lee et al),17,10,30,1252.472325,0.150489,0.00093,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive, encrusting.
+Gonochoric broadcaster.
+
+Can colonise artificial structures.",,"CY-S, HA-NE, HA-W, HP-W, KU-NE, LA-S, LZ-E, LZ-SW, PSD-NW, PSD-SW, PSL-SE, RL-W, SE-NW, SE-SW, SJ-NW, SJ-S, SS-N, SS-S, TKK-W, TM-E, TM-S, TPT-SW",X (SIMP),"
+X (Ng et al, ex situ nursery)
+X (Ng et al, ex situ nursery & intertidal seawall transplant)",,,"X (Raffles)
+X (SultanShoal, as Porites massive)",,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",Also documented on reef flats (Lee et al 2021),"Chuang 1977; Iffah(LKCNHM); Loo & Chou 1995; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Kikuzawa et al 2020 (as Porites spp); Lee et al 2021 (as Porites lobata-lutea complex)
+
+Ng et al 2012 (ex situ coral nursery); Ng et al 2015 (enhancing seawall biodiversity); Tanzil et al 2016 (Symbiodinium diversity); Ng et al 2019b (skeletal density); Quek & Huang 2019 (phylotranscriptomic analysis); Loo et al 2020 (optimal temperature); Quek et al 2020 (baits)"
+Porites lutea,Cnidaria,Anthozoa,Scleractinia,Poritidae,Porites,lutea,Porites,"Milne Edwards & Haime, 1851",,No,No,No,No,LC,-,LC,1956 (Purchon),2021 (Moynihan et al),27,10,30,202.1812822,0.167655,0.000873,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive, encrusting.
+Gonochoric broadcaster.
+
+Can colonise artificial structures.",,"CY-S, HA-NE, HA-W, HP-E, JO-S, KU-NE, LZ-E, LZ-SW, PSD-NW, PSD-SW, PSL-SE, RL-W, SE-SW, SJ-NW, SS-S, TKK-W, TM-E, TM-S, TPT-SW",X (SIMP),"X (Bongiorni et al, in situ nursery)
+X (Ng et al, ex situ nursery)",,,"X (Raffles)
+X (SultanShoal, as Porites massive)",,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",Also documented on reef flats (Lee et al 2021),"Purchon 1956; Chuang 1961; Chou & Teo 1983; Chou & Wong 1986; Iffah(LKCNHM); Loo & Chou 1995; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Lim et al 2020; Kikuzawa et al 2020 (as Porites spp); Lee et al 2021 (as Porites lobata-lutea complex)
+
+Bongiorni et al 2011 (in situ coral nursery); Ng et al 2012 (ex situ coral nursery); Tanzil et al 2013 (growth rates of Porites in SEA); Tanzil et al 2016 (Symbiodinium diversity); Ng et al 2019b (skeletal density); Tan et al 2020 (endosymbiont diversity); Wainwright et al 2020 (host age); Loo et al 2020 (optimal temperature); Moynihan et al 2021 (envir impact on mech properties)"
+Porites monticulosa,Cnidaria,Anthozoa,Scleractinia,Poritidae,Porites,monticulosa,Porites,"Dana, 1846 ",,No,No,No,No,LC,-,DD,2009 (Huang et al),2019 (Chow et al),3,10,30,,0.050097,0.001788,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive, foliose, encrusting.
+Gonochoric broadcaster.",,"JO-S, PSD-NW, PSD-SW, RL-W, SE-NW, SE-SW, SJ-S, TPT-SW",X (SIMP),,,,X (Raffles),,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",,Huang et al 2009; Wong et al 2018; Chow et al 2019
+Porites murrayensis,Cnidaria,Anthozoa,Scleractinia,Poritidae,Porites,murrayensis,Porites,"Vaughan, 1918",,No,No,No,No,NT,-,DD,1995 (Loo & Chou),1995 (Loo & Chou),1,10,30,-100,-0.01336,0.066595,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive, encrusting.
+Gonochoric broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Loo & Chou 1995
+Porites nigrescens,Cnidaria,Anthozoa,Scleractinia,Poritidae,Porites,nigrescens,Porites,"Dana, 1846 ",,No,No,No,No,VU,-,DD,1878 (as Porites saccharata; Brüggemann),1995 (Loo & Chou),15,10,30,-100,-0.09137,0.034253,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, branching, encrusting.
+Gonochoric broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Brüggemann 1878; Studer 1881; Purchon 1956; Chou & Teo 1983; Chou & Wong 1986; Iffah(LKCNHM); Loo & Chou 1995
+Porites rus,Cnidaria,Anthozoa,Scleractinia,Poritidae,Porites,rus,Porites,"(Forskål, 1775) ",,No,No,No,No,LC,-,NT,1956 (as Porites convexa; Purchon),2021 (Lee et al),12,10,30,-45.05230531,-0.04759,0.32973,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive, branching, foliose, encrusting.
+Gonochoric broadcaster.
+
+Can colonise artificial structures.",,"HA-NE, HA-SE, HA-W, HP-E, HP-W, JO-S, KU-NE, LZ-SW, PSD-NW, PSD-SW, RL-W, SJ-NW, SJ-S, SS-S, TPT-SW",X (SIMP),,,,X (SultanShoal),X,,,,X,"Common at many sites. Population decline not significant
+
+Documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",Also documented on reef flats (Lee et al 2021),"Purchon 1956; Chuang 1961; Chou & Wong 1986; Loo & Chou 1995; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Lim et al 2020; Kikuzawa et al 2020; Lee et al 2021
+
+Loo et al 2020 (optimal temperature)"
+Porites solida,Cnidaria,Anthozoa,Scleractinia,Poritidae,Porites,solida,Porites,"(Forskål, 1775)",,No,No,No,No,LC,-,DD,1977 (Chuang),1995 (Loo & Chou),3,10,30,-100,-0.06869,0.016115,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, encrusting.
+Gonochoric broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Chuang 1977; Iffah(LKCNHM); Loo & Chou 1995
+Porites stephensoni,Cnidaria,Anthozoa,Scleractinia,Poritidae,Porites,stephensoni,Porites,"Crossland, 1952",,No,No,No,No,NT,-,DD,"1986 (ZRC, 19860429)",1995 (Loo & Chou),3,10,30,-100,-0.01136,0.036076,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive.
+Gonochoric broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Iffah(LKCNHM); Loo & Chou 1995
+Porites vaughani,Cnidaria,Anthozoa,Scleractinia,Poritidae,Porites,vaughani,Porites,"Crossland, 1952",,No,No,No,No,LC,-,DD,1995 (Loo & Chou),1995 (Loo & Chou),1,10,30,-100,-0.02432,0.003559,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, encrusting.
+Gonochoric broadcaster.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,Loo & Chou 1995
+Psammocora contigua,Cnidaria,Anthozoa,Scleractinia,Psammocoridae,Psammocora,contigua,Psammocora,"(Esper, 1794)",Crinkled sandpaper coral,No,No,No,No,NT,-,NT,1881 (Studer),2020 (Lim et al),17,10,30,-45.7613967,0.002956,0.92783,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive, branching, encrusting.
+Gonochoric broadcaster.",,"HA-W, JO-S, KU-NE, LA-S, RL-W, SJ-S, SS-N, SS-S",X (SIMP),"X (Ng et al, ex situ nursery; as P.obtusangula)
+X (Chou et al, subtidal seawall transplant)
+
+X (Chou et al, subtidal seawall transplant)",,,X (SultanShoal),X,,,,X,"Common at many sites. Population decline not observed.
+
+Documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",,"Studer 1881; Purchon 1956; Chuang 1961; Chuang 1977; Chou & Teo 1983; Chou & Wong 1986; Iffah(LKCNHM); Loo & Chou 1995; BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Lim et al 2020
+
+Ng et al 2012 (ex situ coral nursery, as P. obtusangula); Chou et al 2017 (effectiveness of reef restoration); Chou et al 2018 (relevance of reef restoration)"
+Psammocora haimiana,Cnidaria,Anthozoa,Scleractinia,Psammocoridae,Psammocora,haimiana,Psammocora,"Milne Edwards & Haime, 1851",Boulder sandpaper coral,No,No,No,No,LC,-,LC,1956 (as Psammocora togianensis; Purchon),2020 (Kikuzawa et al),13,10,30,288.3333333,0.130818,0.02847,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive, foliose, encrusting.
+Gonochoric broadcaster.
+
+Can colonise artificial structures.",,"HP-E, JO-S, KU-NE, LZ-SW, PSD-NW, RL-W, SJ-NW, SJ-S, SS-N, SS-S, TPT-SW",X (SIMP),"X (Bongiorni et al, in situ nursery; as P.digitata)
+X (Ng et al, ex situ nursery; as P.digitata)",,,"X (Raffles) ; as P.digitata in Huang2009?
+X (SultanShoal)",,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",,"As P.haimiana: Purchon 1956; Chuang 1961; Chuang 1977; Iffah(LKCNHM); BioBlitz_SIMP2017; Wong et al 2018; Chow et al 2019; Ng et al 2020; Kikuzawa et al 2020
+As P.digitata: Loo & Chou 1995; Huang et al 2009
+
+Bongiorni et al 2011 (in situ coral nursery, as P.digitata); Ng et al 2012 (ex situ coral nursery, as P.digitata)"
+Psammocora nierstraszi,Cnidaria,Anthozoa,Scleractinia,Psammocoridae,Psammocora,nierstraszi,Psammocora,"Van de Horst, 1921",Boulder sandpaper coral,No,No,No,No,LC,-,VU,1988 (REST Survey),2020 (Lim et al),3,10,30,-65.75757576,-0.01004,0.646565,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies massive, submassive, encrusting.
+Gonochoric broadcaster.",,"KU-NE, LA-S, LZ-SW, RL-W, TM-E",X (SIMP),,,,,X,,X,,X,"Common at many sites. Population decline not significant
+
+Documented from other reefs in the region (Huang et al 2015).
+
+Downgraded from status in Part 1 [initial (local) assessment based on RDB2 methodology]: Expected to receive immigration of propagules, or immigration of propagules not expected to decrease.",,BioBlitz_SIMP2017; Wong et al 2018; Lim et al 2020
+Psammocora profundacella,Cnidaria,Anthozoa,Scleractinia,Psammocoridae,Psammocora,profundacella,Psammocora,"Gardiner, 1898",Boulder sandpaper coral,No,No,No,No,LC,-,DD,1995 (as Psammocora superficialis; Loo & Chou),2020 (Kikuzawa et al),3,10,30,,,,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies submassive. 
+Gonochoric broadcaster.
+
+Can colonise artificial structures.",,,,,,,,,,,,,"DD, as not recorded sufficiently from surveys to infer decline.",,"As Psammocora superficialis: 
+Loo & Chou 1995; Huang et al 2009; Kikuzawa et al 2020"
+Pseudosiderastrea tayamai,Cnidaria,Anthozoa,Scleractinia,Siderastreidae,Pseudosiderastrea,tayamai,Pseudosiderastrea,"Yabe & Sugiyama, 1935",Neat hexagonal coral,No,No,No,No,NT,-,LC,1956 (Purchon),2021 (Lee et al),8,10,30,,0.002784,0.173536,,,,,,X,X,X,X,,,,,X,X,,,X,,"Colonies encrusting.
+Gonochoric broadcaster.
+
+Can colonise artificial structures.",,"CY-S, SE-NW, SS-S, TKK-W, TM-S, TPT-SW",X (SIMP),,,,X (Raffles),,,,,,"Population decline not observed and further decline not predicted.
+Common at many sites.
+
+Also documented from other reefs in the region (Huang et al 2015).
+",Also documented on reef flats (Lee et al 2021),Purchon 1956; Chuang 1961; Huang et al 2009; BioBlitz_SIMP2017; Wong et al 2018; Lim et al 2020; Kikuzawa et al 2020; Lee et al 2021
