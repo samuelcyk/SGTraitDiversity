@@ -1,7 +1,7 @@
-# SGTraitDiversity
+## Singapore Trait Diversity Manuscript (SGTraitDiversity)
 Analyses for coral metric trends on Singapore reefs through time.
 
-Please see the following paper for details.
+### Please see the following paper for details.
 Chan et al. 2024 Decadal decline of functional diversity despite increasing taxonomic and phylogenetic diversity of coral reefs under chronic urbanisation stress. Ecological Indicators 164, 112143. 
 https://doi.org/10.1016/j.ecolind.2024.112143
 
